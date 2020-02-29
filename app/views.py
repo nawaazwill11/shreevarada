@@ -37,3 +37,12 @@ def service_worker():
     response = make_response(send_from_directory('static', 'sw.js'))
     response.headers['Cache-Control'] = 'no-cache'
     return response
+
+# app name 
+@app.errorhandler(404) 
+  
+# inbuilt function which takes error as parameter 
+def not_found(e): 
+  
+# defining function 
+  return render_template("404.html") 
