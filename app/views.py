@@ -14,17 +14,17 @@ templates = {
 }
 
 # Landing | Business Information page
-@app.route("/")
+@app.route("http://shreevarada.herokuapp.com//")
 def about():
     return render_template(templates['about'])
 
 # Product information page
-@app.route("/products")
+@app.route("http://shreevarada.herokuapp.com//products")
 def products():
     return render_template(templates['products'])
 
 # Contact information page
-@app.route("/connect")
+@app.route("http://shreevarada.herokuapp.com//connect")
 def connect():
     return render_template(templates['connect'])
 
