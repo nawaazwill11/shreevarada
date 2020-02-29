@@ -6,6 +6,8 @@ from . import fapp
 
 app = fapp
 
+print('Here!!!!!!!')
+
 # A list of all html templates
 templates = {
     'about': 'index.html',
