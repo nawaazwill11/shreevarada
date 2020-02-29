@@ -37,11 +37,11 @@ def service_worker():
     response.headers['Cache-Control'] = 'no-cache'
     return response
 
-# app name 
-@app.errorhandler(404) 
+# # app name 
+# @app.errorhandler(404) 
   
-# inbuilt function which takes error as parameter 
-def not_found(e): 
+# # inbuilt function which takes error as parameter 
+# def not_found(e): 
   
-# defining function 
-  return render_template("404.html") 
+# # defining function 
+#   return render_template("404.html") 
