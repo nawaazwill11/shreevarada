@@ -1,0 +1,12 @@
+{% extends 'layout/base.html' %}
+
+{% block title %}Welcome to Shreevarada Enterprises{% endblock %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='dist/bundle/css/index.css') }}">
+
+{% endblock %}
+
+{% block scripts %}
+    <script src="{{ url_for('static', filename='dist/bundle/js/index.js') }}"></script>
+{% endblock %}
