@@ -2,7 +2,9 @@ from flask import (
     Flask, render_template, make_response, send_from_directory
 )
 
-from . import application
+from . import fapp
+
+app = fapp
 
 # A list of all html templates
 templates = {
@@ -12,22 +14,22 @@ templates = {
 }
 
 # Landing | Business Information page
-@application.route("/")
+@app.route("/")
 def about():
     return render_template(templates['about'])
 
 # Product information page
-@application.route("/products")
+@app.route("/products")
 def products():
     return render_template(templates['products'])
 
 # Contact information page
-@application.route("/connect")
+@app.route("/connect")
 def connect():
     return render_template(templates['connect'])
 
 # Service worker
-@application.route('/sw.js')
+@app.route('/sw.js')
 def service_worker():
     response = make_response(send_from_directory('static', 'sw.js'))
     response.headers['Cache-Control'] = 'no-cache'
