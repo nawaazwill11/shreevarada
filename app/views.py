@@ -2,9 +2,8 @@ from flask import (
     Flask, render_template, make_response, send_from_directory
 )
 
-from . import fapp
+from . import app
 
-app = fapp
 
 print('Here!!!!!!!')
 
