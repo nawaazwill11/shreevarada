@@ -16,6 +16,7 @@ templates = {
 # Landing | Business Information page
 @app.route("/")
 def about():
+    return 'Hello, world!'
     return render_template(templates['about'])
 
 # Product information page
