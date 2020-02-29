@@ -76,6 +76,6 @@ function getFilesToCache() {
 }
 
 function getServerURL() {
-    const url = 'http://localhost:5000/';
+    const url = 'http://shreevarada.herokuapp.com/';
     return url;
 }
