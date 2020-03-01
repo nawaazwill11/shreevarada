@@ -17,7 +17,7 @@ module.exports = {
         new HtmlWebpackPlugin({
         title: "Webpack Output",
         }),
-        new CleanWebpackPlugin(),
+        // new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
           filename: "css/[name].css"
         }),
