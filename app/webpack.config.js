@@ -10,7 +10,7 @@ module.exports = {
       index: __dirname + '/static/packages/index.pack.js',
     },
     output: {
-      path: __dirname + '/static/dist/bundle',
+      path: __dirname + '/static/dist',
       filename: 'js/[name].js',
     },
     plugins: [
