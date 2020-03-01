@@ -7,6 +7,16 @@
 
 {% endblock %}
 
+{% block content %}
+
+<div class="container">
+    <section id="section-1">
+        <div class="underlay"></div>
+    </section>
+</div>
+
+{% endblock %}
+
 {% block scripts %}
     <script src="{{ url_for('static', filename='dist/js/index.js') }}"></script>
 {% endblock %}

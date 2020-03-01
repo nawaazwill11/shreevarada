@@ -5455,11 +5455,6 @@ small {
     font-size: 1.2rem;
   }
 }
-.flex-center-xy, .fixed-action-btn ul li a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 nav {
   position: relative;
@@ -5469,8 +5464,19 @@ nav ul li a {
   color: #fff;
 }
 
+.nav-menu {
+  height: 0px;
+}
 .nav-menu .red {
   background-color: #e53935 !important;
+}
+
+.brand-logo {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0 !important;
 }
 
 .fixed-action-btn {
@@ -5487,6 +5493,9 @@ nav ul li a {
   margin: 0 !important;
 }
 .fixed-action-btn ul li a {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
   width: -webkit-fill-available;
   height: 50px;
   border-radius: 0px;
@@ -5514,15 +5523,48 @@ nav ul li a {
   font-size: 2.3rem;
 }
 
-body {
-  background-color: #424242;
+@media screen and (min-width: 997px) {
+  .brand-logo {
+    display: inline-block !important;
+    padding-left: 20px !important;
+  }
+}
+html {
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
 }
 
-.brand-logo {
-  padding-left: 20px !important;
+body {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-color: #424242;
 }
 
 h5 {
   margin-bottom: 0px;
 }
+.container {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  overflow-x: hidden;
+}
 
+#section-1 {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.underlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: url(../img/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.5;
+}

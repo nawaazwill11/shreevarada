@@ -1,11 +1,5 @@
 $red: #e53935;
 
-.flex-center-xy {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 nav {
     position: relative;
     z-index: 1000;
@@ -15,12 +9,16 @@ nav {
     }
 }
 .nav-menu {
-    // display: flex;
-    // justify-content: center;
+    height: 0px;
 
     .red {
         background-color: $red !important;
     }
+}
+.brand-logo {
+    @include flex-center-xy;
+    width: 100%;
+    padding: 0 !important;
 }
 .fixed-action-btn {
     position: relative;
@@ -36,7 +34,7 @@ nav {
             margin: 0 !important;
 
             a {
-                @extend .flex-center-xy;
+                @include flex-center-xy;
                 width: -webkit-fill-available;
                 height: 50px;
                 border-radius: 0px;
@@ -66,5 +64,12 @@ nav {
             line-height: 40px;
             font-size: 2.3rem;
         }
+    }
+}
+
+@media screen and (min-width: 997px) {
+    .brand-logo {
+        display: inline-block !important;
+        padding-left: 20px !important;
     }
 }

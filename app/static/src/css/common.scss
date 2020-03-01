@@ -1,10 +1,15 @@
+@import 'materialize-css/sass/app_materialize.scss';
+@import './components/helper.scss';
 @import 'components/nav';
 
-body {
-    background-color: #424242;
+html {
+    @include fill-both;
 }
-.brand-logo {
-    padding-left: 20px !important;
+
+body {
+    @include total-hw;
+    position: relative;
+    background-color: #424242;
 }
 h5 {
     margin-bottom: 0px;

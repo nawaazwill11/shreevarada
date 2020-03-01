@@ -1,0 +1,13 @@
+@mixin flex-center-xy {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+@mixin fill-both {
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+}
+@mixin total-hw {
+    height: 100%;
+    width: 100%;
+}

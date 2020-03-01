@@ -44,7 +44,7 @@ module.exports = {
               {
                 loader: MiniCssExtractPlugin.loader
               },
-              {loader: 'css-loader'},
+              {loader: 'css-loader?url=false'},
               {
                 loader: 'postcss-loader',
                 options: {
@@ -71,8 +71,12 @@ module.exports = {
             test: /\.(png|jpg|gif)$/,
             use: [
               {
-                loader: 'file-loader'
+                loader: 'file-loader',
+                options: {
+                  name: 'img/[name].[ext]',
+                },
               },
+              
             ],
           },
         ]
