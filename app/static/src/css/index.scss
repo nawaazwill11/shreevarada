@@ -1,6 +1,5 @@
 @import './components/helper.scss';
-
-$img_url: '../img/';
+@import './components/parallax.scss';
 
 .container {
     @include total-hw;

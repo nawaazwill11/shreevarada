@@ -4557,6 +4557,10 @@ body {
 h5 {
   margin-bottom: 0px;
 }
+.parallax img {
+  opacity: 0.5 !important;
+}
+
 .container {
   height: 100%;
   width: 100%;
