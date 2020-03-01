@@ -1,15 +1,23 @@
-function navInit() {
-    const fabs = document.querySelectorAll('.fixed-action-btn');
-    M.FloatingActionButton.init(fabs, {
-        direction: 'bottom',
-        hoverEnabled: false
-    });
-}
+const nav = function () {
 
-function navClose() {
-    const nav_fab = document.querySelector('.fixed-action-btn');
-    const nav_fab_instance = M.FloatingActionButton.getInstance(nav_fab);
-    nav_fab.close();
-}
+    function init() {
+        const fabs = document.querySelectorAll('.fixed-action-btn');
+        M.FloatingActionButton.init(fabs, {
+            direction: 'bottom',
+            hoverEnabled: false
+        });
+    }
+    
+    function close() {
+        const nav_fab = document.querySelector('.fixed-action-btn');
+        const nav_fab_instance = M.FloatingActionButton.getInstance(nav_fab);
+        nav_fab.close();
+    }
 
-export { navInit, navClose };
+    return {
+        init: init,
+        close: close,
+    }
+}();
+
+export default nav;

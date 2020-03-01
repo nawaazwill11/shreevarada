@@ -1,12 +1,19 @@
+// Contains commonly and repetivitely used css property.
+
+// Flex box, horizontally and vertically center aligned
 @mixin flex-center-xy {
     display: flex !important;
     justify-content: center;
     align-items: center;
 }
+
+// Element fills all available parent's height and width
 @mixin fill-both {
     width: -webkit-fill-available;
     height: -webkit-fill-available;
 }
+
+// Element takes of all its parent's height and width
 @mixin total-hw {
     height: 100%;
     width: 100%;

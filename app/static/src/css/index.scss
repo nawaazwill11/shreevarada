@@ -4,8 +4,8 @@ $img_url: '../img/';
 
 .container {
     @include total-hw;
-    position: absolute;    
-    top: 0;
+    // position: absolute;    
+    // top: 0;
     overflow-x: hidden;
 }
 
