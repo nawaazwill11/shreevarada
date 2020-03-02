@@ -5347,6 +5347,12 @@ nav ul li a {
   color: #fff;
 }
 
+.nav-menu-container {
+  position: fixed;
+  width: 100%;
+  z-index: 996;
+}
+
 .nav-menu {
   height: 0px;
 }
@@ -5360,6 +5366,7 @@ nav ul li a {
   align-items: center;
   width: 100%;
   padding: 0 !important;
+  text-align: center;
 }
 
 .fixed-action-btn {
@@ -5433,7 +5440,7 @@ h5 {
 }
 
 .parallax-container {
-  height: 350px;
+  height: 70%;
 }
 
 .parallax img {
@@ -5466,10 +5473,6 @@ h5 {
   top: -40px;
 }
 
-.section-content {
-  padding: 20px;
-}
-
 .carousel {
   height: 200px;
 }
@@ -5482,19 +5485,17 @@ h5 {
   width: 100%;
 }
 
-#section-1 {
-  position: relative;
-  height: 100%;
-  width: 100%;
+.section-content {
+  padding: 20px;
 }
 
-.underlay {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-image: url(../img/background.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  opacity: 0.5;
+.section-interaction {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 340px) {
+  .section-content {
+    padding: 20px 10px;
+  }
 }

@@ -20,4 +20,4 @@ const nav = function () {
     }
 }();
 
-export default nav;
+export { nav as default };

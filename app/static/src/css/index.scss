@@ -9,19 +9,32 @@
     // overflow-x: hidden;
 }
 
-#section-1 {
-    position: relative;
-    height: 100%;
-    width: 100%;
+// #section-1 {
+//     position: relative;
+//     height: 100%;
+//     width: 100%;
+// }
+
+// .underlay {
+//     position: absolute;
+//     height: 100%;
+//     width: 100%;
+//     background-image: url(../img/background.jpg);
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     background-size: cover;
+//     opacity: 0.5;
+// }
+.section-content {
+    padding: 20px;
+}
+.section-interaction {
+    display: flex;
+    justify-content: center;
 }
 
-.underlay {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-image: url(../img/background.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    opacity: 0.5;
+@media screen and (max-width: 340px) {
+    .section-content {
+        padding: 20px 10px;
+    }
 }

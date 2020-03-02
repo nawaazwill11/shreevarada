@@ -8,6 +8,11 @@ nav {
         color: #fff;
     }
 }
+.nav-menu-container {
+    position: fixed;
+    width: 100%;
+    z-index: 996;
+}
 .nav-menu {
     height: 0px;
 
@@ -19,6 +24,7 @@ nav {
     @include flex-center-xy;
     width: 100%;
     padding: 0 !important;
+    text-align: center;
 }
 .fixed-action-btn {
     position: relative;

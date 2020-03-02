@@ -1,7 +1,17 @@
+{% macro parallax(image_url, text_large='', text_small='') %}
 <div class="parallax-container">
     <div class="parallax"><img src="../static/src/img/background.jpg"></div>
     <div class="parallax-hover">
-      <p class="text-large">Shreevarada Enterprise</p>
-      <p>A Growing Frozen Food Distribution Chain</p>
+      {% if  text_large %} 
+        <p class="text-large">{{ text_large }}</p>
+        
+        {% if text_small %}
+          <p class="text-small">{{ text_small }}</p>
+        {% endif %}
+      
+      {% elif text_small %}
+        <p class="text-small">{{ text_small }}</p>
+      {% endif %}
     </div>
 </div>
+{%- endmacro %}
