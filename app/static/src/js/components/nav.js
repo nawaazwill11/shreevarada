@@ -4,14 +4,14 @@ const nav = function () {
         const fabs = document.querySelectorAll('.fixed-action-btn');
         M.FloatingActionButton.init(fabs, {
             direction: 'bottom',
-            hoverEnabled: false
+            hoverEnabled: true,
         });
     }
     
     function close() {
         const nav_fab = document.querySelector('.fixed-action-btn');
         const nav_fab_instance = M.FloatingActionButton.getInstance(nav_fab);
-        nav_fab.close();
+        nav_fab_instance.close();
     }
 
     return {

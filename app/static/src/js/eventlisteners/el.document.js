@@ -11,7 +11,6 @@ const event_document = function () {
     function onload(callbacks) {
         document.addEventListener('DOMContentLoaded', function() {
             callbacks.forEach(cb => {
-                console.log(cb);
                 cb();
             })
         });   
