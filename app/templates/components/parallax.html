@@ -1,6 +1,6 @@
-{% macro parallax(image_url, text_large='', text_small='') %}
-<div class="parallax-container">
-    <div class="parallax"><img src="../static/src/img/background.jpg"></div>
+{% macro parallax(image_url, text_large='', text_small='', id='') %}
+<div id="parallax-{{ id }}" class="parallax-container">
+    <div class="parallax"><img src="{{ image_url }}"></div>
     <div class="parallax-hover">
       {% if  text_large %} 
         <p class="text-large">{{ text_large }}</p>

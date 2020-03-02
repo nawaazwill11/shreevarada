@@ -12,10 +12,11 @@
   <!-- Parallax -->
    {% import 'components/parallax.html' as parallax %}
     
+   <!-- Parallax -1 -->
     {{ 
       parallax.parallax(url_for('static', filename='dist/img/prx_1.jpg'),
       'Shreevara Enterprise',
-      'A Growing Frozen Food Distribution Chain') 
+      'A Growing Frozen Food Distribution Chain', '1') 
     }}
 
     <!-- Products section -->
@@ -45,6 +46,12 @@
           </div>
       </div>
     </div>
+
+    {{ 
+      parallax.parallax(url_for('static', filename='dist/img/prx_2.jpg'),
+      none,
+      none, '2') 
+    }}
 
 </main>
 {% endblock %}
