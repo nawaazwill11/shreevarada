@@ -5458,7 +5458,6 @@ h5 {
   flex-direction: column;
   color: #fff;
   position: relative;
-  margin-top: 100px;
 }
 .parallax-hover p {
   text-align: center;
@@ -5482,6 +5481,9 @@ h5 {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+}
+#parallax-2 .parallax-hover {
+  margin-top: 100px;
 }
 
 .parallax-components {
