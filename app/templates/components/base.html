@@ -9,17 +9,17 @@
         <title>{% block title %}{% endblock %}</title>
         <meta name="description" content="Shreevarada Enterprise Daman">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        {% include 'layout/_styles.html' %}
+        {% include 'components/_styles.html' %}
         {% block styles %}{% endblock %}
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        {% include 'layout/nav.html' %}
+        {% include 'components/nav.html' %}
         {% block content %}{% endblock %}
 
-        {% include 'layout/_scripts.html' %}
+        {% include 'components/_scripts.html' %}
         {% block scripts %}{% endblock %}
     </body>
 </html>

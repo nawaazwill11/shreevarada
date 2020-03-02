@@ -1,11 +1,12 @@
 @import './components/helper.scss';
 @import './components/parallax.scss';
+@import './components/carousel.scss';
 
 .container {
     @include total-hw;
     // position: absolute;    
     // top: 0;
-    overflow-x: hidden;
+    // overflow-x: hidden;
 }
 
 #section-1 {

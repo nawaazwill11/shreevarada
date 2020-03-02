@@ -1,6 +1,8 @@
 @import 'materialize-css/sass/materialize.scss';
+@import './components/reset.scss';
 @import './components/helper.scss';
 @import 'components/nav';
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
 html {
     @include fill-both;
@@ -10,6 +12,7 @@ body {
     @include total-hw;
     position: relative;
     background-color: #424242;
+    font-family: 'Poppins';
 }
 h5 {
     margin-bottom: 0px;

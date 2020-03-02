@@ -11,4 +11,4 @@ const parallax = function () {
 
 }();
 
-export default parallax;
+export { parallax as default };
