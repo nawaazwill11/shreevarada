@@ -62,13 +62,6 @@
           <p class="text-small">{{ text_small }}</p>
         {% endif %}
       </div>
-      {% if components %}
-        <div class="parallax-components">
-          {% for component in components %}
-            {{ macro.card(component) }}
-          {% endfor %}
-        </div>
-      {% endif %}
     </div>
 </div>
 {% endmacro %}
@@ -126,20 +119,24 @@
 {% endmacro %}
 
 {# Card #}
-{% macro card(value) %}
-  <div class="card-cover">
-    <div class="row">
-      <div class="col s12 m10 push-m1">
-        <div class="card">
-          <div class="card-image">
-            <img src="{{ value['url'] }}">
-            <span class="card-title">{{ value['title'] }}</span>
-          </div>
-          <div class="card-content">
-            <p>{{ value['content'] }}</p>
+{% macro card(cards) %}
+  <div class="card-container">
+    {% for card in cards %}
+      <div class="card-cover">
+        <div class="row">
+          <div class="col s8 m6 push-s2 push-m3">
+            <div class="card">
+              <div class="card-image">
+                <img src="{{ card['url'] }}">
+                <span class="card-title">{{ card['title'] }}</span>
+              </div>
+              <div class="card-content">
+                <p>{{ card['content'] }}</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    {% endfor %}
   </div>
 {% endmacro %}

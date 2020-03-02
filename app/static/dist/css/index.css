@@ -5478,18 +5478,6 @@ h5 {
 
 #parallax-2 {
   top: -100px;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-}
-#parallax-2 .parallax-hover {
-  margin-top: 100px;
-}
-
-.parallax-components {
-  color: #424242;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .carousel {
@@ -5499,11 +5487,17 @@ h5 {
   top: 35px;
 }
 
-.card-cover {
-  flex: 1;
-  min-width: 300px;
+.card-container {
+  position: relative;
+  top: -170px;
+  display: flex;
 }
 
+@media screen and (max-width: 997px) {
+  .card-container {
+    flex-direction: column;
+  }
+}
 .container {
   height: 100%;
   width: 100%;
