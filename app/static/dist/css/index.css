@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins&display=swap);
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
 @charset "UTF-8";
 .materialize-red {
   background-color: #e51c23 !important;
@@ -5375,6 +5376,7 @@ nav ul li a {
   bottom: 40px;
   display: flex;
   justify-content: center;
+  height: 0px;
 }
 .fixed-action-btn ul {
   top: 70px !important;
@@ -5471,6 +5473,15 @@ h5 {
 .products {
   position: relative;
   top: -40px;
+}
+
+#parallax-2 {
+  top: -80px;
+}
+
+.parallax-text {
+  position: absolute;
+  top: 100px;
 }
 
 .carousel {

@@ -1,4 +1,4 @@
-{% extends 'components/base.html' %}
+{% extends 'layout.html' %}
 
 {% block title %}Welcome to Shreevarada Enterprises{% endblock %}
 
@@ -8,49 +8,54 @@
 {% endblock %}
 
 {% block content %}
+
 <main class="container">
-  <!-- Parallax -->
-   {% import 'components/parallax.html' as parallax %}
-    
-   <!-- Parallax -1 -->
+   {# Parallax id: 1 #}
     {{ 
-      parallax.parallax(url_for('static', filename='dist/img/prx_1.jpg'),
-      'Shreevara Enterprise',
-      'A Growing Frozen Food Distribution Chain', '1') 
+      macro.parallax(
+        url_for('static', filename='dist/img/prx_1.jpg'),
+        '1',
+        'Shreevara Enterprise',
+        'A Growing Frozen Food Distribution Chain'
+      ) 
     }}
 
-    <!-- Products section -->
-    <div class="section products">
-      <div class="row">
-          <div class="col s12">
-            <div class="section-content white">
-              <div class="section-header">
-                <h3 class="header center mr-b-10">Our Products</h3>
-              </div>
-              <div class="divider"></div>
-              <div class="section-content">
-                <div class="section-description">
-                  <p class="grey-text text-darken-3 lighten-3">
-                    Some short description on the products that are being offered.
-                  </p>
-                </div>
+    {# Product Section #}
+    {{
+      macro.section(
+        'Our Products', 
+        'Some description',
+        macro, 
+        [
+          {
+            'name': 'carousel',
+            'attr': [
+              [
+                ['#!', url_for('static', filename='dist/img/1.jpg')],
+                ['#!', url_for('static', filename='dist/img/2.jpg')],
+                ['#!', url_for('static', filename='dist/img/3.jpg')],
+              ]
+            ]
+          },
+          {
+            'name': 'button',
+            'attr': [
+              'Browse All'
+            ]
+          }
+        ], 
+        'Browse All'
+      )
+    }}
 
-                <!-- Carousel slider -->
-                {% include 'components/carousel.html' %}
-
-                <div class="section-interaction">
-                  <button class="wave-effect wave-light btn red">Browse All</button>
-                </div>
-              </div>
-            </div>
-          </div>
-      </div>
-    </div>
-
+    {# Parallax id: 2 #}
     {{ 
-      parallax.parallax(url_for('static', filename='dist/img/prx_2.jpg'),
-      none,
-      none, '2') 
+      macro.parallax(
+        url_for('static', filename='dist/img/prx_2.jpg'),
+        '2', 
+        "Our Services",
+        none
+      ) 
     }}
 
 </main>

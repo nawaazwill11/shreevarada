@@ -1,0 +1,121 @@
+{# Scripts #}
+{% macro scripts() %}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+{% endmacro %}
+
+{# section #}
+{% macro section(header, description, macro, components=[], button='') %}
+    <div class="section products">
+    <div class="row">
+        <div class="col s12 l10 push-l1">
+          <div class="section-content white">
+            <div class="section-header">
+              <h3 class="header center mr-b-10">{{ header }}</h3>
+            </div>
+            <div class="divider"></div>
+            <div class="section-content">
+              <div class="section-description">
+                <p class="grey-text text-darken-3 lighten-3">
+                  <!-- Some short description on the products that are being offered. -->
+                  {{ description }}
+                </p>
+              </div>
+
+              {% for component in components %}
+                {% if component['name'] == 'carousel' %}
+                  {{ macro.carousel(component['attr'][0]) }}
+                
+                {% elif component['name'] == 'button' %}
+                  {{ macro.button(component['attr'][0]) }}
+                
+                {% endif %}
+
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+    </div>
+    </div>
+{% endmacro %}
+
+{# Carousel #}
+{% macro carousel(urls) %}
+<div class="carousel">
+    {% for a in urls %}
+        <a class="carousel-item" href="{{ a[0] }}"><img src="{{ a[1] }}"></a>
+    {% endfor %}
+</div>
+{% endmacro %}
+
+{# Nav #}
+{% macro nav() %}
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo">
+          <!-- <img src="{{ url_for('static', filename='dist/img/logo.svg') }}" alt=""> -->
+          Shreevarada Enterprise
+        </a>
+        <!-- <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a> -->
+        <ul class="right hide-on-med-and-down">
+          <li><a class="green" href="/">About Us</a></li>
+          <li><a class="amber accent-2"  href="/products">Products</a></li>
+          <li><a class="red" href="/connect">Connect</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div class="nav-menu-container">
+    <div class="nav-menu hide-on-large-only">
+      <div class="fixed-action-btn">
+        <a class="btn-floating btn-large red">
+          <i class="material-icons">keyboard_arrow_down</i>
+        </a>
+        <ul>
+          <li><a class="btn-floating red"><i class="material-icons">call_made</i><span>Connect</span></a></li>
+          <li><a class="btn-floating amber accent-2"><i class="material-icons">shopping_cart</i><span>Products</span></a></li>
+          <li><a class="btn-floating green"><i class="material-icons">info_outline</i><span>About Us</span></a></li>
+          <!-- <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li> -->
+        </ul>
+      </div>
+    </div>
+    <!-- <div class="item-dropdown-container">
+      <ul>
+        <li>Item one</li>
+        <li>Item two</li>
+      </ul>
+    </div> -->
+  </div>
+{% endmacro %}
+
+{# Parallex #}
+{% macro parallax(image_url, id='', text_large='', text_small='') %}
+<div id="parallax-{{ id }}" class="parallax-container">
+    <div class="parallax"><img src="{{ image_url }}"></div>
+    <div class="parallax-hover">
+      <div class="parallax-text">
+        {% if  text_large %} 
+          <p class="text-large">{{ text_large }}</p>
+          
+          {% if text_small %}
+            <p class="text-small">{{ text_small }}</p>
+          {% endif %}
+        
+        {% elif text_small %}
+          <p class="text-small">{{ text_small }}</p>
+        {% endif %}
+      </div>
+    </div>
+    <div class="parallax-components">
+     
+    </div>
+</div>
+{%- endmacro %}
+
+{# Button #}
+{% macro button(text) %}
+    <div class="section-interaction">
+        <button class="wave-effect wave-light btn red">{{ text }}</button>
+    </div>
+{% endmacro %}
