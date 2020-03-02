@@ -5457,6 +5457,8 @@ h5 {
   width: 100%;
   flex-direction: column;
   color: #fff;
+  position: relative;
+  margin-top: 100px;
 }
 .parallax-hover p {
   text-align: center;
@@ -5476,12 +5478,16 @@ h5 {
 }
 
 #parallax-2 {
-  top: -80px;
+  top: -100px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
-.parallax-text {
-  position: absolute;
-  top: 100px;
+.parallax-components {
+  color: #424242;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .carousel {
@@ -5489,6 +5495,11 @@ h5 {
 }
 .carousel .carousel-item {
   top: 35px;
+}
+
+.card-cover {
+  flex: 1;
+  min-width: 300px;
 }
 
 .container {

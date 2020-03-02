@@ -13,8 +13,9 @@
    {# Parallax id: 1 #}
     {{ 
       macro.parallax(
-        url_for('static', filename='dist/img/prx_1.jpg'),
+        macro,
         '1',
+        url_for('static', filename='dist/img/prx_1.jpg'),
         'Shreevara Enterprise',
         'A Growing Frozen Food Distribution Chain'
       ) 
@@ -23,9 +24,9 @@
     {# Product Section #}
     {{
       macro.section(
+        macro,
         'Our Products', 
         'Some description',
-        macro, 
         [
           {
             'name': 'carousel',
@@ -51,10 +52,31 @@
     {# Parallax id: 2 #}
     {{ 
       macro.parallax(
+        macro,
+        '2',
         url_for('static', filename='dist/img/prx_2.jpg'),
-        '2', 
         "Our Services",
-        none
+        none,
+        [
+          {
+            'id': '1',
+            'url': url_for('static', filename='dist/img/1.jpg'),
+            'title': 'Service Name',
+            'content': 'Some descriptive bragging'
+          },
+          {
+            'id': '2',
+            'url': url_for('static', filename='dist/img/2.jpg'),
+            'title': 'Service Name',
+            'content': 'Some descriptive bragging'
+          },
+          {
+            'id': '3',
+            'url': url_for('static', filename='dist/img/3.jpg'),
+            'title': 'Service Name',
+            'content': 'Some descriptive bragging'
+          }
+        ]
       ) 
     }}
 

@@ -3,50 +3,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 {% endmacro %}
 
-{# section #}
-{% macro section(header, description, macro, components=[], button='') %}
-    <div class="section products">
-    <div class="row">
-        <div class="col s12 l10 push-l1">
-          <div class="section-content white">
-            <div class="section-header">
-              <h3 class="header center mr-b-10">{{ header }}</h3>
-            </div>
-            <div class="divider"></div>
-            <div class="section-content">
-              <div class="section-description">
-                <p class="grey-text text-darken-3 lighten-3">
-                  <!-- Some short description on the products that are being offered. -->
-                  {{ description }}
-                </p>
-              </div>
-
-              {% for component in components %}
-                {% if component['name'] == 'carousel' %}
-                  {{ macro.carousel(component['attr'][0]) }}
-                
-                {% elif component['name'] == 'button' %}
-                  {{ macro.button(component['attr'][0]) }}
-                
-                {% endif %}
-
-              {% endfor %}
-            </div>
-          </div>
-        </div>
-    </div>
-    </div>
-{% endmacro %}
-
-{# Carousel #}
-{% macro carousel(urls) %}
-<div class="carousel">
-    {% for a in urls %}
-        <a class="carousel-item" href="{{ a[0] }}"><img src="{{ a[1] }}"></a>
-    {% endfor %}
-</div>
-{% endmacro %}
-
 {# Nav #}
 {% macro nav() %}
   <div class="navbar-fixed">
@@ -90,7 +46,7 @@
 {% endmacro %}
 
 {# Parallex #}
-{% macro parallax(image_url, id='', text_large='', text_small='') %}
+{% macro parallax(macro, id, image_url, text_large='', text_small='', components=[]) %}
 <div id="parallax-{{ id }}" class="parallax-container">
     <div class="parallax"><img src="{{ image_url }}"></div>
     <div class="parallax-hover">
@@ -106,16 +62,84 @@
           <p class="text-small">{{ text_small }}</p>
         {% endif %}
       </div>
-    </div>
-    <div class="parallax-components">
-     
+      {% if components %}
+        <div class="parallax-components">
+          {% for component in components %}
+            {{ macro.card(component) }}
+          {% endfor %}
+        </div>
+      {% endif %}
     </div>
 </div>
-{%- endmacro %}
+{% endmacro %}
+
+{# section #}
+{% macro section(macro, header, description, components=[], button='') %}
+    <div class="section products">
+    <div class="row">
+        <div class="col s12 l10 push-l1">
+          <div class="section-content white">
+            <div class="section-header">
+              <h3 class="header center mr-b-10">{{ header }}</h3>
+            </div>
+            <div class="divider"></div>
+            <div class="section-content">
+              <div class="section-description">
+                <p class="grey-text text-darken-3 lighten-3">
+                  <!-- Some short description on the products that are being offered. -->
+                  {{ description }}
+                </p>
+              </div>
+
+              {% for component in components %}
+                {% if component['name'] == 'carousel' %}
+                  {{ macro.carousel(component['attr'][0]) }}
+                
+                {% elif component['name'] == 'button' %}
+                  {{ macro.button(component['attr'][0]) }}
+                
+                {% endif %}
+
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+    </div>
+    </div>
+{% endmacro %}
+
+{# Carousel #}
+{% macro carousel(urls) %}
+<div class="carousel">
+    {% for a in urls %}
+        <a class="carousel-item" href="{{ a[0] }}"><img src="{{ a[1] }}"></a>
+    {% endfor %}
+</div>
+{% endmacro %}
+
 
 {# Button #}
 {% macro button(text) %}
     <div class="section-interaction">
         <button class="wave-effect wave-light btn red">{{ text }}</button>
     </div>
+{% endmacro %}
+
+{# Card #}
+{% macro card(value) %}
+  <div class="card-cover">
+    <div class="row">
+      <div class="col s12 m10 push-m1">
+        <div class="card">
+          <div class="card-image">
+            <img src="{{ value['url'] }}">
+            <span class="card-title">{{ value['title'] }}</span>
+          </div>
+          <div class="card-content">
+            <p>{{ value['content'] }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 {% endmacro %}
