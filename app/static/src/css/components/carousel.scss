@@ -3,9 +3,18 @@
 
     .carousel-item {
         top: 35px;
+       
     }
 }
 
-// @media screen and (max-width: 410px) {
-//     .carousel-item
-// }
+@media screen and (max-width: 320px) {
+    .carousel-item {
+        width: 185px !important;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .carousel-item {
+        width: 300px !important;
+    }
+}

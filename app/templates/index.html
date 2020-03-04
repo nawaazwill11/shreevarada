@@ -50,11 +50,12 @@
           {
             'name': 'button',
             'attr': [
-              'Browse All'
+              {
+                'text':'Browse All'
+              }  
             ]
           }
-        ], 
-        'Browse All'
+        ]
       )
     }}
 
@@ -138,12 +139,22 @@
                 'title': 'Switz Food'
               },
             ]
+          },
+          {
+            'name': 'button',
+            'attr': [
+              {
+                'text': 'Know more'
+              }
+            ]
           }
         ]
       ) 
     }}
-
-
+    <div class="divider white"></div>
+    {{
+      macro.footer(marco, [])
+    }}
 </main>
 {% endblock %}
 
