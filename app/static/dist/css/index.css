@@ -5370,6 +5370,12 @@ nav ul li a {
   text-align: center;
 }
 
+@media screen and (min-width: 997px) {
+  .brand-logo {
+    display: inline-block !important;
+    padding-left: 20px !important;
+  }
+}
 .fixed-action-btn {
   position: relative;
   right: 0;
@@ -5378,8 +5384,11 @@ nav ul li a {
   justify-content: center;
   height: 0px;
 }
+.fixed-action-btn a {
+  top: -15px;
+}
 .fixed-action-btn ul {
-  top: 70px !important;
+  top: 85px !important;
 }
 .fixed-action-btn ul li {
   margin: 0 !important;
@@ -5415,12 +5424,6 @@ nav ul li a {
   font-size: 2.3rem;
 }
 
-@media screen and (min-width: 997px) {
-  .brand-logo {
-    display: inline-block !important;
-    padding-left: 20px !important;
-  }
-}
 html {
   width: -webkit-fill-available;
   height: -webkit-fill-available;
@@ -5488,9 +5491,16 @@ h5 {
 }
 
 .card-container {
-  position: relative;
-  top: -170px;
   display: flex;
+  position: relative;
+}
+
+.card-reveal-container .card {
+  height: 250px;
+}
+.card-reveal-container img {
+  height: 170px;
+  padding: 20px;
 }
 
 @media screen and (max-width: 997px) {

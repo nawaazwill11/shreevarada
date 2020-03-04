@@ -25,17 +25,26 @@
     {{
       macro.section(
         macro,
+        '1',
         'Our Products', 
         'Some description',
         [
           {
+            'id': '1',
             'name': 'carousel',
             'attr': [
-              [
-                ['#!', url_for('static', filename='dist/img/1.jpg')],
-                ['#!', url_for('static', filename='dist/img/2.jpg')],
-                ['#!', url_for('static', filename='dist/img/3.jpg')],
-              ]
+                {
+                  'href': '#!', 
+                  'src': url_for('static', filename='dist/img/1.jpg')
+                },
+                {
+                  'href': '#!', 
+                  'src': url_for('static', filename='dist/img/2.jpg')
+                },
+                {
+                  'href': '#!', 
+                  'src': url_for('static', filename='dist/img/3.jpg')
+                }
             ]
           },
           {
@@ -51,39 +60,89 @@
 
     {# Parallax id: 2 #}
     {{ 
-      macro.parallax(
+      macro.section(
         macro,
         '2',
-        url_for('static', filename='dist/img/prx_2.jpg'),
         "Our Services",
-        none
-      ) 
-    }}
-    
-    {{
-      macro.card(
+        none,
         [
           {
             'id': '1',
-            'url': url_for('static', filename='dist/img/1.jpg'),
-            'title': 'Service Name',
-            'content': 'Some descriptive bragging'
-          },
+            'name': 'card',
+            'attr': [
+              {
+                'url': url_for('static', filename='dist/img/1.jpg'),
+                'title': 'Service Name',
+                'content': 'Some descriptive bragging'
+              },
+              {
+                'url': url_for('static', filename='dist/img/2.jpg'),
+                'title': 'Service Name',
+                'content': 'Some descriptive bragging'
+              },
+              {
+                'url': url_for('static', filename='dist/img/3.jpg'),
+                'title': 'Service Name',
+                'content': 'Some descriptive bragging'
+              }
+            ]
+          }        
+        ]
+      ) 
+    }}
+
+    {{ 
+      macro.section(
+        macro,
+        '3',
+        "Our Partners",
+        none,
+        [
           {
-            'id': '2',
-            'url': url_for('static', filename='dist/img/2.jpg'),
-            'title': 'Service Name',
-            'content': 'Some descriptive bragging'
-          },
-          {
-            'id': '3',
-            'url': url_for('static', filename='dist/img/3.jpg'),
-            'title': 'Service Name',
-            'content': 'Some descriptive bragging'
+            'name': 'card_reveal',
+            'attr': [
+              {
+                'src': 'dist/img/venkys_logo.png',
+                'title': 'Venky\'s'
+              },
+              {
+                'src': 'dist/img/mccain_logo.png',
+                'title': 'Mccain Foods'
+              },
+              {
+                'src': 'dist/img/kissan_logo.jpeg',
+                'title': 'Kissan'
+              },
+              {
+                'src': 'dist/img/cremica_logo.png',
+                'title': 'Cremica'
+              },
+              {
+                'src': 'dist/img/gadre_logo.png',
+                'title': 'Gadre'
+              },
+              {
+                'src': 'dist/img/ifb_logo.png',
+                'title': 'IFB Agro'
+              },
+              {
+                'src': 'dist/img/delight_logo.png',
+                'title': 'Mccain Foods'
+              },
+              {
+                'src': 'dist/img/valneer_logo.png',
+                'title': 'Valneer'
+              },
+              {
+                'src': 'dist/img/switz_logo.png',
+                'title': 'Switz Food'
+              },
+            ]
           }
         ]
-      )
+      ) 
     }}
+
 
 </main>
 {% endblock %}

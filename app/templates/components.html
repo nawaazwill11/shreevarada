@@ -24,7 +24,7 @@
 
   <div class="nav-menu-container">
     <div class="nav-menu hide-on-large-only">
-      <div class="fixed-action-btn">
+      <div class="fixed-action-btn" data-active="false">
         <a class="btn-floating btn-large red">
           <i class="material-icons">keyboard_arrow_down</i>
         </a>
@@ -45,7 +45,7 @@
   </div>
 {% endmacro %}
 
-{# Parallex #}
+{# Parallax #}
 {% macro parallax(macro, id, image_url, text_large='', text_small='', components=[]) %}
 <div id="parallax-{{ id }}" class="parallax-container">
     <div class="parallax"><img src="{{ image_url }}"></div>
@@ -67,47 +67,44 @@
 {% endmacro %}
 
 {# section #}
-{% macro section(macro, header, description, components=[], button='') %}
-    <div class="section products">
-    <div class="row">
-        <div class="col s12 l10 push-l1">
-          <div class="section-content white">
-            <div class="section-header">
-              <h3 class="header center mr-b-10">{{ header }}</h3>
-            </div>
-            <div class="divider"></div>
-            <div class="section-content">
-              <div class="section-description">
-                <p class="grey-text text-darken-3 lighten-3">
-                  <!-- Some short description on the products that are being offered. -->
-                  {{ description }}
-                </p>
+{% macro section(macro, id, header, description, components=[], button='') %}
+    <div id="{{ id }}" class="section products">
+      <div class="row">
+          <div class="col s12 l10 push-l1">
+            <div class="section-content white">
+              <div class="section-header">
+                <h3 class="header center mr-b-10">{{ header }}</h3>
               </div>
-
-              {% for component in components %}
-                {% if component['name'] == 'carousel' %}
-                  {{ macro.carousel(component['attr'][0]) }}
-                
-                {% elif component['name'] == 'button' %}
-                  {{ macro.button(component['attr'][0]) }}
-                
+              <div class="divider"></div>
+              <div class="section-content">
+                {% if description %} 
+                  <div class="section-description">
+                    <p class="grey-text text-darken-3 lighten-3">
+                      <!-- Some short description on the products that are being offered. -->
+                      {{ description }}
+                    </p>
+                  </div>
                 {% endif %}
-
-              {% endfor %}
+                {% if components %}
+                  <div class="components section-components">
+                    {{ macro.selector(macro, components) }}
+                  </div>
+                {% endif %}
+              </div>
             </div>
           </div>
-        </div>
-    </div>
+      </div>
     </div>
 {% endmacro %}
 
 {# Carousel #}
-{% macro carousel(urls) %}
-<div class="carousel">
-    {% for a in urls %}
-        <a class="carousel-item" href="{{ a[0] }}"><img src="{{ a[1] }}"></a>
-    {% endfor %}
-</div>
+{% macro carousel(items) %}
+  <div class="carousel">
+    
+      {% for item in items %}
+          <a class="carousel-item" href="{{ item['href'] }}"><img src="{{ item['src'] }}"></a>
+      {% endfor %}
+  </div>
 {% endmacro %}
 
 
@@ -124,7 +121,7 @@
     {% for card in cards %}
       <div class="card-cover">
         <div class="row">
-          <div class="col s8 m6 push-s2 push-m3">
+          <div class="col s10 push-s1">
             <div class="card">
               <div class="card-image">
                 <img src="{{ card['url'] }}">
@@ -140,3 +137,40 @@
     {% endfor %}
   </div>
 {% endmacro %}
+
+{% macro card_reveal(cards) %}
+  <div class="card-reveal-container">
+    <div class="row">
+    {% for card in cards %}
+      <div class="col s12 m4">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="{{ url_for('static', filename=card['src']) }}">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">{{ card['title'] }}<i class="material-icons right">arrow_upward</i></span>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+    </div>
+  </div>
+{% endmacro %}
+
+
+{% macro selector(macro, components) %}
+  {% for component in components %}
+    {% if component['name'] == 'card' %}
+      {{ macro.card(component['attr']) }}
+    {% elif component['name'] == 'card_reveal' %}
+      {{ macro.card_reveal(component['attr']) }}
+    {% elif component['name'] == 'carousel' %}
+      {{ macro.carousel(component['attr']) }}
+    {% endif %}
+  {% endfor %}
+{% endmacro %}
+
