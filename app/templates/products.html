@@ -100,7 +100,7 @@
           'All products are pure veg',
           [
             {
-              'name': 'card',
+              'name': 'card_reveal',
               'attr': [
                 {
                   'url': '1.jpg',
@@ -134,7 +134,7 @@
          'All products are pure chicken',
          [
            {
-             'name': 'card',
+             'name': 'card_reveal',
              'attr': [
                {
                  'url': '1.jpg',
@@ -157,6 +157,13 @@
         )
       }}
     </main>
+
+  <div class="divider white"></div>
+  
+  {{
+    macro.footer(marco, [])
+  }}
+
 {% endblock %}
 
 {% block scripts %}

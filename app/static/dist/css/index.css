@@ -5533,6 +5533,10 @@ body {
 h5 {
   margin-bottom: 0px;
 }
+
+footer .author {
+  font-size: 12px;
+}
 .mr-b-10 {
   margin-bottom: 10px;
 }
