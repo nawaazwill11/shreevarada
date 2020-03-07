@@ -8,6 +8,7 @@ module.exports = {
     // context: path.resolve(__dirname, 'app'),
     entry: {
       index: __dirname + '/static/packages/index.pack.js',
+      products: __dirname + '/static/packages/products.pack.js',
     },
     output: {
       path: __dirname + '/static/dist',

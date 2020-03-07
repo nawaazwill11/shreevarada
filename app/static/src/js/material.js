@@ -41,6 +41,14 @@ const material = function () {
             get elems() {
                 return document.querySelectorAll('.parallax');
             }
+        },
+        slider: {
+            name: 'slider',
+            object: M.Slider,
+            options: {},
+            get elem() {
+                return document.querySelectorAll('.slider');
+            }
         }
     }
 
@@ -54,19 +62,18 @@ const material = function () {
             if(Object.keys(components).includes(component))
                 match.push(components[component]);
         })
-        console.log(request);
-        console.log(components['fab']);
         return match;
     }
     
-    function initComponents(components) {
+    function initComponents(components_list) {
         if (!components) 
-            components = material.components; // All components
-        console.log(components);
-        components.forEach(component => {
+            components_list = material.components; // All components
+        
+        components_list.forEach(comp_obj => {
+            let component = components[comp_obj.name];
             console.log(component);
-            if (component.elems) // initialize only if elements are present
-                component.object.init(component.elems, component.options);
+            component.options = comp_obj.options;
+            component.object.init(component.elems, component.options);
         });
     }
 

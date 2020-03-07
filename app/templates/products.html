@@ -3,10 +3,162 @@
 {% block title %}Products of Shreevarada Enterprises{% endblock %}
 
 {% block styles %}
-    <link rel="stylesheet" href="{{ url_for('static', filename='dist/bundle/css/index.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='dist/css/products.css') }}">
+{% endblock %}
+
+{% block nav %}
+
+{{ 
+    macro.nav([
+      {
+        'name': 'Home',
+        'color': 'amber accent-2',
+        'href': '/',
+        'icon': 'home'
+      },
+      {
+        'name': 'About Us',
+        'color': 'green',
+        'href': '/about',
+        'icon': 'info_outline'
+      },
+      {
+        'name': 'Connect',
+        'color': 'red',
+        'href': '/connect',
+        'icon': 'call_made'
+      }
+    ]) 
+  }}
 
 {% endblock %}
 
+{% block content %}
+
+    {{
+        macro.slider([
+            {
+              'src': 'vegetables.jpg',
+              'header': 'Delicious Veg Options',
+              'btn-color': 'green',
+              'scrollto': 'veg'
+            },
+            {
+              'src': 'chicken.jpg',
+              'header': 'Choicest Chicken Delights',
+              'btn-color': 'red',
+              'scrollto': 'chicken'
+            },
+            {
+              'src': 'fish.jpg',
+              'header': 'Variety of Quality Fishes',
+              'btn-color': 'yellow'
+            },
+            {
+              'src': 'cheese.jpg',
+              'header': 'Variety of Quality Fishes',
+              'btn-color': 'yellow'
+            },
+            {
+              'src': 'chocolate.jpg',
+              'header': 'Variety of Quality Fishes',
+              'btn-color': 'yellow'
+            },
+            {
+              'src': 'mocktails.jpg',
+              'header': 'Variety of Quality Fishes',
+              'btn-color': 'yellow'
+            },
+            {
+              'src': 'pizza.jpg',
+              'header': 'Variety of Quality Fishes',
+              'btn-color': 'yellow'
+            },
+            {
+              'src': 'sauce.webp',
+              'header': 'Variety of Quality Fishes',
+              'btn-color': 'yellow'
+            },
+            {
+              'src': 'whipped_cream.jpg',
+              'header': 'Variety of Quality Fishes',
+              'btn-color': 'yellow'
+            },
+            {
+              'src': 'samosa.png',
+              'header': 'Variety of Quality Fishes',
+              'btn-color': 'yellow'
+            },
+        ])
+    }}
+    <main class="container">
+       {{
+         macro.sectionProducts(
+          macro, 
+          'veg',
+          'Pure Veg',
+          'All products are pure veg',
+          [
+            {
+              'name': 'card',
+              'attr': [
+                {
+                  'url': '1.jpg',
+                  'title': 'French Fries',
+                  'content': '1kg | Rs. 200',
+                  'products': [
+                    
+                  ]
+                },
+                {
+                  'url': '2.jpg',
+                  'title': 'Smiley',
+                  'content': '500g | Rs. 150'
+                },
+                {
+                  'url': '3.jpg',
+                  'title': 'Aloo Tikki',
+                  'content': '500g | Rs. 180'
+                },
+              ]
+            }        
+          ]
+         )
+       }}
+
+       {{
+        macro.section(
+         macro, 
+         'chicken',
+         'Chicken',
+         'All products are pure chicken',
+         [
+           {
+             'name': 'card',
+             'attr': [
+               {
+                 'url': '1.jpg',
+                 'title': 'French Fries',
+                 'content': '1kg | Rs. 200'
+               },
+               {
+                 'url': '2.jpg',
+                 'title': 'Smiley',
+                 'content': '500g | Rs. 150'
+               },
+               {
+                 'url': '3.jpg',
+                 'title': 'Aloo Tikki',
+                 'content': '500g | Rs. 180'
+               },
+             ]
+           }        
+         ]
+        )
+      }}
+    </main>
+{% endblock %}
+
 {% block scripts %}
-    <script src="{{ url_for('static', filename='dist/bundle/js/index.js') }}"></script>
+    <script src="{{ url_for('static', filename='dist/js/products.js') }}"></script>
 {% endblock %}

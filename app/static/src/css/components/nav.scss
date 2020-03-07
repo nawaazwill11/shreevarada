@@ -20,11 +20,23 @@ nav {
         background-color: $red !important;
     }
 }
-.brand-logo {
-    @include flex-center-xy;
-    width: 100%;
-    padding: 0 !important;
-    text-align: center;
+.nav-wrapper {
+    .brand-logo {
+        @include flex-center-xy;
+        width: 100%;
+        padding: 0 !important;
+        text-align: center;
+    }
+
+    ul {
+        position: absolute;
+        right: 0;
+
+        li {
+            min-width: 95px;
+            text-align: center;
+        }
+    }
 }
 
 @media screen and (min-width: 997px) {

@@ -5,7 +5,7 @@
 @import './components/button.scss';
 
 .container {
-    @include total-hw;
+    width: 100% !important;
     // position: absolute;    
     // top: 0;
     // overflow-x: hidden;

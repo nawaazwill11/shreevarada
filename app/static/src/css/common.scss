@@ -9,6 +9,7 @@
 
 html {
     @include fill-both;
+    scroll-behavior: smooth;
 }
 
 body {

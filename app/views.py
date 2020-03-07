@@ -7,15 +7,20 @@ from . import app
 
 # A list of all html templates
 templates = {
-    'about': 'index.html',
+    'index': 'index.html',
+    'about': 'about.html',
     'products': 'products.html',
     'connect': 'connect.html'
 }
 
-# Landing | Business Information page
+# Landing | General Introduction page
 @app.route("/")
+def index():
+    return render_template(templates['index'])
+
+# About | Business Information page
+@app.route("/about")
 def about():
-    # return 'Hello, world!'
     return render_template(templates['about'])
 
 # Product information page

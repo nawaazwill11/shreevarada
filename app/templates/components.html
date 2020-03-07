@@ -4,19 +4,19 @@
 {% endmacro %}
 
 {# Nav #}
-{% macro nav() %}
+{% macro nav(links) %}
   <div class="navbar-fixed">
     <nav>
       <div class="nav-wrapper">
-        <a href="#!" class="brand-logo">
+        <a href="/" class="brand-logo">
           <!-- <img src="{{ url_for('static', filename='dist/img/logo.svg') }}" alt=""> -->
           Shreevarada Enterprise
         </a>
         <!-- <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a> -->
         <ul class="right hide-on-med-and-down">
-          <li><a class="green" href="/">About Us</a></li>
-          <li><a class="amber accent-2"  href="/products">Products</a></li>
-          <li><a class="red" href="/connect">Connect</a></li>
+          {% for link in links %}
+            <li><a href="{{ link['href'] }}" class="{{ link['color'] }}">{{ link['name'] }}</a></li>
+          {% endfor %}
         </ul>
       </div>
     </nav>
@@ -29,10 +29,9 @@
           <i class="material-icons">keyboard_arrow_down</i>
         </a>
         <ul>
-          <li><a class="btn-floating red"><i class="material-icons">call_made</i><span>Connect</span></a></li>
-          <li><a class="btn-floating amber accent-2"><i class="material-icons">shopping_cart</i><span>Products</span></a></li>
-          <li><a class="btn-floating green"><i class="material-icons">info_outline</i><span>About Us</span></a></li>
-          <!-- <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li> -->
+          {% for link in links %}
+            <li><a href="{{ link['href'] }}" class="btn-floating {{ link['color'] }}"><i class="material-icons">{{ link['icon'] }}</i><span>{{ link['name'] }}</span></a></li>
+            {% endfor %}
         </ul>
       </div>
     </div>
@@ -46,9 +45,13 @@
 {% endmacro %}
 
 {# Parallax #}
-{% macro parallax(macro, id, image_url, text_large='', text_small='', components=[]) %}
+{% macro parallax(macro, id, imgs, text_large='', text_small='', components=[]) %}
 <div id="parallax-{{ id }}" class="parallax-container">
-    <div class="parallax"><img src="{{ image_url }}"></div>
+  {% for img in imgs %}
+    <div class="parallax">
+      <img src="{{ url_for('static', filename='dist/img/') }}{{ img }}">
+    </div>
+  {% endfor %}
     <div class="parallax-hover">
       <div class="parallax-text">
         {% if  text_large %} 
@@ -97,16 +100,66 @@
     </div>
 {% endmacro %}
 
+{% macro sectionProducts(macro, id, header, description, components=[], button='') %}
+    <div id="{{ id }}" class="section products">
+      <div class="row">
+          <div class="col s12 l10 push-l1">
+            <div class="section-content white">
+              <div class="section-header">
+                <h3 class="header center mr-b-10">{{ header }}</h3>
+              </div>
+              <div class="divider"></div>
+              <div class="section-content">
+                {% if description %} 
+                  <div class="section-description">
+                    <p class="grey-text text-darken-3 lighten-3">
+                      <!-- Some short description on the products that are being offered. -->
+                      {{ description }}
+                    </p>
+                  </div>
+                {% endif %}
+                {% if components %}
+                  <div class="components section-components">
+                    {{ macro.selector(macro, components) }}
+                  </div>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+{% endmacro %}
+
 {# Carousel #}
-{% macro carousel(items) %}
-  <div class="carousel">
-    
+{% macro carousel(items, fullscreen) %}
+  <div class="carousel
+    {% if fullscreen %}
+    carousel-slider
+    {% endif %}
+  ">
       {% for item in items %}
           <a class="carousel-item" href="{{ item['href'] }}"><img src="{{ item['src'] }}"></a>
       {% endfor %}
   </div>
 {% endmacro %}
 
+{% macro carouselSpecial(macro, id, panels, fixed_center) %}
+  <div id="{{ id }}" class="carousel carousel-slider center">
+    {% if fixed_center %}
+      <div class="carousel-fixed-item center">
+        <a class="btn waves-effect white grey-text darken-text-2">{{ fixed_center['text'] }}</a>
+      </div>
+    {% endif %}
+    {% for panel in panels %}
+      <div class="carousel-item" href="#{{ panel['href'] }}">
+        <img src="{{ url_for('static', filename='dist/img/') }}{{ panel['src'] }}">
+        <h2>{{ panel['header'] }}</h2>
+        <p class="{{ panel['fg'] }}">{{ panel['desc'] }}</p>
+      </div>
+    {% endfor %}
+  
+  </div>
+{% endmacro %}
 
 {# Button #}
 {% macro button(buttons) %}
@@ -126,7 +179,7 @@
           <div class="col s10 push-s1">
             <div class="card">
               <div class="card-image">
-                <img src="{{ card['url'] }}">
+                <img src="{{ url_for('static', filename='dist/img/') }}{{ card['url'] }}">
                 <span class="card-title">{{ card['title'] }}</span>
               </div>
               <div class="card-content">
@@ -161,6 +214,23 @@
     {% endfor %}
     </div>
   </div>
+{% endmacro %}
+
+
+{% macro slider(slides) %}
+<div class="slider fullscreen">
+  <ul class="slides">
+    {% for slide in slides %}
+      <li>
+        <img src="{{ url_for('static', filename='dist/img/') }}{{ slide['src'] }}"> <!-- random image -->
+        <div class="caption left-align">
+          <h3>{{ slide['header'] }}</h3>
+          <button class="wave-effect wave-light btn {{ slide['btn-color'] }} pointer" data-scrollto="{{ slide['scrollto'] }}">Browse</button>
+        </div>
+      </li>
+      {% endfor %}
+  </ul>
+</div>
 {% endmacro %}
 
 

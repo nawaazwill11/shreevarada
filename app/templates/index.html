@@ -7,19 +7,45 @@
 
 {% endblock %}
 
+{% block nav %}
+{{ 
+  macro.nav([
+    {
+      'name': 'Products',
+      'color': 'amber accent-2',
+      'href': '/products',
+      'icon': 'shopping_cart'
+    },
+    {
+      'name': 'About Us',
+      'color': 'green',
+      'href': '/about',
+      'icon': 'info_outline'
+    },
+    {
+      'name': 'Connect',
+      'color': 'red',
+      'href': '/connect',
+      'icon': 'call_made'
+    }
+  ]) 
+}}
+{% endblock %}
+
 {% block content %}
 
-<main class="container">
-   {# Parallax id: 1 #}
-    {{ 
-      macro.parallax(
-        macro,
-        '1',
-        url_for('static', filename='dist/img/prx_1.jpg'),
-        'Shreevara Enterprise',
-        'A Growing Frozen Food Distribution Chain'
-      ) 
-    }}
+{# Parallax id: 1 #}
+{{ 
+  macro.parallax(
+    macro,
+    '1',
+    ['prx_1.jpg'],
+    'Shreevarada Enterprise',
+    'A Growing Frozen Food Distribution Chain'
+  ) 
+}}
+
+<div class="container">
 
     {# Product Section #}
     {{
@@ -59,7 +85,6 @@
       )
     }}
 
-    {# Parallax id: 2 #}
     {{ 
       macro.section(
         macro,
@@ -72,17 +97,17 @@
             'name': 'card',
             'attr': [
               {
-                'url': url_for('static', filename='dist/img/1.jpg'),
+                'url': '1.jpg',
                 'title': 'Service Name',
                 'content': 'Some descriptive bragging'
               },
               {
-                'url': url_for('static', filename='dist/img/2.jpg'),
+                'url': '2.jpg',
                 'title': 'Service Name',
                 'content': 'Some descriptive bragging'
               },
               {
-                'url': url_for('static', filename='dist/img/3.jpg'),
+                'url':'3.jpg',
                 'title': 'Service Name',
                 'content': 'Some descriptive bragging'
               }
@@ -91,7 +116,7 @@
         ]
       ) 
     }}
-
+    
     {{ 
       macro.section(
         macro,
@@ -151,11 +176,11 @@
         ]
       ) 
     }}
-    <div class="divider white"></div>
-    {{
-      macro.footer(marco, [])
-    }}
-</main>
+  </div>
+  <div class="divider white"></div>
+  {{
+    macro.footer(marco, [])
+  }}
 {% endblock %}
 
 {% block scripts %}
