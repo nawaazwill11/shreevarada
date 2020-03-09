@@ -7,18 +7,18 @@
 {% endblock %}
 
 {% block nav %}
-{{ 
+  {{ 
     macro.nav([
       {
         'name': 'Home',
         'color': 'amber accent-2',
-        'href': '/products',
+        'href': '/',
         'icon': 'shopping_cart'
       },
       {
         'name': 'Products',
         'color': 'green',
-        'href': '/about',
+        'href': '/products',
         'icon': 'info_outline'
       },
       {
@@ -39,12 +39,57 @@
     -> Other business and future vision.
     -> Employees and job profile (A quote.)
     -> Photo gallery (A title)
-    -> Mataji photo
+    -> M photo
   #}
+  {{ 
+    macro.parallax(
+      macro,
+      '1',
+      ['prx_1.jpg'],
+      'Shreevarada Enterprise',
+      'Serving Since XXXX'
+    ) 
+  }}
+
+  {{
+    macro.section(
+      macro,
+      '1',
+      'Our History', 
+      'Some description'
+    )
+  }}
+
+  {{
+    macro.section(
+      macro,
+      '1',
+      'Our Businesses', 
+      'Some description'
+    )
+  }}
+
+  {{
+    macro.section(
+      macro,
+      '1',
+      'How do we work?', 
+      'Some description'
+    )
+  }}
+
+  {{
+    macro.section(
+      macro,
+      '1',
+      'Our Team', 
+      'Some description'
+    )
+  }}
 
 
 {% endblock %}
 
 {% block scripts %}
-<script src="{{ url_for('static', filename='dist/js/about.js') }}"></script>
+  <script src="{{ url_for('static', filename='dist/js/about.js') }}"></script>
 {% endblock %}

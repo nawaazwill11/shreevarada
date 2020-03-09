@@ -1,3 +1,84 @@
 {% extends 'layout.html' %}
 
 {% block title %}Connect with Shreevarada Enterprises{% endblock %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='dist/css/connect.css') }}">
+{% endblock %}
+
+{% block nav %}
+    {{ 
+    macro.nav([
+      {
+        'name': 'Home',
+        'color': 'amber accent-2',
+        'href': '/',
+        'icon': 'shopping_cart'
+      },
+      {
+        'name': 'Products',
+        'color': 'green',
+        'href': '/products',
+        'icon': 'info_outline'
+      },
+      {
+        'name': 'About Us',
+        'color': 'red',
+        'href': '/about',
+        'icon': 'call_made'
+      }
+    ]) 
+  }}
+{% endblock %}
+
+{% block content %}
+  {#
+    ### Things to place in connect page ###
+    1. Location on maps
+    2. Address of both shops with 1
+    3. FAQs
+    4. A query form
+    5. Social media handles  
+  #}
+
+  {{
+    macro.section(
+      macro,
+      '1',
+      'Our Location', 
+      'Some description'
+    )
+  }}
+
+  {{
+    macro.section(
+      macro,
+      '1',
+      'Our Social Handles', 
+      'Some description'
+    )
+  }}
+
+  {{
+    macro.section(
+      macro,
+      '1',
+      'FAQ', 
+      'Some description'
+    )
+  }}
+
+  {{
+    macro.section(
+      macro,
+      '1',
+      'Ask Us', 
+      'Some description'
+    )
+  }}
+
+{% endblock %} 
+
+{% block scripts %}
+    <script src="{{ url_for('static', filename='dist/js/connect.js') }}"></script>
+{% endblock %}
