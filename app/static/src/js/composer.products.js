@@ -6,13 +6,15 @@ function initialization () {
         {name: 'fab', options: {}},
         {name: 'parallax', options: {}},
         {name: 'carousel', options: { duration: 300, fullWidth: true, indicators: true }},
-
+        {name: 'slider', options: {}},
+        {name: 'dropdown', options: {}}
     ]
-    const slider = material.components.slider;
-    slider.object.init(slider.elem, {});
+    // const slider = material.components.slider;
+    // slider.object.init(slider.elem, {});
     material.initComponents(components);
     // slideCarousel();
     scrollToSection();
+    sectionFilter();
 }
 
 
@@ -74,6 +76,22 @@ function scrollToSection() {
     });
 
     
+}
+function sectionFilter() {
+    const filter_items = document.querySelectorAll('.filter-item');
+    filter_items.forEach(f_item => {
+        f_item.addEventListener('click', function (e) {
+            const item = e.target;
+            const section_name = item.dataset.show;
+            // const selected_section = document.querySelector('#' + section_name);
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                if (section.id !== section_name)
+                    section.style.display = 'none';
+            })
+        })
+    })
+
 }
 
 const composer = {

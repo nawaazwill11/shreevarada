@@ -39,6 +39,12 @@
     }
 }
 
+.dropdown-container {
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+}
+
 @media screen and (max-width: 600px) {
     .slider {
         .indicators {
@@ -50,3 +56,4 @@
         }
     }
 }
+

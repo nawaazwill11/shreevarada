@@ -70,7 +70,7 @@
 {% endmacro %}
 
 {# section #}
-{% macro section(macro, id, header, description, components=[], button='') %}
+{% macro section(macro, id, header, description='', components=[]) %}
     <div id="{{ id }}" class="section products">
       <div class="row">
           <div class="col s12 l10 push-l1">
@@ -264,6 +264,32 @@
 </footer>
 {% endmacro %}
 
+{% macro select(options) %}
+  <div class="input-field col s12">
+    <select>
+      <option value="" disabled selected>Choose your option</option>
+      <option value="1">Option 1</option>
+      <option value="2">Option 2</option>
+      <option value="3">Option 3</option>
+    </select>
+    <label>Materialize Select</label>
+  </div>
+{% endmacro %}
+
+{% macro dropdown(dd) %}
+  <div class="dropdown-container">
+    <!-- Dropdown Trigger -->
+    <a class='dropdown-trigger btn' href='#!' data-target='dropdown1'>{{ dd['name'] }}</a>
+    
+    <!-- Dropdown Structure -->
+    <ul id='dropdown1' class='dropdown-content'>
+      {% for item in dd['items'] %}
+      <li><a href="#!" class="filter-item" data-show="{{ item }}">{{ item | capitalize }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endmacro %}
+
 {% macro selector(macro, components) %}
   {% for component in components %}
     {% if component['name'] == 'card' %}
@@ -274,6 +300,8 @@
       {{ macro.carousel(component['attr']) }}
     {% elif component['name'] == 'button' %}
       {{ macro.button(component['attr']) }}
+    {% elif component['name'] == 'dropdown' %}
+      {{ macro.dropdown(component['attr']) }}
     {% endif %}
   {% endfor %}
 {% endmacro %}

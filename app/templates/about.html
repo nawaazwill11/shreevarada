@@ -1,3 +1,50 @@
 {% extends 'layout.html' %}
 
 {% block title %}About Shreevarada Enterprise{% endblock %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='dist/css/about.css') }}">
+{% endblock %}
+
+{% block nav %}
+{{ 
+    macro.nav([
+      {
+        'name': 'Home',
+        'color': 'amber accent-2',
+        'href': '/products',
+        'icon': 'shopping_cart'
+      },
+      {
+        'name': 'Products',
+        'color': 'green',
+        'href': '/about',
+        'icon': 'info_outline'
+      },
+      {
+        'name': 'Connect',
+        'color': 'red',
+        'href': '/connect',
+        'icon': 'call_made'
+      }
+    ]) 
+  }}
+{% endblock %}
+
+{% block content %}
+  {#
+    ### Things to add in about page ###
+    -> Companies history.
+    -> Supply and distribution and retail store bifurcation.
+    -> Other business and future vision.
+    -> Employees and job profile (A quote.)
+    -> Photo gallery (A title)
+    -> Mataji photo
+  #}
+
+
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='dist/js/about.js') }}"></script>
+{% endblock %}

@@ -46,10 +46,18 @@ const material = function () {
             name: 'slider',
             object: M.Slider,
             options: {},
-            get elem() {
+            get elems() {
                 return document.querySelectorAll('.slider');
             }
-        }
+        },
+        dropdown: {
+            name: 'dropdown',
+            object: M.Dropdown,
+            options: {},
+            get elems() {
+                return document.querySelectorAll('.dropdown-trigger');
+            }
+        },
     }
 
     function getComponentList(){
@@ -71,7 +79,7 @@ const material = function () {
         
         components_list.forEach(comp_obj => {
             let component = components[comp_obj.name];
-            console.log(component);
+            console.log(component.elems);
             component.options = comp_obj.options;
             component.object.init(component.elems, component.options);
         });

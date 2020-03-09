@@ -92,6 +92,26 @@
         ])
     }}
     <main class="container">
+      {{
+        macro.section(
+          macro,
+          'filter',
+          'Filter Products',
+          none,
+          [
+            {
+              'name': 'dropdown',
+              'attr': {
+                 'name': 'Veg',
+                 'items': [
+                  'veg', 'chicken', 'fish'
+                 ] 
+              }
+            }
+          ]
+        )
+      }}
+
        {{
          macro.sectionProducts(
           macro, 
