@@ -13860,4 +13860,12 @@ footer .author {
   .card .card-content {
     padding: 10px;
   }
+
+  #nutralite .card {
+    height: 210px;
+  }
+
+  #natural .card, #ifb .card {
+    height: 230px;
+  }
 }
