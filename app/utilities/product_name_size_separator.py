@@ -1,6 +1,4 @@
 import re, json, random
-import os;os.chdir('/home/walker/workspace/flask/shreevarada/app/utilities')
-
 
 class Separate(object):
 
