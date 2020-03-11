@@ -6,7 +6,7 @@ env
 cypress
 cypress.json
 .sass-cache
-
+utilities
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
