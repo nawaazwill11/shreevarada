@@ -217,6 +217,31 @@
 {% endmacro %}
 
 
+{% macro cardNoImg(products) %}
+  <div class="cardNoImg-container">
+    <div class="row">
+      {% for product in products %}
+        <div class="col s6 m4 l3">
+          <div class="card">
+            <div class="card-image {{ product['color'] }} white-text">
+              <!-- <img src="{{ url_for('static', filename='dist/img/') }}{{ product['logo'] }}"> -->
+              <span class="card-title">{{ product['name'] | capitalize }}</span>
+            </div>
+            <div class="card-content ">
+             
+              <div class="content">
+                <span>{{ ' | '.join(product['size']) }}</span>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+{% endmacro %}
+
+
 {% macro slider(slides) %}
 <div class="slider fullscreen">
   <ul class="slides">

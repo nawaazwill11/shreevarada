@@ -39,10 +39,39 @@
     }
 }
 
+.section {
+
+    .section-content {
+        padding: 20px 30px;
+    }
+}
+
 .dropdown-container {
     display: flex;
     justify-content: center;
     padding: 25px;
+}
+
+.cardNoImg-container {
+
+    .card {
+        height: 160px;
+     
+        .card-image{
+            display: flex;
+            padding: 5px;
+            height: 50%;
+            justify-content: center;
+            align-items: center;
+        }
+        .card-title {
+            
+            position: relative !important;
+            padding: unset !important;
+            text-align: center;
+            font-size: 20px;
+        }
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -54,6 +83,21 @@
                 margin: 0 9px;
             }
         }
+    }
+    .section {
+
+        .section-content {
+            padding: 20px 10px;
+        }
+    }
+    .card {
+        .card-title {
+            font-size: 16px !important;
+        }
+        .card-content{
+            padding: 10px;
+        }
+
     }
 }
 

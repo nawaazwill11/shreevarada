@@ -1,8 +1,10 @@
 from flask import (
     Flask, render_template, make_response, send_from_directory
 )
-
+import json
 from . import app
+import sys;sys.path.insert(0, '/home/walker/workspace/flask/shreevarada/app/utilities')
+import product_name_size_separator as PMSS
 
 
 # A list of all html templates
@@ -26,7 +28,8 @@ def about():
 # Product information page
 @app.route("/products")
 def products():
-    return render_template(templates['products'])
+    sep = PMSS.Separate('/home/walker/workspace/flask/shreevarada/app/templates', 'products.json')
+    return render_template(templates['products'], companies=sep.god)
 
 # Contact information page
 @app.route("/connect")
