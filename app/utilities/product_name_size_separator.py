@@ -119,7 +119,25 @@ class Separate(object):
 
     def makeGodFile(self):
         print('Merging all output files into single file...')
-        output_files = os.listdir(self.output_path)
+        # output_files = os.listdir(self.output_path)
+        # output_files = [
+        #     'mccain.json',
+        #     'venkys.json',
+        #     'cremica.json',
+        #     'rich.json',
+        #     'mapro.json',
+        #     'ifb.json',
+        #     'knorr.json',
+        #     'delight.json',
+        #     'kissan.json',
+        #     'switz.json',
+        #     'natural.json',
+        #     'nutralite.json',
+        #     'honeycube.json'
+        # ]
+        # ['bestfood', 'prabhat', 'vanleer',  'bonheur', 'honeycube', 'gadre']
+
+        output_files = self.outputFileSorter()
         god_file = {}
         for f in output_files:
             if(os.path.isdir(self.getPathWithOutput(f))): continue
@@ -138,12 +156,33 @@ class Separate(object):
         json.dump(god_file, gfp, indent=4)
         print('All files merged into god.json file.')
 
+    def outputFileSorter(self):
+        sorted_files = [] 
+        files = os.listdir(self.output_path)
+        file_lengths = []
+        for f in files:
+            if (os.path.isfile(self.getPathWithOutput(f))):
+                f_content = self.jsonLoader(f)
+                file_lengths.append ({
+                    'name': f,
+                    'size': len(f_content)
+                })
+        print(file_lengths)
+        sorted_files = sorted(file_lengths, key=lambda k: k['size'], reverse=True)
+        print(sorted_files)
+        return [f['name'] for f in sorted_files]
+    
+    def jsonLoader(self, path):
+        fp = self.getFileHandler(self.getPathWithOutput(path), 'r')
+        return json.load(fp)
+
     def extra(self):
         print('Adding extras...')
         content = self.god
         for company in content.keys():
             # print(content[company] == products)
-            content[company]['logo'] = company + '_logo.png'
+            if (not company in ['honeycube', 'bonheur']):
+                content[company]['logo'] = company + '_logo.png'
             for index in range (len(content[company]['products'])):
                 content[company]['products'][index]['color'] = self.getPaint()
 

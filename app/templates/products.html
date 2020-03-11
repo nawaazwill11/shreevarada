@@ -92,6 +92,7 @@
         ])
     }}
     <main class="container">
+      {#}
       {{
         macro.section(
           macro,
@@ -111,7 +112,6 @@
           ]
         )
       }}
-      {#}
        {{
          macro.sectionProducts(
           macro, 
@@ -203,7 +203,7 @@
                       </div>
                     {% endif %}
                     <div class="components section-components">
-                      {{ macro.cardNoImg(company['products']) }}
+                      {{ macro.productCard(company['products'], company_name, company.get('logo')) }}
                     </div>
                     
                   </div>

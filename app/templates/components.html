@@ -217,23 +217,34 @@
 {% endmacro %}
 
 
-{% macro cardNoImg(products) %}
+{% macro productCard(products, company_name, logo) %}
+  
   <div class="cardNoImg-container">
     <div class="row">
       {% for product in products %}
         <div class="col s6 m4 l3">
-          <div class="card">
+          <div class="card 
+          {% if not logo  %}
+            no-img
+          {% endif %}
+          ">
             <div class="card-image {{ product['color'] }} white-text">
-              <!-- <img src="{{ url_for('static', filename='dist/img/') }}{{ product['logo'] }}"> -->
-              <span class="card-title">{{ product['name'] | capitalize }}</span>
+              {% if logo %}
+              <img class="activator" src="{{ url_for('static', filename='dist/img/') }}{{ logo }}" alt="{{ company_name }}" title="{{ company_name }}">
+              {% else %}
+                <p class="no-img-text">{{ company_name | capitalize }}</p>
+              {% endif %}
             </div>
             <div class="card-content ">
-             
-              <div class="content">
-                <span>{{ ' | '.join(product['size']) }}</span>
-                
-              </div>
+              <span class="activator grey-text text-darken-4 product-name">{{ product['name'] | capitalize }}</span>
+              <span class="activator raiser"><i class="material-icons right">info_outline</i></span>
             </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">{{ product['name'] | capitalize }}</span>
+                  <span class="card-title closer"><i class="material-icons right">close</i></span>
+                  <div class="divider"></div>
+                  <p>{{ ' | '.join(product['size']) }}</p>
+                </div>
           </div>
         </div>
       {% endfor %}
