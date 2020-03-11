@@ -28,7 +28,7 @@ def about():
 # Product information page
 @app.route("/products")
 def products():
-    sep = PMSS.Separate('/home/walker/workspace/flask/shreevarada/app/templates', 'products.json')
+    sep = PMSS.Separate('app/templates', 'products.json')
     return render_template(templates['products'], companies=sep.god)
 
 # Contact information page

@@ -3,7 +3,7 @@ import re, json, random, os
 class Separate(object):
 
     def __init__(self, output_path, god_file_name):
-        self.path = 'products' #
+        self.path = 'app/utilities/products' #
         self.output_path = f"{self.path}/output"
         self.god_output_path = output_path + '/' + god_file_name
         self.ext = '.txt'
