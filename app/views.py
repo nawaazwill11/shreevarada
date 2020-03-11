@@ -3,7 +3,7 @@ from flask import (
 )
 import json
 from . import app
-import sys;sys.path.insert(0, '/home/walker/workspace/flask/shreevarada/app/utilities')
+import sys;sys.path.insert(0, 'app/utilities')
 import product_name_size_separator as PMSS
 
 

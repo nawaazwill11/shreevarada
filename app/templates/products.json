@@ -7,21 +7,21 @@
                 "size": [
                     "200 GM"
                 ],
-                "color": "blue"
+                "color": "red"
             },
             {
                 "name": "CHICKEN HAM",
                 "size": [
                     "200 GM"
                 ],
-                "color": "orange"
+                "color": "green"
             },
             {
                 "name": "SHEEK KABAB",
                 "size": [
                     "250 GMS"
                 ],
-                "color": "red"
+                "color": "blue"
             },
             {
                 "name": "CHICKEN BONELESS",
@@ -29,14 +29,14 @@
                     "250 GM",
                     "500 GM"
                 ],
-                "color": "blue"
+                "color": "orange"
             },
             {
                 "name": "CHICKEN PLAIN KHEEMA",
                 "size": [
                     "250 GM"
                 ],
-                "color": "green"
+                "color": "blue"
             },
             {
                 "name": "CHICKEN BURGER PATTY",
@@ -45,56 +45,56 @@
                     "500 GM",
                     "1.5 KG"
                 ],
-                "color": "red"
+                "color": "orange"
             },
             {
                 "name": "CHICKEN MUGHLAI MASALA",
                 "size": [
                     "250 GM"
                 ],
-                "color": "orange"
+                "color": "red"
             },
             {
                 "name": "CHICKEN MURG MASALA",
                 "size": [
                     "250 GM"
                 ],
-                "color": "green"
+                "color": "orange"
             },
             {
                 "name": "CHICKEN MASALA KHEEMA",
                 "size": [
                     "250 GM"
                 ],
-                "color": "orange"
+                "color": "red"
             },
             {
                 "name": "CHICKEN SALAMI ROLL",
                 "size": [
                     "250 GM"
                 ],
-                "color": "green"
+                "color": "orange"
             },
             {
                 "name": "CHICKEN TIKKA MASALA",
                 "size": [
                     "300 GM"
                 ],
-                "color": "orange"
+                "color": "red"
             },
             {
                 "name": "CHICKEN ACHARI TIKKA",
                 "size": [
                     "300 GM"
                 ],
-                "color": "green"
+                "color": "blue"
             },
             {
                 "name": "CHEESE ONION SAUSAGES",
                 "size": [
                     "300 GM"
                 ],
-                "color": "blue"
+                "color": "green"
             },
             {
                 "name": "CHICKEN CHEESE NUGETS",
@@ -102,14 +102,14 @@
                     "300 GM",
                     "500 GM"
                 ],
-                "color": "green"
+                "color": "red"
             },
             {
                 "name": "CHICKEN COCKTAIL SAUSAGES",
                 "size": [
                     "300 GM"
                 ],
-                "color": "blue"
+                "color": "green"
             },
             {
                 "name": "CHICKEN CUTLETS",
@@ -117,7 +117,7 @@
                     "300 GM",
                     "500 GM"
                 ],
-                "color": "green"
+                "color": "orange"
             },
             {
                 "name": "CHICKEN FINGER",
@@ -139,7 +139,7 @@
                 "size": [
                     "300 GM"
                 ],
-                "color": "orange"
+                "color": "green"
             },
             {
                 "name": "CHICKEN MEAT BALLS",
@@ -156,7 +156,7 @@
                     "1000 GM",
                     "1.5 kg"
                 ],
-                "color": "blue"
+                "color": "green"
             },
             {
                 "name": "CHICKEN POPCORN",
@@ -171,28 +171,28 @@
                 "size": [
                     "300 GM"
                 ],
-                "color": "red"
+                "color": "blue"
             },
             {
                 "name": "CHICKEN VIENNA SAUSAGES",
                 "size": [
                     "300 GM"
                 ],
-                "color": "green"
+                "color": "red"
             },
             {
                 "name": "MURAG MALAI TIKKA",
                 "size": [
                     "300 GM"
                 ],
-                "color": "blue"
+                "color": "orange"
             },
             {
                 "name": "PLAIN SAUSAGES",
                 "size": [
                     "300 GM"
                 ],
-                "color": "orange"
+                "color": "blue"
             },
             {
                 "name": "CHICKEN DRUM STICKS",
@@ -206,21 +206,21 @@
                 "size": [
                     "430 GM"
                 ],
-                "color": "red"
+                "color": "blue"
             },
             {
                 "name": "CHICKEN LEGS",
                 "size": [
                     "460 GM"
                 ],
-                "color": "blue"
+                "color": "orange"
             },
             {
                 "name": "CHICKEN MEAT BALSS",
                 "size": [
                     "500 GM"
                 ],
-                "color": "orange"
+                "color": "red"
             },
             {
                 "name": "CHICKEN SEEKH KABAB",
@@ -242,28 +242,28 @@
                 "size": [
                     "500 GM"
                 ],
-                "color": "red"
+                "color": "orange"
             },
             {
                 "name": "CHICKEN SAUSAGES",
                 "size": [
                     "500 GM"
                 ],
-                "color": "green"
+                "color": "blue"
             },
             {
                 "name": "CHICKEN POPCOURN",
                 "size": [
                     "1000 GM"
                 ],
-                "color": "orange"
+                "color": "green"
             },
             {
                 "name": "CHICKEN PRECUT",
                 "size": [
                     "1150 GM"
                 ],
-                "color": "green"
+                "color": "blue"
             },
             {
                 "name": "CHICKEN WHOLE",
@@ -290,7 +290,7 @@
                 "size": [
                     "1000 ML"
                 ],
-                "color": "orange"
+                "color": "green"
             },
             {
                 "name": "BLUEBERRY CRUSH",
@@ -325,14 +325,14 @@
                 "size": [
                     "1000 ML"
                 ],
-                "color": "red"
+                "color": "blue"
             },
             {
                 "name": "LIME JUICE CORDIAL",
                 "size": [
                     "1000 ML"
                 ],
-                "color": "blue"
+                "color": "green"
             },
             {
                 "name": "MANGO CRUSH",
@@ -346,21 +346,21 @@
                 "size": [
                     "1000 ML"
                 ],
-                "color": "green"
+                "color": "orange"
             },
             {
                 "name": "PINEAPPLE CRUSH",
                 "size": [
                     "1000 ML"
                 ],
-                "color": "orange"
+                "color": "green"
             },
             {
                 "name": "STRAWBERRY CRUSH",
                 "size": [
                     "1000 ML"
                 ],
-                "color": "green"
+                "color": "orange"
             }
         ],
         "logo": "mapro_logo.png"
@@ -373,14 +373,14 @@
                 "size": [
                     "500 GM"
                 ],
-                "color": "orange"
+                "color": "red"
             },
             {
                 "name": "WHITE CHOCOLATE COMPOUND",
                 "size": [
                     "500 GM"
                 ],
-                "color": "green"
+                "color": "orange"
             }
         ],
         "logo": "vanleer_logo.png"
@@ -395,7 +395,7 @@
                     "400 GM",
                     "1.5 KG"
                 ],
-                "color": "blue"
+                "color": "red"
             },
             {
                 "name": "CHILLY GARLIC POTATO BITES",
@@ -403,14 +403,14 @@
                     "200 GM",
                     "1.5 KG"
                 ],
-                "color": "red"
+                "color": "green"
             },
             {
                 "name": "VEG BURGER PATTY",
                 "size": [
                     "360 GM"
                 ],
-                "color": "green"
+                "color": "red"
             },
             {
                 "name": "CRAZY FRIES HERB N GARLIC MASALA",
@@ -418,7 +418,7 @@
                     "175 GM",
                     "400 GM"
                 ],
-                "color": "blue"
+                "color": "orange"
             },
             {
                 "name": "CRAZY FRIES HOT N TANGY MASALA",
@@ -426,7 +426,7 @@
                     "175 GM",
                     "400 GM"
                 ],
-                "color": "orange"
+                "color": "green"
             },
             {
                 "name": "SUPPER WEDGES",
@@ -434,7 +434,7 @@
                     "400 GM",
                     "2.5 KG"
                 ],
-                "color": "green"
+                "color": "red"
             },
             {
                 "name": "TANDOORI VEG NUGETS",
@@ -449,7 +449,7 @@
                 "size": [
                     "550 GM"
                 ],
-                "color": "blue"
+                "color": "green"
             },
             {
                 "name": "VEGGIE FINGER",
@@ -457,7 +457,7 @@
                     "175 GM",
                     "400 GM"
                 ],
-                "color": "green"
+                "color": "blue"
             },
             {
                 "name": "CHEESE CORN SAMOSA",
@@ -472,21 +472,21 @@
                 "size": [
                     "240 GM"
                 ],
-                "color": "red"
+                "color": "blue"
             },
             {
                 "name": "CHEESE PIZZA SAMOSA",
                 "size": [
                     "240 GM"
                 ],
-                "color": "green"
+                "color": "red"
             },
             {
                 "name": "CRAZY FRIES",
                 "size": [
                     "375GM"
                 ],
-                "color": "orange"
+                "color": "blue"
             },
             {
                 "name": "FRENCH FRIES",
@@ -496,7 +496,7 @@
                     "750 GM",
                     "6MM & 9MM 2.5 KG"
                 ],
-                "color": "red"
+                "color": "green"
             },
             {
                 "name": "MASALA FRIES",
@@ -520,7 +520,7 @@
                     "250 GM",
                     "1 KG"
                 ],
-                "color": "orange"
+                "color": "blue"
             },
             {
                 "name": "SMIILES",
@@ -537,7 +537,7 @@
                 "size": [
                     "375 GM"
                 ],
-                "color": "orange"
+                "color": "blue"
             },
             {
                 "name": "SMIILES TANGYS TOMATO",
@@ -546,42 +546,42 @@
                     "175 GM",
                     "375 GM"
                 ],
-                "color": "red"
+                "color": "orange"
             },
             {
                 "name": "VEG FINGER",
                 "size": [
                     "1 KG"
                 ],
-                "color": "blue"
+                "color": "green"
             },
             {
                 "name": "HERB CHILLY POTATO PATTY",
                 "size": [
                     "1.5 KG"
                 ],
-                "color": "green"
+                "color": "blue"
             },
             {
                 "name": "CRINKLE CUT FRIES",
                 "size": [
                     "2.5 KG"
                 ],
-                "color": "orange"
+                "color": "red"
             },
             {
                 "name": "FAVOURITA",
                 "size": [
                     "9MM 2.5KG"
                 ],
-                "color": "green"
+                "color": "blue"
             },
             {
                 "name": "POPULAR BURGER PATTY",
                 "size": [
                     "1.2 K.G"
                 ],
-                "color": "orange"
+                "color": "green"
             },
             {
                 "name": "ROSTY ROUNDS HASH BROWN",
@@ -615,7 +615,7 @@
                 "size": [
                     "400 GM"
                 ],
-                "color": "green"
+                "color": "red"
             },
             {
                 "name": "SWITZ SAMOSA PATTI",
@@ -643,7 +643,7 @@
                 "size": [
                     "3 INCH"
                 ],
-                "color": "blue"
+                "color": "orange"
             },
             {
                 "name": "MINI PIZZA",
@@ -664,49 +664,49 @@
                 "size": [
                     "7 INCH"
                 ],
-                "color": "green"
+                "color": "blue"
             },
             {
                 "name": "CHEESY LOVER PIZA",
                 "size": [
                     "7 INCH"
                 ],
-                "color": "red"
+                "color": "orange"
             },
             {
                 "name": "ITALIAN PIZZA",
                 "size": [
                     "7 INCH"
                 ],
-                "color": "blue"
+                "color": "green"
             },
             {
                 "name": "MARGARITA PIZZA",
                 "size": [
                     "7 INCH"
                 ],
-                "color": "red"
+                "color": "blue"
             },
             {
                 "name": "MEXICAN PIZZA",
                 "size": [
                     "7 INCH"
                 ],
-                "color": "blue"
+                "color": "red"
             },
             {
                 "name": "SPICY PERI PERI PIZZA",
                 "size": [
                     "7 INCH"
                 ],
-                "color": "red"
+                "color": "blue"
             },
             {
                 "name": "TANDOORI PANEER PIZZA",
                 "size": [
                     "7 INCH"
                 ],
-                "color": "orange"
+                "color": "green"
             }
         ],
         "logo": "honeycube_logo.png"
@@ -719,7 +719,7 @@
                 "size": [
                     "1 KG"
                 ],
-                "color": "red"
+                "color": "orange"
             },
             {
                 "name": "BARBEQUE SAUCE",
@@ -733,42 +733,42 @@
                 "size": [
                     "1 KG"
                 ],
-                "color": "red"
+                "color": "orange"
             },
             {
                 "name": "CHILLI SAUCE SACHET",
                 "size": [
                     "8 GM"
                 ],
-                "color": "orange"
+                "color": "green"
             },
             {
                 "name": "CHIPOTLE MOYONNISE",
                 "size": [
                     "1 KG"
                 ],
-                "color": "green"
+                "color": "orange"
             },
             {
                 "name": "CORNETTI PASTA",
                 "size": [
                     "500 GM"
                 ],
-                "color": "orange"
+                "color": "blue"
             },
             {
                 "name": "CHEDDAR CHEESE MAYONISE",
                 "size": [
                     "1 KG"
                 ],
-                "color": "green"
+                "color": "red"
             },
             {
                 "name": "FUSILLI PASTA",
                 "size": [
                     "500 GM"
                 ],
-                "color": "orange"
+                "color": "green"
             },
             {
                 "name": "HARISSA MAYONNAISE",
@@ -782,21 +782,21 @@
                 "size": [
                     "1 KG"
                 ],
-                "color": "orange"
+                "color": "blue"
             },
             {
                 "name": "JALEPENO MOYONNISE",
                 "size": [
                     "1 KG"
                 ],
-                "color": "blue"
+                "color": "red"
             },
             {
                 "name": "MUSTARD SAUCE",
                 "size": [
                     "750 GM"
                 ],
-                "color": "red"
+                "color": "green"
             },
             {
                 "name": "PENNE PASTA",
@@ -810,7 +810,7 @@
                 "size": [
                     "1 KG"
                 ],
-                "color": "green"
+                "color": "red"
             },
             {
                 "name": "PREMIUM MAYONISE",
@@ -824,14 +824,14 @@
                 "size": [
                     "480  GM"
                 ],
-                "color": "blue"
+                "color": "red"
             },
             {
                 "name": "SALAD DRESSING",
                 "size": [
                     "350 GM"
                 ],
-                "color": "orange"
+                "color": "blue"
             },
             {
                 "name": "SALAD MAYONISE",
@@ -909,14 +909,14 @@
                     "1 KG",
                     "1 KG"
                 ],
-                "color": "blue"
+                "color": "red"
             },
             {
                 "name": "CHILLI GARLIC DIP",
                 "size": [
                     "1 KG"
                 ],
-                "color": "orange"
+                "color": "blue"
             },
             {
                 "name": "HONEY DIP CUP",
@@ -930,14 +930,14 @@
                 "size": [
                     "1 KG"
                 ],
-                "color": "orange"
+                "color": "blue"
             },
             {
                 "name": "IMLI CHATAKA",
                 "size": [
                     "480 GM"
                 ],
-                "color": "green"
+                "color": "red"
             },
             {
                 "name": "JAIN TOMATO KETCHUP",
@@ -951,42 +951,42 @@
                 "size": [
                     "1 KG"
                 ],
-                "color": "orange"
+                "color": "green"
             },
             {
                 "name": "MIXED FRUIT JAM",
                 "size": [
                     "15 GMS"
                 ],
-                "color": "red"
+                "color": "blue"
             },
             {
                 "name": "MIXED PICKLE DIP CUP",
                 "size": [
                     "15 GM"
                 ],
-                "color": "blue"
+                "color": "orange"
             },
             {
                 "name": "ORANGE MARMALAD DIP CUP",
                 "size": [
                     "15 GM"
                 ],
-                "color": "red"
+                "color": "green"
             },
             {
                 "name": "SNACK DRESSING",
                 "size": [
                     "1.2 KG"
                 ],
-                "color": "green"
+                "color": "red"
             },
             {
                 "name": "TOMATO PUREE",
                 "size": [
                     "1 KG"
                 ],
-                "color": "red"
+                "color": "blue"
             },
             {
                 "name": "TOMBO SACHET",
@@ -994,14 +994,14 @@
                     "15 GM",
                     "8 GM"
                 ],
-                "color": "blue"
+                "color": "orange"
             },
             {
                 "name": "TORTILA WRAP WHEAT",
                 "size": [
                     "18 Sheets"
                 ],
-                "color": "orange"
+                "color": "green"
             }
         ],
         "logo": "cremica_logo.png"
@@ -1014,21 +1014,21 @@
                 "size": [
                     "1 KG"
                 ],
-                "color": "green"
+                "color": "red"
             },
             {
                 "name": "SHEER FISH STEAK JUMBO",
                 "size": [
                     "1 KG"
                 ],
-                "color": "blue"
+                "color": "orange"
             },
             {
                 "name": "SPICY FISH FINGER",
                 "size": [
                     "1 KG"
                 ],
-                "color": "orange"
+                "color": "red"
             }
         ],
         "logo": "gadre_logo.png"
@@ -1041,14 +1041,14 @@
                 "size": [
                     "1 KG"
                 ],
-                "color": "red"
+                "color": "green"
             },
             {
                 "name": "FROZEN SWEET CORN",
                 "size": [
                     "1 KG"
                 ],
-                "color": "green"
+                "color": "red"
             }
         ],
         "logo": "natural_logo.png"
@@ -1061,14 +1061,14 @@
                 "size": [
                     "1 KG"
                 ],
-                "color": "red"
+                "color": "blue"
             },
             {
                 "name": "COCONUT BONEHEUR SYRUP",
                 "size": [
                     "1 KG"
                 ],
-                "color": "blue"
+                "color": "green"
             },
             {
                 "name": "ELDERFLOWER SYRUP",
@@ -1076,28 +1076,28 @@
                     "1 KG",
                     "1 KG"
                 ],
-                "color": "orange"
+                "color": "blue"
             },
             {
                 "name": "GREEN APPLE SYRUP",
                 "size": [
                     "1 KG"
                 ],
-                "color": "red"
+                "color": "green"
             },
             {
                 "name": "HAZELNUT SYRUP",
                 "size": [
                     "1 KG"
                 ],
-                "color": "orange"
+                "color": "blue"
             },
             {
                 "name": "MOJITO SYRUP",
                 "size": [
                     "1 KG"
                 ],
-                "color": "blue"
+                "color": "red"
             },
             {
                 "name": "PASSION FRUIT SYRUP",
@@ -1111,7 +1111,7 @@
                 "size": [
                     "1 KG"
                 ],
-                "color": "red"
+                "color": "orange"
             }
         ],
         "logo": "bonheur_logo.png"
@@ -1124,42 +1124,42 @@
                 "size": [
                     "1 KG"
                 ],
-                "color": "orange"
+                "color": "red"
             },
             {
                 "name": "CREMAGIC TOPPING",
                 "size": [
                     "2 KG"
                 ],
-                "color": "red"
+                "color": "orange"
             },
             {
                 "name": "DOUBLE DREAM FRESH CREAM",
                 "size": [
                     "1 LT"
                 ],
-                "color": "green"
+                "color": "red"
             },
             {
                 "name": "NIAGARA FARMS WHIP TOPPING",
                 "size": [
                     "1 KG"
                 ],
-                "color": "blue"
+                "color": "green"
             },
             {
                 "name": "NUGEL NETURAL",
                 "size": [
                     "2.5 KG"
                 ],
-                "color": "orange"
+                "color": "red"
             },
             {
                 "name": "PREMIUM TRUFFLE BASE",
                 "size": [
                     "2 KG"
                 ],
-                "color": "green"
+                "color": "orange"
             },
             {
                 "name": "STAR WHIP RSW",
@@ -1173,7 +1173,7 @@
                 "size": [
                     "2 KG"
                 ],
-                "color": "red"
+                "color": "orange"
             },
             {
                 "name": "WHIP TOPPING CREAM",
@@ -1194,14 +1194,14 @@
                 "size": [
                     "1 KG"
                 ],
-                "color": "blue"
+                "color": "orange"
             },
             {
                 "name": "BETTERCREME TOPPING WHIP CHOCOLATE",
                 "size": [
                     "1KG"
                 ],
-                "color": "green"
+                "color": "blue"
             },
             {
                 "name": "CARAMEL GLASE",
@@ -1222,63 +1222,63 @@
                 "size": [
                     "1 KG"
                 ],
-                "color": "green"
+                "color": "red"
             },
             {
                 "name": "NUGEL BLUEBERRY",
                 "size": [
                     "1 KG"
                 ],
-                "color": "orange"
+                "color": "blue"
             },
             {
                 "name": "NUGEL CHOCOLATE GLASE",
                 "size": [
                     "2.5 KG"
                 ],
-                "color": "green"
+                "color": "red"
             },
             {
                 "name": "NUGEL PINEAPPLE GLAZE",
                 "size": [
                     "1 KG"
                 ],
-                "color": "blue"
+                "color": "orange"
             },
             {
                 "name": "NUGEL STRAWBERRY",
                 "size": [
                     "1 KG"
                 ],
-                "color": "orange"
+                "color": "green"
             },
             {
                 "name": "NUGEL WHITE",
                 "size": [
                     "1 KG"
                 ],
-                "color": "blue"
+                "color": "red"
             },
             {
                 "name": "SUNWHIP",
                 "size": [
                     "1 KG"
                 ],
-                "color": "green"
+                "color": "blue"
             },
             {
                 "name": "SWEETMATE",
                 "size": [
                     "1 KG"
                 ],
-                "color": "blue"
+                "color": "orange"
             },
             {
                 "name": "WHIP TOPPING GOLD",
                 "size": [
                     "1 KG"
                 ],
-                "color": "green"
+                "color": "blue"
             }
         ],
         "logo": "rich_logo.png"
@@ -1291,7 +1291,7 @@
                 "size": [
                     "500 GM"
                 ],
-                "color": "orange"
+                "color": "red"
             }
         ],
         "logo": "nutrilite_logo.png"
@@ -1305,21 +1305,21 @@
                     "1 KG",
                     "2 KG"
                 ],
-                "color": "red"
+                "color": "green"
             },
             {
                 "name": "SAUCE DIP",
                 "size": [
                     "1KG"
                 ],
-                "color": "blue"
+                "color": "red"
             },
             {
                 "name": "TOMETO PUREE",
                 "size": [
                     "1 KG"
                 ],
-                "color": "green"
+                "color": "blue"
             }
         ],
         "logo": "kissan_logo.png"
@@ -1332,28 +1332,28 @@
                 "size": [
                     "500 GM"
                 ],
-                "color": "red"
+                "color": "green"
             },
             {
                 "name": "CHEESE MOZZARELLA BLEND",
                 "size": [
                     "2 KG"
                 ],
-                "color": "orange"
+                "color": "red"
             },
             {
                 "name": "CHEESE MOZZARELLA DICED",
                 "size": [
                     "2 KG"
                 ],
-                "color": "red"
+                "color": "orange"
             },
             {
                 "name": "CHEESE PROCESS",
                 "size": [
                     "1 KG"
                 ],
-                "color": "orange"
+                "color": "blue"
             }
         ],
         "logo": "prabhat_logo.png"
@@ -1373,7 +1373,7 @@
                 "size": [
                     "500 GM"
                 ],
-                "color": "orange"
+                "color": "green"
             },
             {
                 "name": "GRAVY ONION TOMATO BASE SAUCE",
@@ -1387,7 +1387,7 @@
                 "size": [
                     "500 GM"
                 ],
-                "color": "orange"
+                "color": "green"
             },
             {
                 "name": "TOMATO MAKHANI BASE SAUCE",
@@ -1401,14 +1401,14 @@
                 "size": [
                     "1 KG"
                 ],
-                "color": "green"
+                "color": "blue"
             },
             {
                 "name": "WHITE GRAVY",
                 "size": [
                     "1 KG"
                 ],
-                "color": "orange"
+                "color": "red"
             }
         ],
         "logo": "knorr_logo.png"
@@ -1421,77 +1421,77 @@
                 "size": [
                     "2.5 KG"
                 ],
-                "color": "red"
+                "color": "blue"
             },
             {
                 "name": "BASA FISH WHITE",
                 "size": [
                     "1 KG"
                 ],
-                "color": "green"
+                "color": "red"
             },
             {
                 "name": "PRAWNS",
                 "size": [
                     "1 KG"
                 ],
-                "color": "red"
+                "color": "orange"
             },
             {
                 "name": "SQUID FISH",
                 "size": [
                     "1 KG"
                 ],
-                "color": "blue"
+                "color": "red"
             },
             {
                 "name": "TIGER PRAWNS",
                 "size": [
                     "1 KG"
                 ],
-                "color": "red"
+                "color": "green"
             },
             {
                 "name": "LARGE PRAWANS",
                 "size": [
                     "200 GM"
                 ],
-                "color": "green"
+                "color": "orange"
             },
             {
                 "name": "MEDIUM PRAWANS",
                 "size": [
                     "200 GM"
                 ],
-                "color": "orange"
+                "color": "blue"
             },
             {
                 "name": "MEDIUM PRAWANS PATTYL",
                 "size": [
                     "300 GM"
                 ],
-                "color": "green"
+                "color": "orange"
             },
             {
                 "name": "PRAWANS CHEESE BAL",
                 "size": [
                     "300 GM"
                 ],
-                "color": "blue"
+                "color": "red"
             },
             {
                 "name": "PRAWANS CHEESE BALL",
                 "size": [
                     "1 KG"
                 ],
-                "color": "green"
+                "color": "orange"
             },
             {
                 "name": "PRAWANS PATTY",
                 "size": [
                     "1 KG"
                 ],
-                "color": "blue"
+                "color": "red"
             }
         ],
         "logo": "ifb_logo.png"
@@ -1504,7 +1504,7 @@
                 "size": [
                     "1 KG"
                 ],
-                "color": "red"
+                "color": "green"
             },
             {
                 "name": "POMFRET",
@@ -1522,14 +1522,14 @@
                     "31-40",
                     "78-80"
                 ],
-                "color": "green"
+                "color": "red"
             },
             {
                 "name": "SALMON FILLET",
                 "size": [
                     "1.107 KG"
                 ],
-                "color": "red"
+                "color": "green"
             }
         ],
         "logo": "delight_logo.png"
@@ -1542,7 +1542,7 @@
                 "size": [
                     "1 KG"
                 ],
-                "color": "orange"
+                "color": "blue"
             }
         ],
         "logo": "bestfood_logo.png"
