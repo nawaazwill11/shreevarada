@@ -273,7 +273,7 @@
       <li>
         <img src="{{ url_for('static', filename='dist/img/') }}{{ slide['src'] }}"> <!-- random image -->
         <div class="caption left-align">
-          <h3>{{ slide['header'] }}</h3>
+          <h3 class="z-depth-1" style="background-color: {{ slide['color'] }};">{{ slide['header'] }}</h3>
 <!--          
           <button class="wave-effect wave-light btn {{ slide['btn-color'] }} pointer" data-scrollto="{{ slide['scrollto'] }}">Browse</button> -->
         </div>
