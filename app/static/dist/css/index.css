@@ -6908,9 +6908,6 @@ footer .author {
   position: relative;
 }
 
-.card-reveal-container .card {
-  height: 250px;
-}
 .card-reveal-container img {
   height: 170px;
   padding: 20px;
@@ -6936,6 +6933,23 @@ footer .author {
 .section-interaction {
   display: flex;
   justify-content: center;
+}
+
+.card-image {
+  padding: 10px;
+}
+
+.card-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.redirect {
+  width: 10px;
+  height: 10px !important;
+  padding: 0 !important;
+  margin-bottom: 4px;
 }
 
 @media screen and (max-width: 340px) {

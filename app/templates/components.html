@@ -138,7 +138,7 @@
     {% endif %}
   ">
       {% for item in items %}
-          <a class="carousel-item" href="{{ item['href'] }}"><img src="{{ item['src'] }}"></a>
+          <a class="carousel-item" href="{{ item['href'] }}"><img src="{{ url_for('static', filename='dist/img/') }}/{{ item['src'] }}"></a>
       {% endfor %}
   </div>
 {% endmacro %}
@@ -182,6 +182,7 @@
                 <img src="{{ url_for('static', filename='dist/img/') }}{{ card['url'] }}">
                 <span class="card-title">{{ card['title'] }}</span>
               </div>
+              <div class="divider"></div>
               <div class="card-content">
                 <p>{{ card['content'] }}</p>
               </div>
@@ -206,8 +207,16 @@
             <span class="card-title activator grey-text text-darken-4">{{ card['title'] }}<i class="material-icons right">arrow_upward</i></span>
           </div>
           <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+            <span class="card-title grey-text text-darken-4">
+              {% if card['link'] %}
+                <a href="{{ card['link'] }}" title="Official Website" target="_blank">
+                  {{ card['title'] }} <img class="redirect" src="{{ url_for('static', filename='dist/img/redirect.svg') }}" alt="redirect">
+                </a>
+              {% else %}
+                {{ card['title'] }}
+              {% endif %}
+              <i class="material-icons right">close</i></span>
+            <p>{{ card['desc'] }}</p>
           </div>
         </div>
       </div>

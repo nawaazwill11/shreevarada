@@ -167,9 +167,8 @@ class Separate(object):
                     'name': f,
                     'size': len(f_content)
                 })
-        print(file_lengths)
+
         sorted_files = sorted(file_lengths, key=lambda k: k['size'], reverse=True)
-        print(sorted_files)
         return [f['name'] for f in sorted_files]
     
     def jsonLoader(self, path):

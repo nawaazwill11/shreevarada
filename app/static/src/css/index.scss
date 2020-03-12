@@ -35,6 +35,23 @@
     justify-content: center;
 }
 
+.card-image {
+    padding: 10px;
+}
+
+.card-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.redirect {
+    width: 10px;
+    height: 10px !important;
+    padding: 0 !important;
+    margin-bottom: 4px;
+}
+
 @media screen and (max-width: 340px) {
     .section-content {
         padding: 20px 10px;
