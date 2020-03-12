@@ -165,7 +165,11 @@
 {% macro button(buttons) %}
     <div class="section-interaction">
       {% for button in buttons %}
-        <button class="wave-effect wave-light btn red">{{ button['text'] }}</button>
+        {% if button['text'] %}
+          <button class="wave-effect wave-light btn red">{{ button['text'] }}</button>
+        {% else %}
+          <a href="{{ button['link'] }}" class="wave-effect wave-light btn red">{{ button['anchor'] }}</a>
+        {% endif %}
       {% endfor %}
     </div>
 {% endmacro %}
@@ -245,11 +249,11 @@
               {% endif %}
             </div>
             <div class="card-content ">
-              <span class="activator grey-text text-darken-4 product-name">{{ product['name'] | capitalize }}</span>
+              <span class="activator grey-text text-darken-4 product-name">{{ product['name'] }}</span>
               <span class="activator raiser"><i class="material-icons right">info_outline</i></span>
             </div>
                 <div class="card-reveal">
-                  <span class="card-title grey-text text-darken-4">{{ product['name'] | capitalize }}</span>
+                  <span class="card-title grey-text text-darken-4">{{ product['name'] }}</span>
                   <span class="card-title closer"><i class="material-icons right">close</i></span>
                   <div class="divider"></div>
                   <p>{{ ' | '.join(product['size']) }}</p>

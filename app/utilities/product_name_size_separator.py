@@ -3,7 +3,7 @@ import re, json, random, os
 class Separate(object):
 
     def __init__(self, output_path, god_file_name):
-        self.path = 'app/utilities/products' #
+        self.path = 'app/utilities/products' 
         self.output_path = f"{self.path}/output"
         self.god_output_path = output_path + '/' + god_file_name
         self.ext = '.txt'
@@ -15,9 +15,16 @@ class Separate(object):
             'blue',
             'orange',
         ]
-        self.main()
+        files = os.listdir(output_path)
+        if (god_file_name not in files):
+            self.jsonizeFiles()
+            self.makeGodFile()
+        self.paintIdx = random.randint(0, len(self.paints) - 1)
+        self.addLogo()
+        self.addPaint()
+        self.success()
     
-    def main(self):
+    def jsonizeFiles(self):
         # Iterate through all files in the list
         count = 0
         for f in self.files_list:
@@ -84,17 +91,13 @@ class Separate(object):
 
         print('Total entries:', count) # shows number of total products
 
-        self.makeGodFile()
-        self.paintIdx = random.randint(0, len(self.paints) - 1)
-        self.extra()
-        self.success()
-
     def bifurcate(self, content):
         split = self.split(content, '[0-9]')
         word_list = re.findall('[a-z]+', split[0], flags=re.IGNORECASE)
-        name = ' '.join(word_list)
+        name = ' '.join([x.capitalize() for x in word_list])
+        print(name)
         size = []
-        if (len(split) >= 2):
+        if (len(split) >= 2): # adds size if split has 2 parts (name and size)
             size.append(split[1])
         
         return {"name": name, "size": size}
@@ -120,32 +123,56 @@ class Separate(object):
     def makeGodFile(self):
         print('Merging all output files into single file...')
         # output_files = os.listdir(self.output_path)
-        # output_files = [
-        #     'mccain.json',
-        #     'venkys.json',
-        #     'cremica.json',
-        #     'rich.json',
-        #     'mapro.json',
-        #     'ifb.json',
-        #     'knorr.json',
-        #     'delight.json',
-        #     'kissan.json',
-        #     'switz.json',
-        #     'natural.json',
-        #     'nutralite.json',
-        #     'honeycube.json'
-        # ]
-        # ['bestfood', 'prabhat', 'vanleer',  'bonheur', 'honeycube', 'gadre']
-
-        output_files = self.outputFileSorter()
+        # output_files = self.outputFileSorter()
+        output_files = [
+            'cremica.json',
+            'venkys.json',
+            'mccain.json',
+            'rich.json',
+            'mapro.json',
+            'ifb.json',
+            'honeycube.json',
+            'bonheur.json',
+            'knorr.json',
+            'prabhat.json',
+            'delight.json',
+            'kissan.json',
+            'gadre.json',
+            'switz.json',
+            'vanleer.json',
+            'natural.json',
+            'nutralite.json',
+            'bestfood.json'
+        ]
+        
         god_file = {}
+        name_ref = {
+            'cremica': 'CREMICA',
+            'venkys': 'VENKY\'S',
+            'mccain': 'McCAIN',
+            'rich': 'RICH\'S',
+            'mapro': 'MAPRO',
+            'ifb': 'IFB AGRO',
+            'honeycube': 'HONEYCUBE',
+            'bonheur': 'BONHEUR',
+            'knorr': 'KNORR',
+            'prabhat': 'PRABHAT',
+            'delight': 'DELIGHT',
+            'kissan': 'KISSAN',
+            'gadre': 'GADRE',
+            'switz': 'SWITZ',
+            'vanleer': 'VAN LEER',
+            'natural': 'NATURAL',
+            'nutralite': 'NUTRALITE',
+            'bestfood': 'BESTFOOD'
+        }
         for f in output_files:
             if(os.path.isdir(self.getPathWithOutput(f))): continue
             file_name = os.path.splitext(f)[0]
             file_path = self.getPathWithOutput(f)
             fp = open(file_path, 'r')
             god_file[file_name] = {
-                "name": os.path.splitext(f)[0],
+                "name":   name_ref[os.path.splitext(f)[0]],
                 "products": json.load(fp)
             }
             fp.close()
@@ -162,7 +189,7 @@ class Separate(object):
         file_lengths = []
         for f in files:
             if (os.path.isfile(self.getPathWithOutput(f))):
-                f_content = self.jsonLoader(f)
+                f_content = self.jsonLoader(self.getPathWithOutput(f))
                 file_lengths.append ({
                     'name': f,
                     'size': len(f_content)
@@ -172,24 +199,37 @@ class Separate(object):
         return [f['name'] for f in sorted_files]
     
     def jsonLoader(self, path):
-        fp = self.getFileHandler(self.getPathWithOutput(path), 'r')
+        fp = self.getFileHandler(path, 'r')
         return json.load(fp)
 
-    def extra(self):
-        print('Adding extras...')
-        content = self.god
+    def jsonDumper(self, path, content): 
+        fp = self.getFileHandler(path, 'w')
+        self.god = content
+        json.dump(content, fp, indent=4)
+
+    def addLogo(self):
+        print('Adding logos...')
+        content = self.jsonLoader(self.god_output_path)
         for company in content.keys():
             # print(content[company] == products)
             if (not company in ['honeycube', 'bonheur']):
                 content[company]['logo'] = company + '_logo.png'
-            for index in range (len(content[company]['products'])):
-                content[company]['products'][index]['color'] = self.getPaint()
 
-        fp = self.getFileHandler(self.god_output_path, 'w')
-        self.god = content
-        json.dump(content, fp, indent=4)
-        print('Extras added')
+        self.jsonDumper(self.god_output_path, content)
+
+        print('Logos added.')
         
+    def addPaint(self):
+        print('Adding paint...')
+        content = self.jsonLoader(self.god_output_path)
+        for company in content.keys():
+            for index in range (len(content[company]['products'])):
+                    content[company]['products'][index]['color'] = self.getPaint()
+
+        self.jsonDumper(self.god_output_path, content)
+        
+        print('Paint added.')
+
     def getPaint(self):
         idx = 0
         while True:
