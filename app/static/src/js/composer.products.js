@@ -4,17 +4,14 @@ import helper from './helper';
 function initialization () {
     const components = [
         {name: 'fab', options: {}},
-        {name: 'parallax', options: {}},
-        {name: 'carousel', options: { duration: 300, fullWidth: true, indicators: true }},
-        {name: 'slider', options: {}},
-        {name: 'dropdown', options: {}}
+        // {name: 'slider', options: {full_width: true, indicators: true}},
     ]
+    material.initComponents(components);
     // const slider = material.components.slider;
     // slider.object.init(slider.elem, {});
-    material.initComponents(components);
     // slideCarousel();
-    scrollToSection();
-    sectionFilter();
+    // scrollToSection();
+    // sectionFilter();
 }
 
 

@@ -4,8 +4,13 @@ nav {
     position: relative;
     z-index: 1000;
 
-    ul li a {
+    ul {
+        a {
+            font-size: 1.3rem;
+        }
+        li a {
         color: #fff;
+        }
     }
 }
 .nav-menu-container {

@@ -3,8 +3,7 @@ import material from './material';
 function initialization () {
     const components = [
         {name: 'fab', options: {}},
-        {name: 'parallax', options: {}},
-        {name: 'carousel', options: {}},
+        {name: 'textarea_counter', options: {} }
     ]
     material.initComponents(components);
 }

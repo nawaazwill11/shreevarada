@@ -58,6 +58,14 @@ const material = function () {
                 return document.querySelectorAll('.dropdown-trigger');
             }
         },
+        textarea_counter: {
+            name: 'textarea_counter',
+            object: M.CharacterCounter,
+            options: {},
+            get elems() {
+                return document.querySelectorAll('.character-counter');
+            }
+        },
     }
 
     function getComponentList(){

@@ -1,5 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins&display=swap);
 @import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+@import url(https://fonts.googleapis.com/css?family=Arvo&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Dosis:700&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Lato&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap);
 @charset "UTF-8";
 .materialize-red {
   background-color: #e51c23 !important;
@@ -6729,6 +6733,9 @@ nav {
   position: relative;
   z-index: 1000;
 }
+nav ul a {
+  font-size: 1.3rem;
+}
 nav ul li a {
   color: #fff;
 }
@@ -6833,7 +6840,11 @@ body {
   width: 100%;
   position: relative;
   background-color: #424242;
-  font-family: "Poppins";
+  font-family: "Lato", "Dosis", "Arvo", "Times New Roman";
+}
+
+body * {
+  color: #333333;
 }
 
 h5 {
@@ -6870,8 +6881,9 @@ footer .author {
   margin: 0;
 }
 .parallax-hover .text-large {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   margin-bottom: 20px;
+  font-weight: 600;
 }
 .parallax-hover .text-small {
   font-size: 1.5rem;
@@ -6930,6 +6942,12 @@ footer .author {
   padding: 20px;
 }
 
+.section-description p {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
 .section-interaction {
   display: flex;
   justify-content: center;
@@ -6945,15 +6963,20 @@ footer .author {
   align-items: center;
 }
 
+.card-title {
+  font-weight: 500 !important;
+}
+
+.card-content p {
+  text-align: center;
+  font-size: 1.3rem;
+}
+
 .redirect {
   width: 10px;
   height: 10px !important;
   padding: 0 !important;
   margin-bottom: 4px;
-}
-
-.card-content p {
-  text-align: center;
 }
 
 @media screen and (max-width: 340px) {

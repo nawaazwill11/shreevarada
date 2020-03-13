@@ -27,8 +27,16 @@
 //     background-size: cover;
 //     opacity: 0.5;
 // }
+
 .section-content {
     padding: 20px;
+}
+.section-description {
+    p {
+        font-size: 1.6rem;
+        line-height: 1.6;
+        text-align: center;
+    }
 }
 .section-interaction {
     display: flex;
@@ -44,19 +52,23 @@
     justify-content: center;
     align-items: center;
 }
+.card-title {
+    font-weight: 500 !important;
+}
+.card-content {
 
+    p {
+        text-align: center;
+        font-size: 1.3rem;
+    }
+}
 .redirect {
     width: 10px;
     height: 10px !important;
     padding: 0 !important;
     margin-bottom: 4px;
 }
-.card-content {
 
-    p {
-        text-align: center;
-    }
-}
 @media screen and (max-width: 340px) {
     .section-content {
         padding: 20px 10px;

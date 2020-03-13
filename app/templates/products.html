@@ -40,47 +40,47 @@
             {
               'src': 'vegetables.jpg',
               'header': 'Delicious Veg Options',
-              'color': '#F44336 !important'
+              'color': '#4CAF50 !important'
             },
             {
               'src': 'chicken.jpg',
               'header': 'Choicest Chicken Delights',
-              'color': '#f44336'
+              'color': '#f44336c7'
             },
             {
               'src': 'fish.jpg',
               'header': 'Variety of Quality Fishes',
-              'color': 'gray'
+              'color': '#808080c7'
             },
             {
               'src': 'cheese.jpg',
               'header': 'An Exquisite Collection of Cheese',
-              'color': '#ffca28'
+              'color': '#ffca28c7'
             },
             {
               'src': 'chocolate.jpg',
               'header': 'Imported World-Class Chocolates',
-              'color': '#795548'
+              'color': '#795548c7'
             },
             {
               'src': 'mocktails.jpg',
               'header': 'Refreshing Squashes and Mocktails',
-              'color': 'orange'
+              'color': '#ffa500c7'
             },
             {
               'src': 'pizza.jpg',
               'header': 'Satisfying and Delicious Pizzas',
-              'color': 'red'
+              'color': '#f44336c7'
             },
             {
               'src': 'sauce.webp',
-              'header': 'Sauces for Salads, Sandwiches, Burgers and More',
-              'color': 'orange'
+              'header': 'A Range of Appletizing Sauces',
+              'color': '#ffa500c7'
             },
             {
               'src': 'whipped_cream.jpg',
-              'header': 'Fresh and Ready-To-Use Dressings And Spreads',
-              'color': '#89d7e1',
+              'header': 'Fresh Dressings And Spreads',
+              'color': '#89d7e1c7'
             }
         ])
     }}
@@ -126,4 +126,13 @@
 
 {% block scripts %}
     <script src="{{ url_for('static', filename='dist/js/products.js') }}"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+
+    
+    <script>
+        $(document).ready(function () {
+            $('.slider').slider({full_width: true, indicators:true});
+        });
+    </script>
 {% endblock %}

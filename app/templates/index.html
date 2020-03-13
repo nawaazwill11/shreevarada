@@ -38,7 +38,7 @@
 {{ 
   macro.parallax(
     macro,
-    '1',
+    'parallax',
     ['prx_1.jpg'],
     'Shreevarada Enterprise',
     'A Growing Frozen Food Distribution Chain'
@@ -51,9 +51,8 @@
     {{
       macro.section(
         macro,
-        '1',
+        'products',
         'Our Products', 
-        'Some description',
         [
           {
             'id': '1',
@@ -86,6 +85,10 @@
             ]
           },
           {
+            'name': 'description',
+            'attr': 'We manage and supply one of the top brands in the frozen-food industry along with the top dressing, seasoning, spread and syrups industries in the entire country.'
+          },
+          {
             'name': 'button',
             'attr': [
               {
@@ -101,9 +104,8 @@
     {{ 
       macro.section(
         macro,
-        '2',
+        'services',
         "Our Services",
-        none,
         [
           {
             'id': '1',
@@ -135,7 +137,6 @@
         macro,
         '3',
         "Our Partners",
-        none,
         [
           {
             'name': 'card_reveal',

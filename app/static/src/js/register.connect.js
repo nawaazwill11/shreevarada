@@ -1,4 +1,4 @@
-import composer from './composer.index';
+import composer from './composer.connect';
 
 document.addEventListener('DOMContentLoaded', function () {
     composer.initialization();

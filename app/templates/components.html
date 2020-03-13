@@ -70,24 +70,21 @@
 {% endmacro %}
 
 {# section #}
-{% macro section(macro, id, header, description='', components=[]) %}
+{% macro section(macro, id, header, components=[], size='') %}
     <div id="{{ id }}" class="section products">
       <div class="row">
-          <div class="col s12 l10 push-l1">
+          <div class="col  
+          {% if size %}
+            {{ size }}
+          {% else %}
+          s12 l10 push-l1
+          {% endif %}">
             <div class="section-content white">
               <div class="section-header">
                 <h3 class="header center mr-b-10">{{ header }}</h3>
               </div>
               <div class="divider"></div>
               <div class="section-content">
-                {% if description %} 
-                  <div class="section-description">
-                    <p class="grey-text text-darken-3 lighten-3">
-                      <!-- Some short description on the products that are being offered. -->
-                      {{ description }}
-                    </p>
-                  </div>
-                {% endif %}
                 {% if components %}
                   <div class="components section-components">
                     {{ macro.selector(macro, components) }}
@@ -100,7 +97,15 @@
     </div>
 {% endmacro %}
 
-{% macro sectionProducts(macro, id, header, description, components=[], button='') %}
+{% macro description(desc) %}
+  <div class="section-description">
+    <p class="grey-text text-darken-3 lighten-3">
+      {{ desc }}
+    </p>
+  </div>
+{% endmacro %}
+
+{% macro sectionProducts(macro, id, header, components=[], button='') %}
     <div id="{{ id }}" class="section products">
       <div class="row">
           <div class="col s12 l10 push-l1">
@@ -110,14 +115,6 @@
               </div>
               <div class="divider"></div>
               <div class="section-content">
-                {% if description %} 
-                  <div class="section-description">
-                    <p class="grey-text text-darken-3 lighten-3">
-                      <!-- Some short description on the products that are being offered. -->
-                      {{ description }}
-                    </p>
-                  </div>
-                {% endif %}
                 {% if components %}
                   <div class="components section-components">
                     {{ macro.selector(macro, components) }}
@@ -256,7 +253,11 @@
                   <span class="card-title grey-text text-darken-4">{{ product['name'] }}</span>
                   <span class="card-title closer"><i class="material-icons right">close</i></span>
                   <div class="divider"></div>
-                  <p>{{ ' | '.join(product['size']) }}</p>
+                  <div class="size">
+                    {% for size in product['size'] %}
+                    <p>{{ size }}</p>
+                    {% endfor %}
+                  </div>
                 </div>
           </div>
         </div>
@@ -272,10 +273,8 @@
     {% for slide in slides %}
       <li>
         <img src="{{ url_for('static', filename='dist/img/') }}{{ slide['src'] }}"> <!-- random image -->
-        <div class="caption left-align">
-          <h3 class="z-depth-1" style="background-color: {{ slide['color'] }};">{{ slide['header'] }}</h3>
-<!--          
-          <button class="wave-effect wave-light btn {{ slide['btn-color'] }} pointer" data-scrollto="{{ slide['scrollto'] }}">Browse</button> -->
+        <div class="caption center-align">
+          <h3 style="background-color: {{ slide['color'] }};">{{ slide['header'] }}</h3>
         </div>
       </li>
       {% endfor %}
@@ -340,54 +339,34 @@
   </div>
 {% endmacro %}
 
-{% macro form(fields) %}
-  <div class="row">
-    <form class="col s12">
-      <div class="row">
-        <div class="input-field col s6">
-          <input placeholder="Placeholder" id="first_name" type="text" class="validate">
-          <label for="first_name">First Name</label>
-        </div>
-        <div class="input-field col s6">
-          <input id="last_name" type="text" class="validate">
-          <label for="last_name">Last Name</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s12">
-          <input disabled value="I am not editable" id="disabled" type="text" class="validate">
-          <label for="disabled">Disabled</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s12">
-          <input id="password" type="password" class="validate">
-          <label for="password">Password</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s12">
-          <input id="email" type="email" class="validate">
-          <label for="email">Email</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col s12">
-          This is an inline input field:
-          <div class="input-field inline">
-            <input id="email_inline" type="email" class="validate">
-            <label for="email_inline">Email</label>
-            <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
-          </div>
-        </div>
-      </div>
-    </form>
+{% macro form(rows) %}
+  <div class="form-container">
+    <div class="row">
+      <form class="col s12">
+        {% for row in rows %}
+            <div class="row">
+              {% for field in row['row'] %}
+                <div class="input-field {{ field['size'] }}">
+                  {% if field['type'] == 'textarea' %}
+                    <textarea name="{{ field['id'] }}" id="{{ field['id'] }}" class="{{ field['class'] }}" cols="30" rows="10" data-length="{{ field['length'] }}"></textarea>
+                  {% else %}
+                    <input name="{{ field['id'] }}" id="{{ field['id'] }}" type="{{ field['type'] }}" class="{{ field['class'] }}" required="{{ field['required'] }}">
+                  {% endif %}
+                  <label for="{{ field['id'] }}">{{ field['label'] }}</label>
+                </div>
+              {% endfor %}
+            </div>
+          {% endfor %}
+        </form>
+    </div>
   </div>
 {% endmacro %}
 
 {% macro selector(macro, components) %}
   {% for component in components %}
-    {% if component['name'] == 'card' %}
+    {% if component['name'] == 'description' %}
+      {{ macro.description(component['attr']) }}
+    {% elif component['name'] == 'card' %}
       {{ macro.card(component['attr']) }}
     {% elif component['name'] == 'card_reveal' %}
       {{ macro.card_reveal(component['attr']) }}
@@ -397,6 +376,8 @@
       {{ macro.button(component['attr']) }}
     {% elif component['name'] == 'dropdown' %}
       {{ macro.dropdown(component['attr']) }}
+    {% elif component['name'] == 'form' %}
+      {{ macro.form(component['attr']) }}
     {% endif %}
   {% endfor %}
 {% endmacro %}

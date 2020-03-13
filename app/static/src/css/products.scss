@@ -28,9 +28,10 @@
     align-items: center;
 
     h3 {
+        font-size: 3.3rem;
         padding: 20px;
         text-align: center;
-        border-radius: 7px;
+        color: white
     }
     
     .pointer {
@@ -139,6 +140,12 @@
     }
 }
 
+.size {
+    margin-top: 10px;
+    p {
+        margin: 5px 0;
+    }
+}
 @media screen and (max-width: 600px) {
     .slider {
         .indicators {
@@ -151,8 +158,8 @@
     }
     .caption {
         h3 {
-            font-size: 35px;
-            line-height: 50px;
+            font-size: 3rem;
+            line-height: 1.4;
         }
     }
     .section {
