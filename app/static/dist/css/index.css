@@ -6936,7 +6936,7 @@ footer .author {
 }
 
 .card-image {
-  padding: 10px;
+  padding: 3px;
 }
 
 .card-content {
@@ -6950,6 +6950,10 @@ footer .author {
   height: 10px !important;
   padding: 0 !important;
   margin-bottom: 4px;
+}
+
+.card-content p {
+  text-align: center;
 }
 
 @media screen and (max-width: 340px) {
