@@ -88,18 +88,18 @@ function sectionFilter() {
     })
 }
 
-function toggleProductsView(section, button) {
+function toggleProductsView(section) {
     const toggle = section.dataset.toggle;
     let elem_list = section.querySelectorAll(`.card`);
     const length = 12;
-    console.log(toggle)
+
     if (toggle == 'show') {
         elem_list.forEach(elem => {
-            // if (elem.style.display == 'none') {
-                // elem.style.display == 'block';
+            if (elem.style.display == 'none') {
+                elem.style.display == 'block';
                 elem.setAttribute('style', "{display: block}");
                 console.log(elem.style.display);
-            // }
+            }
         });
         section.dataset.toggle = 'hide';
     }
@@ -107,7 +107,6 @@ function toggleProductsView(section, button) {
         if (elem_list.length > length) {
             elem_list = Array.from(elem_list);
             elem_list.splice(0, 12);
-            console.log(elem_list);
             elem_list.forEach(elem => {
                 elem.style.display = 'none';
             })
