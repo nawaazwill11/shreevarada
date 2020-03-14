@@ -7,7 +7,6 @@
 .parallax-hover {
    @include flex-center-total;
    flex-direction: column;
-   color: #fff;
    position: relative;
 
    p {
@@ -16,12 +15,14 @@
    }
 
    .text-large {
-       font-size: 3.5rem;
-       margin-bottom: 20px;
-       font-weight: 600;
+        color: #fff !important;
+        font-size: 3.5rem;
+        margin-bottom: 20px;
+        font-weight: 600;
    }
    .text-small {
-       font-size: 1.5rem;
+        color: #fff !important;
+        font-size: 1.5rem;
    }
 }
 .products {

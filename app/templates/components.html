@@ -179,14 +179,27 @@
       {% for card in cards[1:] %}
           <div class="col {{ cards[0]['size'] }}">
             <div class="card">
-              <div class="card-image black">
+              <div class="card-image "
+                {% if card['img-bg'] %}
+                  style="background-color: {{ card['img-bg'] }};"
+                {% endif %}
+              >
                 <img src="{{ url_for('static', filename='dist/img/') }}{{ card['url'] }}">
                 <span class="card-title">{{ card['title'] }}</span>
               </div>
               <div class="divider"></div>
-              <div class="card-content">
-                <p>{{ card['content'] }}</p>
-              </div>
+              {% if card['content'] %}
+                <div class="card-content">
+                  <p>{{ card['content'] }}</p>
+                </div>
+              {% endif %}
+              {% if card['action'] %}
+                {% for action in card['action'] %}
+                  <div class="card-action">
+                    <a href="{{ action['link'] }}">{{ action['text'] }}</a>
+                  </div>
+                {% endfor %}
+              {% endif %}
             </div>
           </div>
         {% endfor %}
@@ -362,6 +375,10 @@
   </div>
 {% endmacro %}
 
+{% macro raw(html) %}
+  {% include html %}
+{% endmacro %}
+
 {% macro selector(macro, components) %}
   {% for component in components %}
     {% if component['name'] == 'description' %}
@@ -378,6 +395,8 @@
       {{ macro.dropdown(component['attr']) }}
     {% elif component['name'] == 'form' %}
       {{ macro.form(component['attr']) }}
+    {% elif component['name'] == 'raw' %}
+      {{ macro.raw(component['attr']) }}
     {% endif %}
   {% endfor %}
 {% endmacro %}

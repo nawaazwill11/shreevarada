@@ -46,6 +46,12 @@
       macro,
       '1',
       'Our Location', 
+      [
+        {
+          'name': 'raw',
+          'attr': 'maps.html'
+        }
+      ]
     )
   }}
 
@@ -53,7 +59,8 @@
     macro.section(
       macro,
       '1',
-      'Our Social Handles', 
+      'Our Social Handles',
+      
     )
   }}
   {#}
@@ -147,5 +154,7 @@
 {% endblock %} 
 
 {% block scripts %}
-    <script src="{{ url_for('static', filename='dist/js/connect.js') }}"></script>
+<script src="{{ url_for('static', filename='dist/js/connect.js') }}"></script>
+<script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script>
+<script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyA96SOxSQHgX4eYhCIfqDOmSKDuE7trmDQ&callback=window.initMap' async defer></script>
 {% endblock %}

@@ -6751,6 +6751,9 @@ nav ul li a {
   width: 100%;
   z-index: 996;
 }
+.nav-menu-container span {
+  color: #fff !important;
+}
 
 .nav-menu {
   height: 0px;
@@ -6833,6 +6836,10 @@ nav ul li a {
 footer {
   background-color: #424242 !important;
   padding: 20px 25px;
+}
+
+footer * {
+  color: #fff !important;
 }
 
 html {
@@ -13605,6 +13612,9 @@ nav ul li a {
   width: 100%;
   z-index: 996;
 }
+.nav-menu-container span {
+  color: #fff !important;
+}
 
 .nav-menu {
   height: 0px;
@@ -13689,6 +13699,10 @@ footer {
   padding: 20px 25px;
 }
 
+footer * {
+  color: #fff !important;
+}
+
 html {
   width: -webkit-fill-available;
   height: -webkit-fill-available;
@@ -13730,7 +13744,6 @@ footer .author {
   height: 100%;
   width: 100%;
   flex-direction: column;
-  color: #fff;
   position: relative;
 }
 .parallax-hover p {
@@ -13738,11 +13751,13 @@ footer .author {
   margin: 0;
 }
 .parallax-hover .text-large {
+  color: #fff !important;
   font-size: 3.5rem;
   margin-bottom: 20px;
   font-weight: 600;
 }
 .parallax-hover .text-small {
+  color: #fff !important;
   font-size: 1.5rem;
 }
 

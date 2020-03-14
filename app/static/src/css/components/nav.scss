@@ -7,9 +7,10 @@ nav {
     ul {
         a {
             font-size: 1.3rem;
+            
         }
         li a {
-        color: #fff;
+            color: #fff;
         }
     }
 }
@@ -17,6 +18,10 @@ nav {
     position: fixed;
     width: 100%;
     z-index: 996;
+
+    span {
+        color: #fff !important;
+    }
 }
 .nav-menu {
     height: 0px;

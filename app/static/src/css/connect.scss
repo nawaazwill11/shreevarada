@@ -4,3 +4,22 @@
 .section-content {
     padding: 20px;
 }
+#map {
+    height: 300px;
+}
+.description {
+    margin-bottom: 10px;
+}
+.desc-title {
+    p {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+}
+.desc-content {
+    p {
+        margin: 0;
+        line-height: 1.7;
+    }
+}
