@@ -6837,9 +6837,33 @@ footer {
   background-color: #424242 !important;
   padding: 20px 25px;
 }
+footer ul li {
+  margin: 5px 0;
+}
 
 footer * {
   color: #fff !important;
+}
+
+.page-footer > .container > .row {
+  margin-bottom: 0 !important;
+}
+.page-footer > .container > .row > .col:first-child {
+  margin-bottom: 20px;
+}
+.page-footer > .container > .row > .col:first-child p {
+  margin-bottom: 5px !important;
+}
+
+.footer-copyright .container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.address p {
+  margin: 5px 0;
 }
 
 html {
@@ -6858,6 +6882,10 @@ body {
 
 body * {
   color: #333333;
+}
+
+body a {
+  color: #039be5;
 }
 
 h5 {
@@ -13694,9 +13722,33 @@ footer {
   background-color: #424242 !important;
   padding: 20px 25px;
 }
+footer ul li {
+  margin: 5px 0;
+}
 
 footer * {
   color: #fff !important;
+}
+
+.page-footer > .container > .row {
+  margin-bottom: 0 !important;
+}
+.page-footer > .container > .row > .col:first-child {
+  margin-bottom: 20px;
+}
+.page-footer > .container > .row > .col:first-child p {
+  margin-bottom: 5px !important;
+}
+
+.footer-copyright .container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.address p {
+  margin: 5px 0;
 }
 
 html {
@@ -13717,6 +13769,10 @@ body * {
   color: #333333;
 }
 
+body a {
+  color: #039be5;
+}
+
 h5 {
   margin-bottom: 0px;
 }
@@ -13729,8 +13785,13 @@ footer .author {
   padding: 20px;
 }
 
+.location-container .col {
+  padding: 0 20px !important;
+}
+
 #map {
   height: 300px;
+  margin-top: 10px;
 }
 
 .description {
@@ -13741,9 +13802,53 @@ footer .author {
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 5px;
+  margin-top: 5px;
 }
 
 .desc-content p {
   margin: 0;
   line-height: 1.7;
+}
+
+.section-description {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.flat-container {
+  padding: 20px;
+}
+
+.flat-image {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+.flat-image img {
+  width: 150px;
+}
+
+.flat-link {
+  text-align: center;
+}
+.flat-link a {
+  font-size: 1.3rem;
+}
+
+@media screen and (max-width: 600px) {
+  .location-container .col {
+    padding: 0 0.75rem !important;
+  }
+  .location-container .col:first-child {
+    margin-bottom: 20px;
+  }
+
+  .flat-container {
+    padding: 10px;
+  }
+
+  .flat {
+    margin-bottom: 30px;
+  }
 }

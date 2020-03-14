@@ -4,8 +4,14 @@
 .section-content {
     padding: 20px;
 }
+.location-container {
+    .col {
+        padding: 0 20px !important;
+    }
+}
 #map {
     height: 300px;
+    margin-top: 10px;
 }
 .description {
     margin-bottom: 10px;
@@ -15,11 +21,54 @@
         font-size: 1.5rem;
         font-weight: bold;
         margin-bottom: 5px;
+        margin-top: 5px;
     }
 }
 .desc-content {
     p {
         margin: 0;
         line-height: 1.7;
+    }
+}
+.section-description {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    text-align: center;
+}
+.flat-container {
+    padding: 20px;
+}
+.flat-image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+
+    img {
+        width: 150px;
+    }
+}
+.flat-link {
+    text-align: center;
+
+    a {
+        font-size: 1.3rem;
+    }
+}
+@media screen and (max-width: 600px) {
+    .location-container {
+        .col {
+            padding: 0 0.75rem !important;
+        }
+
+        .col:first-child {
+            // padding: 0px !important;
+            margin-bottom: 20px;
+        }
+    }
+    .flat-container {
+        padding: 10px;
+    }
+    .flat {
+        margin-bottom: 30px;
     }
 }

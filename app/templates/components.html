@@ -305,22 +305,29 @@
         <p class="grey-text text-lighten-4">
           A Growing Forzen Food Distribution Chain
         </p>
+        <div class="address">
+          <p>Building name</p>
+          <p>Street name</p>
+          <p>City & Code</p>
+        </div>
       </div>
       <div class="col l4 offset-l2 s12">
         <h5 class="">Connect With Us</h5>
         <ul>
-          <li><a class="grey-text text-lighten-3" href="#!">Facebook</a></li>
-          <li><a class="grey-text text-lighten-3" href="#!">Twitter</a></li>
-          <li><a class="grey-text text-lighten-3" href="#!">Instagram</a></li>
-          <li><a class="grey-text text-lighten-3" href="#!">LinkedIn</a></li>
+          <li><a class="grey-text text-lighten-3" href="tel:99999XXXXX">99999XXXXX</a></li>
+          <li><a class="grey-text text-lighten-3" href="mailto:some@mail.com">some@mail.com</a></li>
+          <li><a class="grey-text text-lighten-3" href="https://www.facebook.com" target="_blank">Facebook</a></li>
+          <!-- <li><a class="grey-text text-lighten-3" href="#!">Twitter</a></li> -->
+          <li><a class="grey-text text-lighten-3" href="https://www.instagram.com/shreevaradaenterprise/" target="_blank">Instagram</a></li>
+          <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
         </ul>
       </div>
     </div>
   </div>
   <div class="footer-copyright">
     <div class="container">
-    © 2020 All Rights Reserved
-    <a class="grey-text text-lighten-4 right author" href="#!">Made by Nawaaz K.</a>
+      <p>© 2020 All Rights Reserved</p>
+      <a class="grey-text text-lighten-4 author" href="https://www.facebook.com/nawaaz.kortiwala">Made by Nawaaz K.</a>
     </div>
   </div>
 </footer>
@@ -375,6 +382,27 @@
   </div>
 {% endmacro %}
 
+{% macro flat(items) %}
+<div class="flat-container">
+  <div class="row">
+      {% for item in items %}
+      <div class="col s12 m4">
+        <div class="flat">
+            <div class="flat-image">
+                <img src="{{ url_for('static', filename='dist/img/') }}{{ item['url'] }}" alt="">
+            </div>
+            <div class="flat-content">
+                <div class="flat-link">
+                    <a href="{{ item['link'] }}">{{ item['text'] }}</a>
+                </div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+  </div>
+</div>
+{% endmacro %}
+
 {% macro raw(html) %}
   {% include html %}
 {% endmacro %}
@@ -395,6 +423,8 @@
       {{ macro.dropdown(component['attr']) }}
     {% elif component['name'] == 'form' %}
       {{ macro.form(component['attr']) }}
+    {% elif component['name'] == 'flat' %}
+      {{ macro.flat(component['attr']) }}
     {% elif component['name'] == 'raw' %}
       {{ macro.raw(component['attr']) }}
     {% endif %}
