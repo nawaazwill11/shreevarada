@@ -121,7 +121,7 @@ function interaction(e) {
     const action = e.target;
     const section = action.closest('.section');
     if (toggleProductsView(section, action) == 'show') {
-        action.innerHTML = 'Hide all';
+        action.innerHTML = 'Hide';
     } else {
         action.innerHTML = 'Show all';
     }
