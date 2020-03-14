@@ -3,6 +3,7 @@ $red: #e53935;
 nav {
     position: relative;
     z-index: 1000;
+    height: 64px;
 
     ul {
         a {
@@ -31,13 +32,6 @@ nav {
     }
 }
 .nav-wrapper {
-    .brand-logo {
-        @include flex-center-xy;
-        width: 100%;
-        padding: 0 !important;
-        text-align: center;
-    }
-
     ul {
         position: absolute;
         right: 0;
@@ -49,9 +43,39 @@ nav {
     }
 }
 
+.brand-logo {
+    @include flex-center-xy;
+    width: 100%;
+    padding: 0 !important;
+    text-align: center;
+}
+.logo-container {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    margin-top: 8px;
+
+    img {
+        width: 105px;
+    }
+    span {
+        position: relative;
+        left: -20px;
+    }
+}
+
 @media screen and (min-width: 997px) {
     .brand-logo {
         display: inline-block !important;
-        padding-left: 20px !important;
+    }
+}
+@media screen and (max-width: 600px) {
+    .logo-container {
+
+        span {
+            display: none;
+        }
     }
 }

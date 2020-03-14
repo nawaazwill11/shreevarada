@@ -6732,6 +6732,7 @@ h1, h2, h3, h4, h5 {
 nav {
   position: relative;
   z-index: 1000;
+  height: 64px;
 }
 nav ul a {
   font-size: 1.3rem;
@@ -6756,14 +6757,6 @@ nav ul li a {
   background-color: #e53935 !important;
 }
 
-.nav-wrapper .brand-logo {
-  display: flex !important;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  padding: 0 !important;
-  text-align: center;
-}
 .nav-wrapper ul {
   position: absolute;
   right: 0;
@@ -6773,10 +6766,39 @@ nav ul li a {
   text-align: center;
 }
 
+.brand-logo {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0 !important;
+  text-align: center;
+}
+
+.logo-container {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  margin-top: 8px;
+}
+.logo-container img {
+  width: 105px;
+}
+.logo-container span {
+  position: relative;
+  left: -20px;
+}
+
 @media screen and (min-width: 997px) {
   .brand-logo {
     display: inline-block !important;
-    padding-left: 20px !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  .logo-container span {
+    display: none;
   }
 }
 .fixed-action-btn {
