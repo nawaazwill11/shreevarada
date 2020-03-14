@@ -6784,11 +6784,11 @@ nav ul li a {
   margin-top: 8px;
 }
 .logo-container img {
-  width: 105px;
+  width: 50px;
 }
 .logo-container span {
   position: relative;
-  left: -20px;
+  left: 5px;
 }
 
 @media screen and (min-width: 997px) {

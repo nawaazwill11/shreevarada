@@ -10,7 +10,9 @@
         <title>{% block title %}{% endblock %}</title>
         <meta name="description" content="Shreevarada Enterprise Daman">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="{{ url_for('static', filename='dist/img/shree_logo.ico') }}" type="image/ico" sizes="16x10">
         {% block styles %}{% endblock %}
+        
     </head>
     <body>
         <!--[if lt IE 7]>
