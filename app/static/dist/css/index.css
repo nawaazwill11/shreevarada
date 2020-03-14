@@ -6789,6 +6789,9 @@ nav ul li a {
 .logo-container span {
   position: relative;
   left: 5px;
+  top: 4px;
+  display: flex;
+  align-items: center;
 }
 
 @media screen and (min-width: 997px) {
@@ -6798,7 +6801,7 @@ nav ul li a {
 }
 @media screen and (max-width: 600px) {
   .logo-container span {
-    display: none;
+    font-size: 2rem;
   }
 }
 .fixed-action-btn {

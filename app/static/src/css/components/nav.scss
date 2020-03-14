@@ -63,6 +63,9 @@ nav {
     span {
         position: relative;
         left: 5px;
+        top: 4px;
+        display: flex;
+        align-items: center;
     }
 }
 
@@ -75,7 +78,7 @@ nav {
     .logo-container {
 
         span {
-            display: none;
+            font-size: 2rem;
         }
     }
 }
