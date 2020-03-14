@@ -13918,6 +13918,7 @@ footer .author {
   font-weight: bold;
   font-size: 20px;
   text-align: center;
+  color: #fff !important;
 }
 
 #ifb .card {
@@ -13945,6 +13946,11 @@ footer .author {
 }
 .size p {
   margin: 5px 0;
+}
+
+.section-interaction {
+  display: flex;
+  justify-content: center;
 }
 
 @media screen and (max-width: 600px) {

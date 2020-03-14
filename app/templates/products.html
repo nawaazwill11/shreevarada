@@ -86,7 +86,7 @@
     }}
     <main class="container">
       {% for company_name, company in companies.items() %}      
-        <div id="{{ company_name }}" class="section products">
+        <div id="{{ company_name }}" class="section products" data-toggle="hide">
           <div class="row">
               <div class="col s12 l10 push-l1">
                 <div class="section-content white ">
@@ -106,6 +106,15 @@
                     {% endif %}
                     <div class="components section-components">
                       {{ macro.productCard(company['products'], company_name, company.get('logo')) }}
+                      {% if company['products'] | length > 12 %}
+                        {{ 
+                          macro.button([
+                            {
+                              'text': 'Show all'
+                            }
+                          ]) 
+                        }}
+                      {% endif %}
                     </div>
                     
                   </div>
