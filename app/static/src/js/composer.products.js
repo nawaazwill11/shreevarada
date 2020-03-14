@@ -2,16 +2,14 @@ import material from './material';
 import helper from './helper';
 
 function initialization () {
-    const components = [
-        {name: 'fab', options: {}},
-        // {name: 'slider', options: {full_width: true, indicators: true}},
-    ]
-    material.initComponents(components);
-    // const slider = material.components.slider;
-    // slider.object.init(slider.elem, {});
-    // slideCarousel();
-    // scrollToSection();
-    // sectionFilter();
+    return new Promise(resolve => {
+        const components = [
+            {name: 'fab', options: {}},
+            // {name: 'slider', options: {full_width: true, indicators: true}},
+        ]
+        resolve(material.initComponents(components));
+    })
+
 }
 
 

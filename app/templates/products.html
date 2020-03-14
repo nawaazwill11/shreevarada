@@ -40,7 +40,7 @@
             {
               'src': 'vegetables.jpg',
               'header': 'Delicious Veg Options',
-              'color': '#4CAF50 !important'
+              'color': '#4CAF50c7 !important'
             },
             {
               'src': 'chicken.jpg',
@@ -128,11 +128,4 @@
     <script src="{{ url_for('static', filename='dist/js/products.js') }}"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
-
-    
-    <script>
-        $(document).ready(function () {
-            $('.slider').slider({full_width: true, indicators:true});
-        });
-    </script>
 {% endblock %}
