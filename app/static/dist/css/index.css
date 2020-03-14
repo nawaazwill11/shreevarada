@@ -6885,6 +6885,11 @@ footer * {
   margin: 5px 0;
 }
 
+@media screen and (max-width: 600px) {
+  .page-footer {
+    text-align: center;
+  }
+}
 html {
   width: -webkit-fill-available;
   height: -webkit-fill-available;
