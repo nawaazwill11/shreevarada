@@ -6611,4 +6611,8 @@ footer .author {
   .flat {
     margin-bottom: 30px;
   }
+
+  .section-content {
+    padding: 20px 10px !important;
+  }
 }
