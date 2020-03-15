@@ -1,4 +1,5 @@
 import material from './material';
+import helper from './helper';
 
 function initialization () {
     const components = [
@@ -7,6 +8,7 @@ function initialization () {
         {name: 'carousel', options: {}},
     ]
     material.initComponents(components);
+    helper.navbarTransition();
 }
 
 function getNavFabInstance() {

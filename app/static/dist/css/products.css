@@ -6735,10 +6735,18 @@ h1, h2, h3, h4, h5 {
   margin-bottom: 10px;
 }
 
+.nav-container {
+  position: fixed;
+  width: 100%;
+  z-index: 1010;
+  transition: top 0.3s;
+}
+
 nav {
   position: relative;
   z-index: 1000;
   height: 64px;
+  color: #fff !important;
 }
 nav ul a {
   font-size: 1.3rem;
@@ -6747,8 +6755,11 @@ nav ul li a {
   color: #fff;
 }
 
+.navbar-fixed {
+  position: unset !important;
+}
+
 .nav-menu-container {
-  position: fixed;
   width: 100%;
   z-index: 996;
 }
@@ -13654,10 +13665,18 @@ h1, h2, h3, h4, h5 {
   margin-bottom: 10px;
 }
 
+.nav-container {
+  position: fixed;
+  width: 100%;
+  z-index: 1010;
+  transition: top 0.3s;
+}
+
 nav {
   position: relative;
   z-index: 1000;
   height: 64px;
+  color: #fff !important;
 }
 nav ul a {
   font-size: 1.3rem;
@@ -13666,8 +13685,11 @@ nav ul li a {
   color: #fff;
 }
 
+.navbar-fixed {
+  position: unset !important;
+}
+
 .nav-menu-container {
-  position: fixed;
   width: 100%;
   z-index: 996;
 }

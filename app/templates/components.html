@@ -5,75 +5,76 @@
 
 {# Nav #}
 {% macro nav(links) %}
-  <div class="navbar-fixed">
-    <nav>
-      <div class="nav-wrapper">
-        <a href="/" class="brand-logo">
-          <div class="tri">
-            <div class="yello"></div>
-            <div class="green"></div>
-            <div class="red"></div>
-          </div>
-          <p class="logo-container">
-            <img src="{{ url_for('static', filename='dist/img/shree_logo.svg') }}" alt="">
-            <span>Shreevarada Enterprise</span>
-          </p>
-        </a>
-        <!-- <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a> -->
-        <ul class="right hide-on-med-and-down">
-          {% for link in links %}
+  <div class="nav-container">
+    <div class="navbar">
+      <nav>
+        <div class="nav-wrapper">
+          <a href="/" class="brand-logo">
+            <div class="tri">
+              <div class="yello"></div>
+              <div class="green"></div>
+              <div class="red"></div>
+            </div>
+            <p class="logo-container">
+              <img src="{{ url_for('static', filename='dist/img/shree_logo.svg') }}" alt="">
+              <span>Shreevarada Enterprise</span>
+            </p>
+          </a>
+          <!-- <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a> -->
+          <ul class="right hide-on-med-and-down">
+            {% for link in links %}
             <li><a href="{{ link['href'] }}" class="{{ link['color'] }}">{{ link['name'] }}</a></li>
-          {% endfor %}
-        </ul>
-      </div>
-    </nav>
-  </div>
-
-  <div class="nav-menu-container">
-    <div class="nav-menu hide-on-large-only">
-      <div class="fixed-action-btn" data-active="false">
-        <a class="btn-floating btn-large red">
-          <i class="material-icons">keyboard_arrow_down</i>
-        </a>
-        <ul>
-          {% for link in links %}
+            {% endfor %}
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="nav-menu-container">
+      <div class="nav-menu hide-on-large-only">
+        <div class="fixed-action-btn" data-active="false">
+          <a class="btn-floating btn-large red">
+            <i class="material-icons">keyboard_arrow_down</i>
+          </a>
+          <ul>
+            {% for link in links %}
             <li><a href="{{ link['href'] }}" class="btn-floating {{ link['color'] }}"><i class="material-icons">{{ link['icon'] }}</i><span>{{ link['name'] }}</span></a></li>
             {% endfor %}
-        </ul>
+          </ul>
+        </div>
       </div>
+      <!-- <div class="item-dropdown-container">
+        <ul>
+          <li>Item one</li>
+          <li>Item two</li>
+        </ul>
+      </div> -->
     </div>
-    <!-- <div class="item-dropdown-container">
-      <ul>
-        <li>Item one</li>
-        <li>Item two</li>
-      </ul>
-    </div> -->
   </div>
 {% endmacro %}
-
-{# Parallax #}
+  
+  {# Parallax #}
 {% macro parallax(macro, id, imgs, text_large='', text_small='', components=[]) %}
-<div id="parallax-{{ id }}" class="parallax-container">
-  {% for img in imgs %}
-    <div class="parallax">
-      <img src="{{ url_for('static', filename='dist/img/') }}{{ img }}">
-    </div>
-  {% endfor %}
-    <div class="parallax-hover">
-      <div class="parallax-text">
-        {% if  text_large %} 
-          <p class="text-large">{{ text_large }}</p>
+  <div id="parallax-{{ id }}" class="parallax-container">
+    {% for img in imgs %}
+      <div class="parallax">
+        <img src="{{ url_for('static', filename='dist/img/') }}{{ img }}">
+      </div>
+    {% endfor %}
+      <div class="parallax-hover">
+        <div class="parallax-text">
+          {% if  text_large %} 
+            <p class="text-large">{{ text_large }}</p>
+            
+            {% if text_small %}
+              <p class="text-small">{{ text_small }}</p>
+            {% endif %}
           
-          {% if text_small %}
+          {% elif text_small %}
             <p class="text-small">{{ text_small }}</p>
           {% endif %}
-        
-        {% elif text_small %}
-          <p class="text-small">{{ text_small }}</p>
-        {% endif %}
+        </div>
       </div>
-    </div>
-</div>
+  </div>
 {% endmacro %}
 
 {# section #}

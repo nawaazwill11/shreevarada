@@ -42,11 +42,10 @@
     display: flex;
     justify-content: center;
 }
-
-.card-image {
-    padding: 3px;
+.carousel {
+    background-color: #424242;
+    border-radius: 5px;
 }
-
 .card-content {
     display: flex;
     justify-content: center;
@@ -67,6 +66,12 @@
     height: 10px !important;
     padding: 0 !important;
     margin-bottom: 4px;
+}
+
+@media screen and(max-width: 600px) {
+    .carousel {
+        height: 160px;
+    }
 }
 
 @media screen and (max-width: 340px) {

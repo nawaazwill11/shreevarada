@@ -6729,10 +6729,18 @@ h1, h2, h3, h4, h5 {
   margin-bottom: 10px;
 }
 
+.nav-container {
+  position: fixed;
+  width: 100%;
+  z-index: 1010;
+  transition: top 0.3s;
+}
+
 nav {
   position: relative;
   z-index: 1000;
   height: 64px;
+  color: #fff !important;
 }
 nav ul a {
   font-size: 1.3rem;
@@ -6741,8 +6749,11 @@ nav ul li a {
   color: #fff;
 }
 
+.navbar-fixed {
+  position: unset !important;
+}
+
 .nav-menu-container {
-  position: fixed;
   width: 100%;
   z-index: 996;
 }
@@ -6965,7 +6976,7 @@ footer .author {
 }
 
 .carousel {
-  height: 200px;
+  height: 250px;
 }
 .carousel .carousel-item {
   top: 35px;
@@ -7019,8 +7030,9 @@ footer .author {
   justify-content: center;
 }
 
-.card-image {
-  padding: 3px;
+.carousel {
+  background-color: #424242;
+  border-radius: 5px;
 }
 
 .card-content {
@@ -7045,6 +7057,11 @@ footer .author {
   margin-bottom: 4px;
 }
 
+@media screen and (max-width: 600px) {
+  .carousel {
+    height: 160px;
+  }
+}
 @media screen and (max-width: 340px) {
   .section-content {
     padding: 20px 10px;

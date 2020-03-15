@@ -1,4 +1,5 @@
 import material from './material';
+import helper from './helper';
 
 function initialization () {
     const components = [
@@ -6,6 +7,7 @@ function initialization () {
         {name: 'textarea_counter', options: {} }
     ]
     material.initComponents(components);
+    helper.navbarTransition();
 }
 
 function getNavFabInstance() {

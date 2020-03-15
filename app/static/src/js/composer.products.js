@@ -7,6 +7,7 @@ function initialization () {
             {name: 'fab', options: {}},
             // {name: 'slider', options: {full_width: true, indicators: true}},
         ]
+        helper.navbarTransition();
         resolve(material.initComponents(components));
     })
 

@@ -20,8 +20,24 @@ function scrollToElement(pageElement, addToHeight) {
     });
 }
 
+function navbarTransition() {
+    let nav = document.querySelector('.nav-container');
+    let prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+        const currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            nav.style.top = "0";
+        } else {
+            nav.style.top = "-65px";
+        }
+        prevScrollpos = currentScrollPos;
+    }
+}
+
 const helper = {
     scrollToElement: scrollToElement,
+    navbarTransition: navbarTransition,
+
 }
 
 export default helper;
