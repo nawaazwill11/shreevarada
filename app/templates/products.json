@@ -7,7 +7,7 @@
                 "size": [
                     "1 KG"
                 ],
-                "color": "blue"
+                "color": "orange"
             },
             {
                 "name": "Barbeque Sauce",
@@ -56,21 +56,21 @@
                 "size": [
                     "500 GM"
                 ],
-                "color": "blue"
+                "color": "red"
             },
             {
                 "name": "Harissa Mayonnaise",
                 "size": [
                     "1 KG"
                 ],
-                "color": "red"
+                "color": "green"
             },
             {
                 "name": "Honey Mustard Sauce",
                 "size": [
                     "1 KG"
                 ],
-                "color": "orange"
+                "color": "red"
             },
             {
                 "name": "Jalepeno Moyonnise",
@@ -84,42 +84,42 @@
                 "size": [
                     "750 GM"
                 ],
-                "color": "red"
+                "color": "green"
             },
             {
                 "name": "Penne Pasta",
                 "size": [
                     "500 GM"
                 ],
-                "color": "green"
+                "color": "red"
             },
             {
                 "name": "Pizza Pasta Sauce",
                 "size": [
                     "1 KG"
                 ],
-                "color": "red"
+                "color": "green"
             },
             {
                 "name": "Premium Mayonise",
                 "size": [
                     "1 KG"
                 ],
-                "color": "blue"
+                "color": "orange"
             },
             {
                 "name": "Pudina Chataka",
                 "size": [
                     "480  GM"
                 ],
-                "color": "red"
+                "color": "blue"
             },
             {
                 "name": "Salad Dressing",
                 "size": [
                     "350 GM"
                 ],
-                "color": "blue"
+                "color": "orange"
             },
             {
                 "name": "Salad Mayonise",
@@ -127,7 +127,7 @@
                     "1 KG",
                     "1 KG"
                 ],
-                "color": "green"
+                "color": "blue"
             },
             {
                 "name": "Salsa Maxicana",
@@ -141,21 +141,21 @@
                 "size": [
                     "500 GM"
                 ],
-                "color": "blue"
+                "color": "green"
             },
             {
                 "name": "Tandoori Bread Spread",
                 "size": [
                     "1 KG"
                 ],
-                "color": "green"
+                "color": "blue"
             },
             {
                 "name": "Thick Chocolate Dressing",
                 "size": [
                     "1.3 KG"
                 ],
-                "color": "blue"
+                "color": "orange"
             },
             {
                 "name": "Thousand Island",
@@ -170,7 +170,7 @@
                 "size": [
                     "450 GM"
                 ],
-                "color": "blue"
+                "color": "orange"
             },
             {
                 "name": "Tomato Ketchup Sachet",
@@ -179,7 +179,7 @@
                     "8 GM",
                     "9 GM"
                 ],
-                "color": "orange"
+                "color": "green"
             },
             {
                 "name": "Tomato Ketchup Squeasy",
@@ -189,7 +189,7 @@
                     "950 GM",
                     "950 GM"
                 ],
-                "color": "green"
+                "color": "orange"
             },
             {
                 "name": "Cheese Blends",
@@ -204,14 +204,14 @@
                 "size": [
                     "1 KG"
                 ],
-                "color": "red"
+                "color": "orange"
             },
             {
                 "name": "Honey Dip Cup",
                 "size": [
                     "15 GM"
                 ],
-                "color": "orange"
+                "color": "green"
             },
             {
                 "name": "Hot Fudge Topping",
@@ -225,35 +225,35 @@
                 "size": [
                     "480 GM"
                 ],
-                "color": "blue"
+                "color": "green"
             },
             {
                 "name": "Jain Tomato Ketchup",
                 "size": [
                     "1KG"
                 ],
-                "color": "green"
+                "color": "orange"
             },
             {
                 "name": "Ketchup Akshardham",
                 "size": [
                     "1 KG"
                 ],
-                "color": "red"
+                "color": "blue"
             },
             {
                 "name": "Mixed Fruit Jam",
                 "size": [
                     "15 GMS"
                 ],
-                "color": "orange"
+                "color": "red"
             },
             {
                 "name": "Mixed Pickle Dip Cup",
                 "size": [
                     "15 GM"
                 ],
-                "color": "blue"
+                "color": "green"
             },
             {
                 "name": "Orange Marmalad Dip Cup",
@@ -274,7 +274,7 @@
                 "size": [
                     "1 KG"
                 ],
-                "color": "orange"
+                "color": "red"
             },
             {
                 "name": "Tombo Sachet",
@@ -282,14 +282,14 @@
                     "15 GM",
                     "8 GM"
                 ],
-                "color": "green"
+                "color": "blue"
             },
             {
                 "name": "Tortila Wrap Wheat",
                 "size": [
                     "18 Sheets"
                 ],
-                "color": "orange"
+                "color": "green"
             }
         ],
         "logo": "cremica_logo.png"
@@ -302,21 +302,21 @@
                 "size": [
                     "200 GM"
                 ],
-                "color": "blue"
+                "color": "red"
             },
             {
                 "name": "Chicken Ham",
                 "size": [
                     "200 GM"
                 ],
-                "color": "orange"
+                "color": "green"
             },
             {
                 "name": "Sheek Kabab",
                 "size": [
                     "250 GMS"
                 ],
-                "color": "red"
+                "color": "orange"
             },
             {
                 "name": "Chicken Boneless",
@@ -324,14 +324,14 @@
                     "250 GM",
                     "500 GM"
                 ],
-                "color": "orange"
+                "color": "blue"
             },
             {
                 "name": "Chicken Plain Kheema",
                 "size": [
                     "250 GM"
                 ],
-                "color": "blue"
+                "color": "orange"
             },
             {
                 "name": "Chicken Burger Patty",
@@ -340,7 +340,7 @@
                     "500 GM",
                     "1.5 KG"
                 ],
-                "color": "orange"
+                "color": "green"
             },
             {
                 "name": "Chicken Mughlai Masala",
@@ -354,21 +354,21 @@
                 "size": [
                     "250 GM"
                 ],
-                "color": "red"
+                "color": "green"
             },
             {
                 "name": "Chicken Masala Kheema",
                 "size": [
                     "250 GM"
                 ],
-                "color": "green"
+                "color": "orange"
             },
             {
                 "name": "Chicken Salami Roll",
                 "size": [
                     "250 GM"
                 ],
-                "color": "orange"
+                "color": "red"
             },
             {
                 "name": "Chicken Tikka Masala",
@@ -389,7 +389,7 @@
                 "size": [
                     "300 GM"
                 ],
-                "color": "red"
+                "color": "blue"
             },
             {
                 "name": "Chicken Cheese Nugets",
@@ -397,14 +397,14 @@
                     "300 GM",
                     "500 GM"
                 ],
-                "color": "blue"
+                "color": "orange"
             },
             {
                 "name": "Chicken Cocktail Sausages",
                 "size": [
                     "300 GM"
                 ],
-                "color": "orange"
+                "color": "red"
             },
             {
                 "name": "Chicken Cutlets",
@@ -412,7 +412,7 @@
                     "300 GM",
                     "500 GM"
                 ],
-                "color": "blue"
+                "color": "green"
             },
             {
                 "name": "Chicken Finger",
@@ -420,14 +420,14 @@
                     "300 GM",
                     "500 GM"
                 ],
-                "color": "orange"
+                "color": "red"
             },
             {
                 "name": "Chicken Hariyali Kabab",
                 "size": [
                     "300 GM"
                 ],
-                "color": "blue"
+                "color": "orange"
             },
             {
                 "name": "Chicken Hariyali Tikka",
@@ -441,7 +441,7 @@
                 "size": [
                     "300 GM"
                 ],
-                "color": "orange"
+                "color": "blue"
             },
             {
                 "name": "Chicken Nugets",
@@ -451,7 +451,7 @@
                     "1000 GM",
                     "1.5 kg"
                 ],
-                "color": "green"
+                "color": "orange"
             },
             {
                 "name": "Chicken Popcorn",
@@ -466,7 +466,7 @@
                 "size": [
                     "300 GM"
                 ],
-                "color": "orange"
+                "color": "green"
             },
             {
                 "name": "Chicken Vienna Sausages",
@@ -501,14 +501,14 @@
                 "size": [
                     "430 GM"
                 ],
-                "color": "green"
+                "color": "red"
             },
             {
                 "name": "Chicken Legs",
                 "size": [
                     "460 GM"
                 ],
-                "color": "blue"
+                "color": "orange"
             },
             {
                 "name": "Chicken Meat Balss",
@@ -523,42 +523,42 @@
                     "500 GM",
                     "1000 GM"
                 ],
-                "color": "red"
+                "color": "orange"
             },
             {
                 "name": "Chicken Cheese Onion Sausages",
                 "size": [
                     "500 GM"
                 ],
-                "color": "blue"
+                "color": "green"
             },
             {
                 "name": "Chicken Haryali Kabab",
                 "size": [
                     "500 GM"
                 ],
-                "color": "red"
+                "color": "blue"
             },
             {
                 "name": "Chicken Sausages",
                 "size": [
                     "500 GM"
                 ],
-                "color": "green"
+                "color": "red"
             },
             {
                 "name": "Chicken Popcourn",
                 "size": [
                     "1000 GM"
                 ],
-                "color": "orange"
+                "color": "green"
             },
             {
                 "name": "Chicken Precut",
                 "size": [
                     "1150 GM"
                 ],
-                "color": "red"
+                "color": "blue"
             },
             {
                 "name": "Chicken Whole",
@@ -595,14 +595,14 @@
                     "200 GM",
                     "1.5 KG"
                 ],
-                "color": "green"
+                "color": "red"
             },
             {
                 "name": "Veg Burger Patty",
                 "size": [
                     "360 GM"
                 ],
-                "color": "blue"
+                "color": "green"
             },
             {
                 "name": "Crazy Fries Herb N Garlic Masala",
@@ -610,7 +610,7 @@
                     "175 GM",
                     "400 GM"
                 ],
-                "color": "green"
+                "color": "red"
             },
             {
                 "name": "Crazy Fries Hot N Tangy Masala",
@@ -626,7 +626,7 @@
                     "400 GM",
                     "2.5 KG"
                 ],
-                "color": "red"
+                "color": "orange"
             },
             {
                 "name": "Tandoori Veg Nugets",
@@ -641,7 +641,7 @@
                 "size": [
                     "550 GM"
                 ],
-                "color": "orange"
+                "color": "green"
             },
             {
                 "name": "Veggie Finger",
@@ -649,7 +649,7 @@
                     "175 GM",
                     "400 GM"
                 ],
-                "color": "green"
+                "color": "blue"
             },
             {
                 "name": "Cheese Corn Samosa",
@@ -678,7 +678,7 @@
                 "size": [
                     "375GM"
                 ],
-                "color": "orange"
+                "color": "green"
             },
             {
                 "name": "French Fries",
@@ -696,14 +696,14 @@
                     "375GM",
                     "1.5 KG"
                 ],
-                "color": "orange"
+                "color": "red"
             },
             {
                 "name": "Potato Bites",
                 "size": [
                     "420 GM"
                 ],
-                "color": "red"
+                "color": "green"
             },
             {
                 "name": "Potato Cheese Shotz",
@@ -722,14 +722,14 @@
                     "750 GM",
                     "1.5 KG"
                 ],
-                "color": "blue"
+                "color": "green"
             },
             {
                 "name": "Smiiles Pudina Chatka",
                 "size": [
                     "375 GM"
                 ],
-                "color": "orange"
+                "color": "blue"
             },
             {
                 "name": "Smiiles Tangys Tomato",
@@ -738,35 +738,35 @@
                     "175 GM",
                     "375 GM"
                 ],
-                "color": "green"
+                "color": "orange"
             },
             {
                 "name": "Veg Finger",
                 "size": [
                     "1 KG"
                 ],
-                "color": "orange"
+                "color": "red"
             },
             {
                 "name": "Herb Chilly Potato Patty",
                 "size": [
                     "1.5 KG"
                 ],
-                "color": "red"
+                "color": "green"
             },
             {
                 "name": "Crinkle Cut Fries",
                 "size": [
                     "2.5 KG"
                 ],
-                "color": "orange"
+                "color": "red"
             },
             {
                 "name": "Favourita",
                 "size": [
                     "9MM 2.5KG"
                 ],
-                "color": "blue"
+                "color": "orange"
             },
             {
                 "name": "Popular Burger Patty",
@@ -780,7 +780,7 @@
                 "size": [
                     "1.5 KG"
                 ],
-                "color": "blue"
+                "color": "orange"
             },
             {
                 "name": "Super Burger Patty",
@@ -794,7 +794,7 @@
                 "size": [
                     "3 KG"
                 ],
-                "color": "blue"
+                "color": "green"
             }
         ],
         "logo": "mccain_logo.png"
@@ -807,112 +807,112 @@
                 "size": [
                     "1 KG"
                 ],
-                "color": "orange"
+                "color": "blue"
             },
             {
                 "name": "Cremagic Topping",
                 "size": [
                     "2 KG"
                 ],
-                "color": "red"
+                "color": "green"
             },
             {
                 "name": "Double Dream Fresh Cream",
                 "size": [
                     "1 LT"
                 ],
-                "color": "green"
+                "color": "red"
             },
             {
                 "name": "Niagara Farms Whip Topping",
                 "size": [
                     "1 KG"
                 ],
-                "color": "orange"
+                "color": "blue"
             },
             {
                 "name": "Nugel Netural",
                 "size": [
                     "2.5 KG"
                 ],
-                "color": "red"
+                "color": "orange"
             },
             {
                 "name": "Premium Truffle Base",
                 "size": [
                     "2 KG"
                 ],
-                "color": "orange"
+                "color": "green"
             },
             {
                 "name": "Star Whip Rsw",
                 "size": [
                     "1 KG"
                 ],
-                "color": "green"
+                "color": "red"
             },
             {
                 "name": "Truffle Base",
                 "size": [
                     "2 KG"
                 ],
-                "color": "blue"
+                "color": "orange"
             },
             {
                 "name": "Whip Topping Cream",
                 "size": [
                     "2 KG"
                 ],
-                "color": "orange"
+                "color": "blue"
             },
             {
                 "name": "Whip Topping Cream Silver",
                 "size": [
                     "1 KG"
                 ],
-                "color": "blue"
+                "color": "orange"
             },
             {
                 "name": "Bettercreme Topping Whip",
                 "size": [
                     "1 KG"
                 ],
-                "color": "green"
+                "color": "blue"
             },
             {
                 "name": "Bettercreme Topping Whip Chocolate",
                 "size": [
                     "1KG"
                 ],
-                "color": "blue"
+                "color": "red"
             },
             {
                 "name": "Caramel Glase",
                 "size": [
                     "1 KG"
                 ],
-                "color": "red"
+                "color": "orange"
             },
             {
                 "name": "Chocolate Whip Topping",
                 "size": [
                     "1 KG"
                 ],
-                "color": "green"
+                "color": "red"
             },
             {
                 "name": "Excel Whip India",
                 "size": [
                     "1 KG"
                 ],
-                "color": "blue"
+                "color": "orange"
             },
             {
                 "name": "Nugel Blueberry",
                 "size": [
                     "1 KG"
                 ],
-                "color": "orange"
+                "color": "green"
             },
             {
                 "name": "Nugel Chocolate Glase",
@@ -926,7 +926,7 @@
                 "size": [
                     "1 KG"
                 ],
-                "color": "green"
+                "color": "orange"
             },
             {
                 "name": "Nugel Strawberry",
@@ -940,7 +940,7 @@
                 "size": [
                     "1 KG"
                 ],
-                "color": "red"
+                "color": "green"
             },
             {
                 "name": "Sunwhip",
@@ -961,7 +961,7 @@
                 "size": [
                     "1 KG"
                 ],
-                "color": "green"
+                "color": "blue"
             }
         ],
         "logo": "rich_logo.png"
@@ -974,35 +974,35 @@
                 "size": [
                     "1000 ML"
                 ],
-                "color": "red"
+                "color": "orange"
             },
             {
                 "name": "Blueberry Crush",
                 "size": [
                     "750 ML"
                 ],
-                "color": "green"
+                "color": "blue"
             },
             {
                 "name": "Chocolate Topping",
                 "size": [
                     "1000 ML"
                 ],
-                "color": "red"
+                "color": "green"
             },
             {
                 "name": "Citrus Blue Crush",
                 "size": [
                     "1000 ML"
                 ],
-                "color": "orange"
+                "color": "blue"
             },
             {
                 "name": "Kiwi Crush",
                 "size": [
                     "1000 ML"
                 ],
-                "color": "blue"
+                "color": "green"
             },
             {
                 "name": "Lichee Crush",
@@ -1016,14 +1016,14 @@
                 "size": [
                     "1000 ML"
                 ],
-                "color": "blue"
+                "color": "orange"
             },
             {
                 "name": "Mango Crush",
                 "size": [
                     "1000 ML"
                 ],
-                "color": "orange"
+                "color": "blue"
             },
             {
                 "name": "Orange Crush",
@@ -1057,7 +1057,7 @@
                 "size": [
                     "2.5 KG"
                 ],
-                "color": "green"
+                "color": "red"
             },
             {
                 "name": "Basa Fish White",
@@ -1071,28 +1071,28 @@
                 "size": [
                     "1 KG"
                 ],
-                "color": "red"
+                "color": "green"
             },
             {
                 "name": "Squid Fish",
                 "size": [
                     "1 KG"
                 ],
-                "color": "orange"
+                "color": "blue"
             },
             {
                 "name": "Tiger Prawns",
                 "size": [
                     "1 KG"
                 ],
-                "color": "red"
+                "color": "green"
             },
             {
                 "name": "Large Prawans",
                 "size": [
                     "200 GM"
                 ],
-                "color": "green"
+                "color": "red"
             },
             {
                 "name": "Medium Prawans",
@@ -1113,21 +1113,21 @@
                 "size": [
                     "300 GM"
                 ],
-                "color": "blue"
+                "color": "green"
             },
             {
                 "name": "Prawans Cheese Ball",
                 "size": [
                     "1 KG"
                 ],
-                "color": "red"
+                "color": "blue"
             },
             {
                 "name": "Prawans Patty",
                 "size": [
                     "1 KG"
                 ],
-                "color": "green"
+                "color": "orange"
             }
         ],
         "logo": "ifb_logo.png"
@@ -1140,56 +1140,56 @@
                 "size": [
                     "3 INCH"
                 ],
-                "color": "orange"
+                "color": "red"
             },
             {
                 "name": "Mini Pizza",
                 "size": [
                     "4 INCH"
                 ],
-                "color": "red"
+                "color": "blue"
             },
             {
                 "name": "Jain Italian",
                 "size": [
                     "7 INCH"
                 ],
-                "color": "blue"
+                "color": "green"
             },
             {
                 "name": "American County Pizza",
                 "size": [
                     "7 INCH"
                 ],
-                "color": "orange"
+                "color": "red"
             },
             {
                 "name": "Cheesy Lover Piza",
                 "size": [
                     "7 INCH"
                 ],
-                "color": "red"
+                "color": "green"
             },
             {
                 "name": "Italian Pizza",
                 "size": [
                     "7 INCH"
                 ],
-                "color": "blue"
+                "color": "red"
             },
             {
                 "name": "Margarita Pizza",
                 "size": [
                     "7 INCH"
                 ],
-                "color": "red"
+                "color": "blue"
             },
             {
                 "name": "Mexican Pizza",
                 "size": [
                     "7 INCH"
                 ],
-                "color": "blue"
+                "color": "red"
             },
             {
                 "name": "Spicy Peri Peri Pizza",
@@ -1203,7 +1203,7 @@
                 "size": [
                     "7 INCH"
                 ],
-                "color": "red"
+                "color": "green"
             }
         ]
     },
@@ -1215,7 +1215,7 @@
                 "size": [
                     "1 KG"
                 ],
-                "color": "orange"
+                "color": "red"
             },
             {
                 "name": "Coconut Boneheur Syrup",
@@ -1230,28 +1230,28 @@
                     "1 KG",
                     "1 KG"
                 ],
-                "color": "red"
+                "color": "orange"
             },
             {
                 "name": "Green Apple Syrup",
                 "size": [
                     "1 KG"
                 ],
-                "color": "green"
+                "color": "blue"
             },
             {
                 "name": "Hazelnut Syrup",
                 "size": [
                     "1 KG"
                 ],
-                "color": "blue"
+                "color": "green"
             },
             {
                 "name": "Mojito Syrup",
                 "size": [
                     "1 KG"
                 ],
-                "color": "red"
+                "color": "blue"
             },
             {
                 "name": "Passion Fruit Syrup",
@@ -1265,7 +1265,7 @@
                 "size": [
                     "1 KG"
                 ],
-                "color": "blue"
+                "color": "orange"
             }
         ]
     },
@@ -1277,42 +1277,42 @@
                 "size": [
                     "500 GM"
                 ],
-                "color": "green"
+                "color": "red"
             },
             {
                 "name": "Chicken Broth Powder",
                 "size": [
                     "500 GM"
                 ],
-                "color": "orange"
+                "color": "green"
             },
             {
                 "name": "Gravy Onion Tomato Base Sauce",
                 "size": [
                     "1 KG"
                 ],
-                "color": "red"
+                "color": "blue"
             },
             {
                 "name": "Lime Seasoning",
                 "size": [
                     "500 GM"
                 ],
-                "color": "blue"
+                "color": "orange"
             },
             {
                 "name": "Tomato Makhani Base Sauce",
                 "size": [
                     "1 KG"
                 ],
-                "color": "red"
+                "color": "green"
             },
             {
                 "name": "Veg Yellow Gravy",
                 "size": [
                     "1 KG"
                 ],
-                "color": "green"
+                "color": "red"
             },
             {
                 "name": "White Gravy",
@@ -1332,28 +1332,28 @@
                 "size": [
                     "500 GM"
                 ],
-                "color": "orange"
+                "color": "green"
             },
             {
                 "name": "Cheese Mozzarella Blend",
                 "size": [
                     "2 KG"
                 ],
-                "color": "red"
+                "color": "orange"
             },
             {
                 "name": "Cheese Mozzarella Diced",
                 "size": [
                     "2 KG"
                 ],
-                "color": "orange"
+                "color": "blue"
             },
             {
                 "name": "Cheese Process",
                 "size": [
                     "1 KG"
                 ],
-                "color": "blue"
+                "color": "green"
             }
         ],
         "logo": "prabhat_logo.png"
@@ -1366,14 +1366,14 @@
                 "size": [
                     "1 KG"
                 ],
-                "color": "green"
+                "color": "blue"
             },
             {
                 "name": "Pomfret",
                 "size": [
                     "1-KG"
                 ],
-                "color": "blue"
+                "color": "orange"
             },
             {
                 "name": "Prawans",
@@ -1384,14 +1384,14 @@
                     "31-40",
                     "78-80"
                 ],
-                "color": "orange"
+                "color": "blue"
             },
             {
                 "name": "Salmon Fillet",
                 "size": [
                     "1.107 KG"
                 ],
-                "color": "green"
+                "color": "orange"
             }
         ],
         "logo": "delight_logo.png"
@@ -1405,7 +1405,7 @@
                     "1 KG",
                     "2 KG"
                 ],
-                "color": "orange"
+                "color": "green"
             },
             {
                 "name": "Sauce Dip",
@@ -1432,21 +1432,21 @@
                 "size": [
                     "1 KG"
                 ],
-                "color": "red"
+                "color": "blue"
             },
             {
                 "name": "Sheer Fish Steak Jumbo",
                 "size": [
                     "1 KG"
                 ],
-                "color": "blue"
+                "color": "red"
             },
             {
                 "name": "Spicy Fish Finger",
                 "size": [
                     "1 KG"
                 ],
-                "color": "red"
+                "color": "orange"
             }
         ],
         "logo": "gadre_logo.png"
@@ -1467,14 +1467,14 @@
                     "250 GM",
                     "500 GM"
                 ],
-                "color": "orange"
+                "color": "green"
             },
             {
                 "name": "Switz Spring Roll Patti",
                 "size": [
                     "275 GM"
                 ],
-                "color": "green"
+                "color": "blue"
             }
         ],
         "logo": "switz_logo.png"
@@ -1487,14 +1487,14 @@
                 "size": [
                     "500 GM"
                 ],
-                "color": "blue"
+                "color": "green"
             },
             {
                 "name": "White Chocolate Compound",
                 "size": [
                     "500 GM"
                 ],
-                "color": "green"
+                "color": "blue"
             }
         ],
         "logo": "vanleer_logo.png"
@@ -1507,14 +1507,14 @@
                 "size": [
                     "1 KG"
                 ],
-                "color": "blue"
+                "color": "green"
             },
             {
                 "name": "Frozen Sweet Corn",
                 "size": [
                     "1 KG"
                 ],
-                "color": "green"
+                "color": "blue"
             }
         ],
         "logo": "natural_logo.png"
@@ -1527,7 +1527,7 @@
                 "size": [
                     "500 GM"
                 ],
-                "color": "orange"
+                "color": "green"
             }
         ],
         "logo": "nutralite_logo.png"
@@ -1540,7 +1540,7 @@
                 "size": [
                     "1 KG"
                 ],
-                "color": "green"
+                "color": "red"
             }
         ],
         "logo": "bestfood_logo.png"

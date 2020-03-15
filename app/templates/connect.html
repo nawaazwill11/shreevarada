@@ -41,144 +41,149 @@
     5. Social media handles  
   #}
 
-  {{
-    macro.section(
-      macro,
-      '1',
-      'Our Location', 
-      [
-        {
-          'name': 'raw',
-          'attr': 'maps.html'
-        }
-      ]
-    )
-  }}
+  <main class="main">
+    <div class="container">
+        {{
+          macro.section(
+            macro,
+            '1',
+            'Our Location', 
+            [
+              {
+                'name': 'raw',
+                'attr': 'maps.html'
+              }
+            ]
+          )
+        }}
 
-  {{
-    macro.section(
-      macro,
-      '1',
-      'Our Social Handles',
-      [
-        {
-          'name': 'description',
-          'attr': 'Follow us on social platforms to stay updated with our new and and upcoming products.'
-        },
-        {
-          'name': 'flat',
-          'attr': [
-            {
-              'url': 'social/facebook.svg',
-              'link': 'https://www.facebook.com',
-              'text': 'Follow us on facebook'
-            },
-            {
-              'url': 'social/instagram.svg',
-              'link': 'https://www.instagram.com',
-              'text': 'Follow us on Instagram'
-            },
-            {
-              'url': 'social/linkedin.svg',
-              'link': 'https://www.linkedin.com',
-              'text': 'Follow us on LinkedIn'
-            }
-          ]
-        }
-      ]
-    )
-  }}
-  {#}
-  {{
-    macro.section(
-      macro,
-      '1',
-      'FAQ', 
-      'Some description'
-    )
-  }}
-  {#}
-  {{
-    macro.section(
-      macro,
-      '1',
-      'Ask Us', 
-      [
-        {
-          'name': 'description',
-          'attr': 'If you have any query related to our services or products, or if you want to provide a feedback, please write to us.'
-        },
-        {
-          'name': 'form',
-          'attr': [
-            {
-              'row': [
-                {
-                  'size': 'col s12',
-                  'id': 'name',
-                  'type': 'text',
-                  'class': 'validate',
-                  'label': 'Name',
-                  'required': 'true'
-                }
-              ]
-            },
-            {
-              "row": [
-                {
-                  'size': 'col s12',
-                  'id': 'email',
-                  'type': 'email',
-                  'class': 'validate',
-                  'label': 'Email',
-                  'required': 'true'
-                }
-              ]
-            },
-            {
-              "row": [
-                {
-                  'size': 'col s12',
-                  'id': 'title',
-                  'type': 'text',
-                  'class': 'validate',
-                  'label': 'Query Title',
-                  'required': 'true'
-                }
-              ]
-            },
-            {
-              "row": [
-                {
-                  'size': 'col s12',
-                  'id': 'query',
-                  'type': 'textarea',
-                  'class': 'materialize-textarea character-counter',
-                  'length': '160',
-                  'label': 'Query',
-                  'required': 'true'
-                }
-              ]
-            }
-          ]
-        },
-        {
-          'name': 'button',
-          'attr': [
-            {
-              'text': 'Submit'
-            }
-          ]
-        },
-      ],
-      's12 m8 l6 push-m2 push-l3'
-    )
-  }}
-
-  <div class="divider white"></div>
-  {{
-    macro.footer(marco, [])
-  }}
+        {{
+          macro.section(
+            macro,
+            '1',
+            'Our Social Handles',
+            [
+              {
+                'name': 'description',
+                'attr': 'Follow us on social platforms to stay updated with our new and and upcoming products.'
+              },
+              {
+                'name': 'flat',
+                'attr': [
+                  {
+                    'url': 'social/facebook.svg',
+                    'link': 'https://www.facebook.com',
+                    'text': 'Follow us on facebook'
+                  },
+                  {
+                    'url': 'social/instagram.svg',
+                    'link': 'https://www.instagram.com',
+                    'text': 'Follow us on Instagram'
+                  },
+                  {
+                    'url': 'social/linkedin.svg',
+                    'link': 'https://www.linkedin.com',
+                    'text': 'Follow us on LinkedIn'
+                  }
+                ]
+              }
+            ]
+          )
+        }}
+        {#}
+        {{
+          macro.section(
+            macro,
+            '1',
+            'FAQ', 
+            'Some description'
+          )
+        }}
+        {#}
+        {{
+          macro.section(
+            macro,
+            '1',
+            'Ask Us', 
+            [
+              {
+                'name': 'description',
+                'attr': 'If you have any query related to our services or products, or if you want to provide a feedback, please write to us.'
+              },
+              {
+                'name': 'form',
+                'attr': [
+                  {
+                    'row': [
+                      {
+                        'size': 'col s12',
+                        'id': 'name',
+                        'type': 'text',
+                        'class': 'validate',
+                        'label': 'Name',
+                        'required': 'true'
+                      }
+                    ]
+                  },
+                  {
+                    "row": [
+                      {
+                        'size': 'col s12',
+                        'id': 'email',
+                        'type': 'email',
+                        'class': 'validate',
+                        'label': 'Email',
+                        'required': 'true'
+                      }
+                    ]
+                  },
+                  {
+                    "row": [
+                      {
+                        'size': 'col s12',
+                        'id': 'title',
+                        'type': 'text',
+                        'class': 'validate',
+                        'label': 'Query Title',
+                        'required': 'true'
+                      }
+                    ]
+                  },
+                  {
+                    "row": [
+                      {
+                        'size': 'col s12',
+                        'id': 'query',
+                        'type': 'textarea',
+                        'class': 'materialize-textarea character-counter',
+                        'length': '160',
+                        'label': 'Query',
+                        'required': 'true'
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                'name': 'button',
+                'attr': [
+                  {
+                    'text': 'Submit'
+                  }
+                ]
+              },
+            ],
+            's12 m8 l6 push-m2 push-l3'
+          )
+        }}
+    </div>
+    
+    
+    <div class="divider white"></div>
+    {{
+      macro.footer(marco, [])
+    }}
+  </main>
 
 {% endblock %} 
 

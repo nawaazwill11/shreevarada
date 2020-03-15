@@ -18,6 +18,7 @@ h1, h2, h3, h4, h5 {
   width: 100%;
   z-index: 1010;
   transition: top 0.3s;
+  top: 0;
 }
 
 nav {
@@ -210,6 +211,11 @@ body a {
 
 h5 {
   margin-bottom: 0px;
+}
+
+main {
+  height: 100%;
+  margin-top: 64px;
 }
 
 footer .author {
@@ -5335,6 +5341,7 @@ h1, h2, h3, h4, h5 {
   width: 100%;
   z-index: 1010;
   transition: top 0.3s;
+  top: 0;
 }
 
 nav {
@@ -5529,6 +5536,11 @@ h5 {
   margin-bottom: 0px;
 }
 
+main {
+  height: 100%;
+  margin-top: 64px;
+}
+
 footer .author {
   font-size: 12px;
 }
@@ -5581,6 +5593,7 @@ footer .author {
 .fullscreen {
   position: relative !important;
   top: -56px !important;
+  margin-top: 64px;
 }
 
 .slides {

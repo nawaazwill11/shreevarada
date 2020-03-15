@@ -34,7 +34,7 @@
 {% endblock %}
 
 {% block content %}
-
+<main class="main">
     {{
         macro.slider([
             {
@@ -84,7 +84,7 @@
             }
         ])
     }}
-    <main class="container">
+    <div class="container">
       {% for company_name, company in companies.items() %}      
         <div id="{{ company_name }}" class="section products" data-toggle="hide">
           <div class="row">
@@ -123,14 +123,14 @@
           </div>
         </div>
       {% endfor %}
-    </main>
+      </div>
 
   <div class="divider white"></div>
   
   {{
     macro.footer(marco, [])
   }}
-
+</main>
 {% endblock %}
 
 {% block scripts %}

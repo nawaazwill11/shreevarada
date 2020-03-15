@@ -33,217 +33,218 @@
 {% endblock %}
 
 {% block content %}
-
-{# Parallax id: 1 #}
-{{ 
-  macro.parallax(
-    macro,
-    'parallax',
-    ['prx_1.jpg'],
-    'Shreevarada Enterprise',
-    'A Growing Frozen Food Distribution Chain'
-  ) 
-}}
-
-<div class="container">
-
-    {# Product Section #}
-    {{
-      macro.section(
-        macro,
-        'products',
-        'Our Products', 
-        [
-          {
-            'id': '1',
-            'name': 'carousel',
-            'attr': [
-                {
-                  'href': '#!', 
-                  'src': 'products/cremica.jpg'
-                },
-                {
-                  'href': '#!', 
-                  'src': 'products/mccain.jpg'
-                },
-                {
-                  'href': '#!', 
-                  'src': 'products/venkys.jpg'
-                },
-                {
-                  'href': '#!', 
-                  'src': 'products/mapro.jpg'
-                },
-                {
-                  'href': '#!', 
-                  'src': 'products/rich.jpg'
-                },
-                {
-                  'href': '#!', 
-                  'src': 'products/ifb.jpg'
-                }
-            ]
-          },
-          {
-            'name': 'description',
-            'attr': 'We manage and supply one of the top brands in the frozen-food industry along with the top dressing, seasoning, spread and syrups industries in the entire country.'
-          },
-          {
-            'name': 'button',
-            'attr': [
-              {
-                'anchor': 'Browse All',
-                'link': '/products'
-              } 
-            ]
-          }
-        ]
-      )
-    }}
-
+  <main class="main">
+    {# Parallax id: 1 #}
     {{ 
-      macro.section(
+      macro.parallax(
         macro,
-        'services',
-        "Our Services",
-        [
-          {
-            'id': '1',
-            'name': 'card',
-            'attr': [
-              {
-                'size': 's12 m6 l4',
-              },
-              {
-                'url': 'services/hands.webp',
-                'content': 'Deliver a wide variety of high quality products to business of all sizes.'
-              },
-              {
-                'url':'services/deliver.jpg',
-                'content': 'Best price in market with on-time delivery across the country.'
-              },
-              {
-                'url':'services/shopping.jpg',
-                'content': 'A retail outlet for a speedy and swift product purchase for non-businesses.'
-              }
-            ]
-          }        
-        ]
+        'parallax',
+        ['prx_1.jpg'],
+        'Shreevarada Enterprise',
+        'A Growing Frozen Food Distribution Chain'
       ) 
     }}
-    
-    {{ 
-      macro.section(
-        macro,
-        '3',
-        "Our Partners",
-        [
-          {
-            'name': 'card_reveal',
-            'attr': [
-              {
-                'size': 's12 m6 l4',
-              },
-              {
-                'url': 'logo/cremica_logo.png',
-                'title': 'Cremica',
-                'desc': 'Cremica is known for its unique recipes, health oriented ingredients and state-of-the art standards.',
-                'link': 'https://www.cremica.com/'
-              },
-              {
-                'url': 'logo/venkys_logo.png',
-                'title': 'Venky\'s',
-                'desc': 'Foudned by the Venkateshwara Hatcheries Group in 1971, Pune, India, the company is a $2 billion Indian conglomerate.',
-                'link': 'https://www.venkys.com/'
-              },
-              {
-                'url': 'logo/mccain_logo.png',
-                'title': 'Mccain Foods',
-                'desc': 'McCain Foods Limited is a Canadian multinational frozen food company established in 1957 in Florenceville, New Brunswick, Canada.',
-                'link': 'http://www.mccain.com/'
-              },
-              {
-                'url': 'logo/rich_logo.png',
-                'title': 'Rich Products',
-                'desc': 'Rich Products Corporation is a privately held, multinational food products corporation headquartered in Buffalo, New York. The company was founded in 1945 by Robert E. Rich, Sr., after his development of a non-dairy whipped topping based on soybean oil.',
-                'link': 'https://www.richs.com/'
-              },
-              {
-                'url': 'logo/mapro_logo.png',
-                'title': 'Mapro',
-                'desc': 'Located around the idyllic hill-town of Panchgani in Western India, Mapro Foods manufactures Fruit Jams; Fruit beverage concentrates – Crushes and Squashes; and Fruit Bars.',
-                'link': 'http://www.mapro.com/'
-              },
-              {
-                'url': 'logo/ifb_logo.png',
-                'title': 'IFB Agro',
-                'desc': 'IFB Agro is a leading processor/exporter of Indian Frozen Seafood segment with state of the art manufacturing facility. Their manufacturing plant is located in Kolkata of 2000 MT capacity and have added another plant of same capacity in Andhra Pradesh.',
-                'link': 'https://www.ifbagro.in/'
-              },
-              {
-                'url': 'logo/knorr_logo.png',
-                'title': 'Knorr',
-                'desc': 'Knorr is a German food and beverage brand. It has been owned by the British-Dutch company Unilever since 2000.',
-                'link': 'http://www.knorr.com/'
-              },
-              {
-                'url': 'logo/delight_logo.png',
-                'title': 'Delight Foods',
-                'desc': 'Delight Foods is owned by GFOI Retail Pvt. Ltd, Bangalore.',
-                'link': 'https://www.delightfoods.com/'
-              },
-              {
-                'url': 'logo/kissan_logo.png',
-                'title': 'Kissan',
-                'desc': 'Introduced primarily for British settlers in India, Kissan has been present in India since 1935. The UB group, under the Late Vittal Malya then, acquired Kissan from Mitchell bros in the year 1950. In 1993, Hindustan Unilever Limited took it over from the UB group.',
-                'link': 'https://www.kissan.in/'
-              },
-              {
-                'url': 'logo/gadre_logo.png',
-                'title': 'Gadre',
-                'desc': 'Gadre Marine is the 3rd largest Surimi manufacturer in the world. They have three plants, one in Ratnagiri, Maharashtra, and one each in Chorwad, Gujarat, and Brahmavar, Karnataka.',
-                'link': 'https://gadre.co.in/'
 
+    <div class="container">
+
+        {# Product Section #}
+        {{
+          macro.section(
+            macro,
+            'products',
+            'Our Products', 
+            [
+              {
+                'id': '1',
+                'name': 'carousel',
+                'attr': [
+                    {
+                      'href': '#!', 
+                      'src': 'products/cremica.jpg'
+                    },
+                    {
+                      'href': '#!', 
+                      'src': 'products/mccain.jpg'
+                    },
+                    {
+                      'href': '#!', 
+                      'src': 'products/venkys.jpg'
+                    },
+                    {
+                      'href': '#!', 
+                      'src': 'products/mapro.jpg'
+                    },
+                    {
+                      'href': '#!', 
+                      'src': 'products/rich.jpg'
+                    },
+                    {
+                      'href': '#!', 
+                      'src': 'products/ifb.jpg'
+                    }
+                ]
               },
               {
-                'url': 'logo/switz_logo.png',
-                'title': 'Switz Food',
-                'desc': 'Switz Group is a leading bakery group in the Middle East and Indian subcontinent.',
-                'link': 'http://www.switzfrozen.com/'
+                'name': 'description',
+                'attr': 'We manage and supply one of the top brands in the frozen-food industry along with the top dressing, seasoning, spread and syrups industries in the entire country.'
               },
               {
-                'url': 'logo/vanleer_logo.png',
-                'title': 'Vanleer',
-                'desc': 'Van Leer continues this tradition of taste and quality with the support of Barry Callebaut and its 150 years of chocolate making experience.',
-                'link': 'https://www.barry-callebaut.com/en-US/artisans/van-leer'
-              },
-            ]
-          },
-          {
-            'name': 'button',
-            'attr': [
-              {
-                'anchor': 'Know More',
-                'link': '/products'
+                'name': 'button',
+                'attr': [
+                  {
+                    'anchor': 'Browse All',
+                    'link': '/products'
+                  } 
+                ]
               }
             ]
-          }
-        ]
-      ) 
-    }}
-  </div>
-          {#
+          )
+        }}
+
+        {{ 
+          macro.section(
+            macro,
+            'services',
+            "Our Services",
+            [
               {
-                'url': '',
-                'title': '',
-                'desc': '',
-                'link': ''
+                'id': '1',
+                'name': 'card',
+                'attr': [
+                  {
+                    'size': 's12 m6 l4',
+                  },
+                  {
+                    'url': 'services/hands.webp',
+                    'content': 'Deliver a wide variety of high quality products to business of all sizes.'
+                  },
+                  {
+                    'url':'services/deliver.jpg',
+                    'content': 'Best price in market with on-time delivery across the country.'
+                  },
+                  {
+                    'url':'services/shopping.jpg',
+                    'content': 'A retail outlet for a speedy and swift product purchase for non-businesses.'
+                  }
+                ]
+              }        
+            ]
+          ) 
+        }}
+        
+        {{ 
+          macro.section(
+            macro,
+            '3',
+            "Our Partners",
+            [
+              {
+                'name': 'card_reveal',
+                'attr': [
+                  {
+                    'size': 's12 m6 l4',
+                  },
+                  {
+                    'url': 'logo/cremica_logo.png',
+                    'title': 'Cremica',
+                    'desc': 'Cremica is known for its unique recipes, health oriented ingredients and state-of-the art standards.',
+                    'link': 'https://www.cremica.com/'
+                  },
+                  {
+                    'url': 'logo/venkys_logo.png',
+                    'title': 'Venky\'s',
+                    'desc': 'Foudned by the Venkateshwara Hatcheries Group in 1971, Pune, India, the company is a $2 billion Indian conglomerate.',
+                    'link': 'https://www.venkys.com/'
+                  },
+                  {
+                    'url': 'logo/mccain_logo.png',
+                    'title': 'Mccain Foods',
+                    'desc': 'McCain Foods Limited is a Canadian multinational frozen food company established in 1957 in Florenceville, New Brunswick, Canada.',
+                    'link': 'http://www.mccain.com/'
+                  },
+                  {
+                    'url': 'logo/rich_logo.png',
+                    'title': 'Rich Products',
+                    'desc': 'Rich Products Corporation is a privately held, multinational food products corporation headquartered in Buffalo, New York. The company was founded in 1945 by Robert E. Rich, Sr., after his development of a non-dairy whipped topping based on soybean oil.',
+                    'link': 'https://www.richs.com/'
+                  },
+                  {
+                    'url': 'logo/mapro_logo.png',
+                    'title': 'Mapro',
+                    'desc': 'Located around the idyllic hill-town of Panchgani in Western India, Mapro Foods manufactures Fruit Jams; Fruit beverage concentrates – Crushes and Squashes; and Fruit Bars.',
+                    'link': 'http://www.mapro.com/'
+                  },
+                  {
+                    'url': 'logo/ifb_logo.png',
+                    'title': 'IFB Agro',
+                    'desc': 'IFB Agro is a leading processor/exporter of Indian Frozen Seafood segment with state of the art manufacturing facility. Their manufacturing plant is located in Kolkata of 2000 MT capacity and have added another plant of same capacity in Andhra Pradesh.',
+                    'link': 'https://www.ifbagro.in/'
+                  },
+                  {
+                    'url': 'logo/knorr_logo.png',
+                    'title': 'Knorr',
+                    'desc': 'Knorr is a German food and beverage brand. It has been owned by the British-Dutch company Unilever since 2000.',
+                    'link': 'http://www.knorr.com/'
+                  },
+                  {
+                    'url': 'logo/delight_logo.png',
+                    'title': 'Delight Foods',
+                    'desc': 'Delight Foods is owned by GFOI Retail Pvt. Ltd, Bangalore.',
+                    'link': 'https://www.delightfoods.com/'
+                  },
+                  {
+                    'url': 'logo/kissan_logo.png',
+                    'title': 'Kissan',
+                    'desc': 'Introduced primarily for British settlers in India, Kissan has been present in India since 1935. The UB group, under the Late Vittal Malya then, acquired Kissan from Mitchell bros in the year 1950. In 1993, Hindustan Unilever Limited took it over from the UB group.',
+                    'link': 'https://www.kissan.in/'
+                  },
+                  {
+                    'url': 'logo/gadre_logo.png',
+                    'title': 'Gadre',
+                    'desc': 'Gadre Marine is the 3rd largest Surimi manufacturer in the world. They have three plants, one in Ratnagiri, Maharashtra, and one each in Chorwad, Gujarat, and Brahmavar, Karnataka.',
+                    'link': 'https://gadre.co.in/'
+
+                  },
+                  {
+                    'url': 'logo/switz_logo.png',
+                    'title': 'Switz Food',
+                    'desc': 'Switz Group is a leading bakery group in the Middle East and Indian subcontinent.',
+                    'link': 'http://www.switzfrozen.com/'
+                  },
+                  {
+                    'url': 'logo/vanleer_logo.png',
+                    'title': 'Vanleer',
+                    'desc': 'Van Leer continues this tradition of taste and quality with the support of Barry Callebaut and its 150 years of chocolate making experience.',
+                    'link': 'https://www.barry-callebaut.com/en-US/artisans/van-leer'
+                  },
+                ]
               },
-          #}
-  <div class="divider white"></div>
-  {{
-    macro.footer(marco, [])
-  }}
+              {
+                'name': 'button',
+                'attr': [
+                  {
+                    'anchor': 'Know More',
+                    'link': '/products'
+                  }
+                ]
+              }
+            ]
+          ) 
+        }}
+      </div>
+              {#
+                  {
+                    'url': '',
+                    'title': '',
+                    'desc': '',
+                    'link': ''
+                  },
+              #}
+      <div class="divider white"></div>
+      {{
+        macro.footer(marco, [])
+      }}
+  </main>
 {% endblock %}
 
 {% block scripts %}
