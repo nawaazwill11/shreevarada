@@ -9,7 +9,7 @@
     "sass": "sass node_modules/materialize-css/sass/app_materialize.scss static/dist/css/materialize.css",
     "sass:build": "npm run sass minify",
     "dev": "webpack -d --watch",
-    "build": "webpack --mode production",
+    "build": "webpack --mode production && npm run minify",
     "build:server-run": "npm run build start",
     "cypress:open": "cypress open",
     "start": "python3 -m flask run"

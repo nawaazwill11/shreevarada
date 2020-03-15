@@ -1,12 +1,36 @@
-var cleanCSS = require('clean-css');
-var fs = require('fs');
-var input = fs.readFileSync('./static/dist/css/materialize.css', 'utf-8');
-var options = { returnPromise: true };
-var output = new cleanCSS(options)
-                .minify(input)
-                .then(minifile => {
-                    fs.writeFileSync('./static/dist/css/materialize.min.css', minifile.styles);
-                })
-                .catch(error => {
-                    console.log(`Shit got fucked like this => ` + error);
-                });
+const fs = require('fs');
+const path = require('path');
+const cleanCSS = require('clean-css');
+
+const css_dir = './static/dist/css';
+const css_files = fs.readdirSync(css_dir);
+
+css_files.forEach(file => {
+    if (path.extname(file) === '.css') {
+        const css_file_path = css_dir + '/' + file;
+        const input = fs.readFileSync(css_file_path);
+        const options = {
+            returnPromise: true
+        }
+        const output = new cleanCSS(options)
+                        .minify(input)
+                        .then(minifile => {
+                            fs.writeFileSync(css_file_path, minifile.styles);
+                            // console.log(minifile.styles)
+                        })
+                        .catch(error => {
+                            console.log('Error occurred with file:', file, error)
+                        });
+    }
+});
+
+// var input = fs.readFileSync('./static/dist/css/materialize.css', 'utf-8');
+// var options = { returnPromise: true };
+// var output = new cleanCSS(options)
+//                 .minify(input)
+//                 .then(minifile => {
+//                     fs.writeFileSync('./static/dist/css/materialize.min.css', minifile.styles);
+//                 })
+//                 .catch(error => {
+//                     console.log(`Shit got fucked like this => ` + error);
+//                 });
