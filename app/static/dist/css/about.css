@@ -218,6 +218,10 @@ main {
   margin-top: 64px;
 }
 
+.container {
+  width: 100%;
+}
+
 footer .author {
   font-size: 12px;
 }
@@ -5458,6 +5462,10 @@ main {
   margin-top: 64px;
 }
 
+.container {
+  width: 100%;
+}
+
 footer .author {
   font-size: 12px;
 }
@@ -5505,4 +5513,14 @@ footer .author {
 
 .carousel {
   height: 200px;
+}
+
+.section-content {
+  padding: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .section-content {
+    padding: 10px;
+  }
 }

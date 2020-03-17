@@ -218,6 +218,10 @@ main {
   margin-top: 64px;
 }
 
+.container {
+  width: 100%;
+}
+
 footer .author {
   font-size: 12px;
 }
@@ -6535,6 +6539,10 @@ h5 {
 main {
   height: 100%;
   margin-top: 64px;
+}
+
+.container {
+  width: 100%;
 }
 
 footer .author {

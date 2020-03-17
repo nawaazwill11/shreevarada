@@ -5,3 +5,11 @@
 .carousel {
     height: 200px;
 }
+.section-content {
+    padding: 20px;
+}
+@media screen and (max-width: 600px) {
+    .section-content {
+        padding: 10px;
+    }
+}

@@ -71,6 +71,7 @@ function getFilesToCache() {
     return [
         "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js",
         "https://fonts.googleapis.com/icon?family=Material+Icons",
+        
         // "https://fonts.gstatic.com/s/materialicons/v50/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2",
     ]
 }
