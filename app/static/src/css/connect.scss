@@ -1,7 +1,9 @@
 @import 'materialize-css/sass/connect.materialize.scss';
 @import './common.scss';
 
-
+p {
+    word-break: break-word;
+}
 .section-content {
     padding: 20px;
 }
@@ -74,5 +76,10 @@
     }
     .section-content {
         padding: 20px 10px !important;
+    }
+    .flat-image {
+        img {
+            width: 100px;
+        }
     }
 }

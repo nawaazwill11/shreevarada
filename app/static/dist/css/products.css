@@ -156,6 +156,9 @@ footer {
 footer ul li {
   margin: 5px 0;
 }
+footer p {
+  word-break: break-word;
+}
 
 footer * {
   color: #fff !important;
@@ -5482,6 +5485,9 @@ footer {
 }
 footer ul li {
   margin: 5px 0;
+}
+footer p {
+  word-break: break-word;
 }
 
 footer * {

@@ -156,6 +156,9 @@ footer {
 footer ul li {
   margin: 5px 0;
 }
+footer p {
+  word-break: break-word;
+}
 
 footer * {
   color: #fff !important;
@@ -6479,6 +6482,9 @@ footer {
 footer ul li {
   margin: 5px 0;
 }
+footer p {
+  word-break: break-word;
+}
 
 footer * {
   color: #fff !important;
@@ -6547,6 +6553,10 @@ main {
 
 footer .author {
   font-size: 12px;
+}
+
+p {
+  word-break: break-word;
 }
 
 .section-content {
@@ -6622,5 +6632,9 @@ footer .author {
 
   .section-content {
     padding: 20px 10px !important;
+  }
+
+  .flat-image img {
+    width: 100px;
   }
 }
