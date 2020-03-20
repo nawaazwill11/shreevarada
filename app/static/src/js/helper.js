@@ -35,30 +35,9 @@ function navbarTransition() {
     }
 }
 
-const loader = {
-    load: function (){
-        const body = document.querySelector('body');
-        body.style.overflowY = 'hidden';
-        const load = document.createElement('div');
-        load.className = 'loader';
-        const lds = document.createElement('div');
-        lds.className = 'lds-hourglass';
-        load.appendChild(lds);
-        body.appendChild(load);
-    },
-    unload: function () {
-        const body = document.querySelector('body');
-        body.style.overflowY = 'scroll';
-        body.removeChild(
-            document.querySelector('.loader')
-        );
-    }
-}
-
 const helper = {
     scrollToElement: scrollToElement,
     navbarTransition: navbarTransition,
-    loader: loader,
 }
 
 

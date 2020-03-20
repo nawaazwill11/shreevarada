@@ -1,9 +1,8 @@
 import composer from './composer.connect';
-import './register.common';
-import helper from './helper';
+
 
 document.addEventListener('DOMContentLoaded', function () {
-    helper.loader.unload();
+    loader.unload();
     composer.initialization();
 
     const fab = document.querySelector('.fixed-action-btn');

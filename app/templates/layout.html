@@ -11,6 +11,51 @@
         <meta name="description" content="Shreevarada Enterprise Daman">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" href="{{ url_for('static', filename='dist/img/shree_logo.ico') }}" type="image/ico" sizes="16x10">
+        <style>
+            .loader {
+                z-index: 1150;
+                position: fixed;
+                height: 100%;
+                width: 100%;
+                background-color: white;
+                top: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .lds-hourglass {
+                display: inline-block;
+                position: relative;
+                width: 80px;
+                height: 80px;
+              }
+            .lds-hourglass:after {
+                content: " ";
+                display: block;
+                border-radius: 50%;
+                width: 0;
+                height: 0;
+                margin: 8px;
+                box-sizing: border-box;
+                border: 32px solid #fff;
+                border-color: #000 transparent #000 transparent;
+                animation: lds-hourglass 1.2s infinite;
+            }
+            @keyframes lds-hourglass {
+                0% {
+                  transform: rotate(0);
+                  animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+                }
+                50% {
+                  transform: rotate(900deg);
+                  animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+                }
+                100% {
+                  transform: rotate(1800deg);
+                }
+            }
+              
+        </style>
         {% block styles %}{% endblock %}
         
     </head>
@@ -20,7 +65,30 @@
         <![endif]-->
         {% block nav %}{% endblock %}
         {% block content %}{% endblock %}
-
-        {% block scripts %}{% endblock %}
+        <script>
+            const loader = {
+                load: function (){
+                    const body = document.querySelector('body');
+                    body.style.overflowY = 'hidden';
+                    const load = document.createElement('div');
+                    load.className = 'loader';
+                    const lds = document.createElement('div');
+                    lds.className = 'lds-hourglass';
+                    load.appendChild(lds);
+                    body.appendChild(load);
+                },
+                unload: function () {
+                    const body = document.querySelector('body');
+                    body.style.overflowY = 'scroll';
+                    body.removeChild(
+                        document.querySelector('.loader')
+                    );
+                }
+            }
+            loader.load();
+        </script>
+        {% block scripts %}
+        
+        {% endblock %}
     </body>
 </html>
