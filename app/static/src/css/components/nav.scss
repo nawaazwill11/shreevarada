@@ -89,9 +89,15 @@ nav {
 }
 @media screen and (max-width: 600px) {
     .logo-container {
+        padding: 5px;
 
+        img {
+            height: 40px;
+            width: 40px;
+        }
+        
         span {
-            font-size: 2rem;
+            font-size: 1.8rem;
             top: 0px !important;
         }
     }

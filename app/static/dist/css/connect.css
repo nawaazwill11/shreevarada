@@ -96,8 +96,15 @@ nav ul li a {
   }
 }
 @media screen and (max-width: 600px) {
+  .logo-container {
+    padding: 5px;
+  }
+  .logo-container img {
+    height: 40px;
+    width: 40px;
+  }
   .logo-container span {
-    font-size: 2rem;
+    font-size: 1.8rem;
     top: 0px !important;
   }
 }
@@ -6422,8 +6429,15 @@ nav ul li a {
   }
 }
 @media screen and (max-width: 600px) {
+  .logo-container {
+    padding: 5px;
+  }
+  .logo-container img {
+    height: 40px;
+    width: 40px;
+  }
   .logo-container span {
-    font-size: 2rem;
+    font-size: 1.8rem;
     top: 0px !important;
   }
 }
