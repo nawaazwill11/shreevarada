@@ -1,6 +1,9 @@
 import composer from './composer.products';
+import './register.common';
+import helper from './helper';
 
 document.addEventListener('DOMContentLoaded', function () {
+    helper.loader.unload();
     composer.initialization()
     .then(function () {
         $('.slider').slider({full_width: true, indicators:true});

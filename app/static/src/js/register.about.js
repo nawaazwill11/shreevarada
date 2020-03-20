@@ -1,6 +1,9 @@
 import composer from './composer.index';
+import './register.common';
+import helper from './helper';
 
 document.addEventListener('DOMContentLoaded', function () {
+    helper.loader.unload();
     composer.initialization();
     registerSW();
 });
