@@ -101,7 +101,7 @@
 {% macro description(desc) %}
   <div class="section-description">
     <p class="grey-text text-darken-3 lighten-3">
-      {{ desc }}
+      {{ desc|safe }}
     </p>
   </div>
 {% endmacro %}
@@ -304,19 +304,24 @@
       <div class="col l6 s12">
         <h5 class="">Shreevarada Enterprise</h5>
         <p class="grey-text text-lighten-4">
-          A Growing Forzen Food Distribution Chain
+          A Growing Frozen Food Distribution Chain
         </p>
         <div class="address">
-          <p>Building name</p>
-          <p>Street name</p>
-          <p>City & Code</p>
+          <p>Shop no. 15-178/A-G-2</p>
+          <p>Burhani Building</p>
+          <p>Khariwad, Nani Daman</p>
+          <p>Daman - 396210</p>
         </div>
       </div>
       <div class="col l4 offset-l2 s12">
         <h5 class="">Connect With Us</h5>
         <ul>
-          <li><a class="grey-text text-lighten-3" href="tel:99999XXXXX">99999XXXXX</a></li>
-          <li><a class="grey-text text-lighten-3" href="mailto:some@mail.com">some@mail.com</a></li>
+          <li>
+            <a class="grey-text text-lighten-3" href="tel:9824103540">9824103540</a> /
+            <a class="grey-text text-lighten-3" href="tel:8140984400">8140984400</a> /
+            <a class="grey-text text-lighten-3" href="tel:8140984400">7434946660 (Retail)</a>
+          </li>
+          <li><a class="grey-text text-lighten-3" href="mailto:shreevardha76@gmail.com">shreevardha76@gmail.com</a></li>
           <li><a class="grey-text text-lighten-3" href="https://www.facebook.com" target="_blank">Facebook</a></li>
           <!-- <li><a class="grey-text text-lighten-3" href="#!">Twitter</a></li> -->
           <li><a class="grey-text text-lighten-3" href="https://www.instagram.com/shreevaradaenterprise/" target="_blank">Instagram</a></li>
