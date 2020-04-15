@@ -66,6 +66,14 @@ const material = function () {
                 return document.querySelectorAll('.character-counter');
             }
         },
+        materialbox: {
+            name: 'materialbox',
+            object: M.Materialbox,
+            options: {},
+            get elems() {
+                return document.querySelectorAll('.materialboxed');
+            }
+        }
     }
 
     function getComponentList(){

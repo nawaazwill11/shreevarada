@@ -6,6 +6,7 @@ function initialization () {
         {name: 'fab', options: {}},
         {name: 'parallax', options: {}},
         {name: 'carousel', options: {}},
+        {name: 'materialbox', options: {}}
     ]
     material.initComponents(components);
     helper.navbarTransition();

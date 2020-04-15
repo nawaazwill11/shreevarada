@@ -417,6 +417,25 @@
   {% include html %}
 {% endmacro %}
 
+{% macro media(imgList) %}
+  <div class="image-container">
+    <div class="row">
+      {% for img in imgList %}
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="image">
+              <img class="materialboxed" src="{{ url_for('static', filename='dist/img/') }}{{ img['src'] }}" alt="media">
+            </div>
+            <div class="image-title">
+              Cremica
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+{% endmacro %}
+
 {% macro selector(macro, components) %}
   {% for component in components %}
     {% if component['name'] == 'description' %}
@@ -437,6 +456,8 @@
       {{ macro.flat(component['attr']) }}
     {% elif component['name'] == 'raw' %}
       {{ macro.raw(component['attr']) }}
+    {% elif component['name'] == 'media' %}
+      {{ macro.media(component['attr']) }}
     {% endif %}
   {% endfor %}
 {% endmacro %}

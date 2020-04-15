@@ -15,7 +15,15 @@
         text-align: justify;
     }
 }
-
+.image-title {
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+}
+.materialboxed {
+    width: 100%;
+}
 @media screen and (max-width: 600px) {
     // .section-content {
     //     padding: 20px 10px;
