@@ -24,7 +24,15 @@
 .materialboxed {
     width: 100%;
     min-height: 185px;
-    max-height: 185px
+    max-height: 185px;
+}
+.image {
+    .active {
+        z-index: 1051 !important;
+    }
+}
+#materialbox-overlay {
+    z-index: 1050 !important;
 }
 @media screen and (max-width: 600px) {
     // .section-content {
